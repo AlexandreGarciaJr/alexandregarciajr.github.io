@@ -44,7 +44,7 @@
     gap: 40px;
   }
   .introducao h1 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .introducao h1::before {
     width: 50px;
@@ -54,9 +54,18 @@
   }
 }
 
+@media (max-width: 600px) {
+  .introducao h1 {
+    font-size: 2rem;
+  }
+}
+
 @media (max-width: 400px) {
   .introducao {
     grid-template-columns: 1fr;
+  }
+  .introducao h1 {
+    font-size: 2rem;
   }
   .introducao img {
     display: block;
@@ -67,3 +76,5 @@
 .empresa-habilidades{
   display: flex;
 }
+
+
