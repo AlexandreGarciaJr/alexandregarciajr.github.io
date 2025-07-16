@@ -33,7 +33,7 @@
 
 .footer-contato li a:hover {
   color: #4ac546;
-  text-shadow: 0 0 3px #67dd0a, 0 0 8px rgb(186, 238, 199);;
+  text-shadow: 0 0 3px #67dd0a, 0 0 8px rgb(186, 238, 199);
   transition: 1s ease;
 }
 
@@ -79,7 +79,34 @@
     gap: 40px;
   }
 
-  .footer-contato li {
-    font-size: 1.5rem;
+.footer-contato li.linkedin {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* texto vai para a direita */
+  position: relative;
+  padding-left: 50px; /* garante espaço para o ícone */
+}
+
+.footer-contato li.github {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* texto vai para a direita */
+  position: relative;
+  padding-left: 50px; /* garante espaço para o ícone */
+}
+
+  .footer-contato li.github::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    align-self: center;
+  }
+
+  .footer-contato li.linkedin::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    align-self: center;
   }
 }
+
