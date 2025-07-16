@@ -1,29 +1,42 @@
-body{
+body {
+  height: 100%;
   margin: 0px;
   font-family: "Fira Sans", Arial, sans-serif;
   color: #141414;
-  /* background: linear-gradient(#979797f7, #fffffff7); */
+  background: linear-gradient( #b1aaaaf7, #ffffffff,#a5c6c7f7, #ffffffff,rgb(195, 216, 192));
 }
 
-h1, h2, h3, p{
+h1,
+h2,
+h3,
+p {
   margin: 0px;
 }
 
-ul{
+ul {
   margin: 0px;
   padding: 0px;
   list-style: none;
 }
 
-img{
+img {
   max-width: 100%;
+  height: auto;
   display: block;
 }
 
-.subtitulo{
+.subtitulo {
   font-size: 8rem;
   word-break: break-all;
   line-height: 1;
   text-transform: uppercase;
   max-width: 4ch;
+}
+
+@media (max-width: 800px) {
+  .subtitulo {
+    font-size: 5rem;
+    text-transform: capitalize;
+    max-width: initial !important;
+  }
 }

@@ -1,0 +1,85 @@
+.footer {
+  background: #000000;
+}
+
+.footer-container {
+  max-width: 1500px;
+  padding: 120px 20px 60px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  position: relative;
+  align-items: center;
+}
+
+.footer-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  color: #cccccc;
+}
+
+.footer-contato li {
+  font-weight: bold;
+  font-size: 2.25rem;
+  line-height: 1.1;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.footer-contato li a {
+  color: #ffffff;
+}
+
+.footer-contato li a:hover {
+  color: #4ac546;
+  text-shadow: 0 0 3px #67dd0a, 0 0 8px rgb(186, 238, 199);;
+  transition: 1s ease;
+}
+
+.footer-contato li.linkedin {
+  display: flex;
+  position: relative;
+}
+
+.footer-contato li.linkedin::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: url(../img/linkedin.svg) no-repeat center;
+  background-size: contain;
+  left: -50px;
+}
+
+.footer-contato li.github {
+  display: flex;
+  position: relative;
+}
+
+.footer-contato li.github::before {
+  content: "";
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  background: url(../img/github.svg) no-repeat center;
+  background-size: contain;
+  left: -52px;
+}
+
+.footer-copy {
+  grid-column: 1 / -1;
+  font-size: 1.125rem;
+  color: #8f8f8f;
+}
+
+@media (max-width: 800px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .footer-contato li {
+    font-size: 1.5rem;
+  }
+}

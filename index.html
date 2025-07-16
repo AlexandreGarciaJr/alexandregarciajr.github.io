@@ -5,23 +5,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio - Alexandre Garcia</title>
+  <meta name="description" content="Desenvolvedor Backend e Frontend, Localizado em São Paulo">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
   <header class="header">
-    <img class="nome" src="./img/nome.svg" alt="Alexandre Garcia">
-    <nav>
-      <ul class="header-menu">
+    <p class="nome">Alexandre Garcia</p>
+
+    <nav class="header-menu">
+      <a href="#experiencia">Experiência</a>
+      <a href="#formacao">Formação</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <div id="menuToggle">
+      <input type="checkbox" checked />
+      <span></span>
+      <span></span>
+      <span></span>
+      <ul id="menu">
         <li><a href="#experiencia">Experiência</a></li>
         <li><a href="#formacao">Formação</a></li>
-        <li><a href="#Contato">Contato</a></li>
+        <li><a href="#contato">Contato</a></li>
       </ul>
-    </nav>
+    </div>
   </header>
 
+
   <main class="introducao">
-    <img src="./img/perfil.jpg" alt=" Foto de Alexandre">
+    <img src="./img/perfil-2.png" alt=" Foto de Alexandre" width=" 360px" height="520px">
     <div>
       <h1>Desenvolvedor <br> Backend & <br> Frontend</h1>
       <p>Localizado em São Paulo 🏨</p>
@@ -81,6 +94,76 @@
     </div>
   </section>
 
+  <section class="formacao" id="formacao" aria-label="Formação">
+    <div class="formacao-container">
+      <h2 class="subtitulo">Formação</h2>
+      <div>
+        <p class="formacao-texto">
+          Estudante de <strong>Análise e Desenvolvimento de Sistemas</strong> pela instituição <strong>SENAC</strong>, e estudante de <strong>Backend</strong> e <strong>Frontend</strong>💻. Formado em <strong>Arquitetura e Urbanismo </strong>, pela Universidade Nove de Julho com 12 anos de experiência na área de construção civil🔨.
+        </p>
+
+        <ul class="faculdade-lista">
+          <li class="faculdade">
+            <span class="faculdade-tipo">Tecnólogo</span>
+            <h3 class="faculdade-curso">Análise e Desenvolvimento de Sistemas</h3>
+            <span class="faculdade-instituicao">SENAC</span>
+          </li>
+          <li class="faculdade">
+            <span class="faculdade-tipo">Bacharel</span>
+            <h3 class="faculdade-curso">Arquitetura e Urbanismo</h3>
+            <span class="faculdade-instituicao">UNINOVE</span>
+          </li>
+          <li class="faculdade">
+            <span class="faculdade-tipo">Cursos</span>
+            <h3 class="faculdade-curso">Frontend e Backend</h3>
+            <span class="faculdade-instituicao">Origamid - DIO.</span>
+          </li>
+        </ul>
+
+        <div class="formacao-extra">
+          <div class="cursos">
+            <h3>Cursos Intensivos</h3>
+            <ul>
+              <li><span>Origamid</span> HTML e CSS <span>23h</span></li>
+              <li><span>Dio.</span> Bootcamp Java com Springboot e MySQL <span>75h</span></li>
+              <li><span>Cisco</span> Fundamentos de Phyton <span>30h</span></li>
+              <li><span>Cisco</span> Computer Hardware Basics <span>40h</span></li>
+            </ul>
+          </div>
+
+          <div class="idiomas">
+            <h3>Idiomas</h3>
+            <ul>
+              <li>Portugues<span> Fluente</span></li>
+              <li>Ingles<span> Avançado</span></li>
+              <li>Espanhol<span> Intermediário</span></li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+  </section>
+
+
+  <footer class="footer" id="contato">
+    <div class="footer-container">
+      <p class=" footer-texto"> Estou disponível para novos projetos, entre em contato e será um prazer atende-lo(a)👋📲</p>
+      <ul class="footer-contato">
+        <li>alexandregojunior@gmail.com</li>
+        <li>+55 11 98618-6964</li>
+        <li class="linkedin"><a href="https://www.linkedin.com/in/alexandregarcia-junior/">Linkedin</a></li>
+        <li class="github"><a href="https://github.com/AlexandreGarciaJr">Github</a></li>
+      </ul>
+      <p class="footer-copy">Copyright © 2025 Alexandre Garcia</p>
+    </div>
+
+    <a class="whatsapp-button" href="https://wa.me/5511986186964?text=Olá,%20preciso%20de%20mais%20informações" target="_blank" aria-label="Fale conosco via WhatsApp">
+      <span class="whatsapp-text">Fale conosco</span>
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+    </a>
+  </footer>
 
 </body>
 
