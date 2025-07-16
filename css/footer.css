@@ -79,21 +79,21 @@
     gap: 40px;
   }
 
-.footer-contato li.linkedin {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; /* texto vai para a direita */
-  position: relative;
-  padding-left: 50px; /* garante espaço para o ícone */
-}
+  .footer-contato li.linkedin {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* texto vai para a direita */
+    position: relative;
+    padding-left: 50px; /* garante espaço para o ícone */
+  }
 
-.footer-contato li.github {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; /* texto vai para a direita */
-  position: relative;
-  padding-left: 50px; /* garante espaço para o ícone */
-}
+  .footer-contato li.github {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* texto vai para a direita */
+    position: relative;
+    padding-left: 50px; /* garante espaço para o ícone */
+  }
 
   .footer-contato li.github::before {
     content: "";
@@ -110,3 +110,9 @@
   }
 }
 
+@media (max-width: 500px) {
+  .formacao-extra span{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
