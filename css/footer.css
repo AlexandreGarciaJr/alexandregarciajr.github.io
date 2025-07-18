@@ -111,8 +111,52 @@
 }
 
 @media (max-width: 500px) {
-  .formacao-extra span{
+  .formacao-extra span {
     margin-left: 10px;
     margin-right: 10px;
+  }
+
+  .footer-contato li {
+    font-size:1.35rem;
+    line-height: 1.1;
+  }
+
+   .footer-contato .email {
+    font-size:1.15rem;
+    line-height: 1.1;
+  }
+
+  .footer-contato li.linkedin {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* texto vai para a direita */
+    position: relative;
+    padding-left: 35px; /* garante espaço para o ícone */
+  }
+
+  .footer-contato li.github {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* texto vai para a direita */
+    position: relative;
+    padding-left: 35px; /* garante espaço para o ícone */
+  }
+
+  .footer-contato li.github::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    align-self: center;
+    width: 40px;
+    height: 30px;
+  }
+
+  .footer-contato li.linkedin::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    align-self: center;
+    width: 40px;
+    height: 30px;
   }
 }

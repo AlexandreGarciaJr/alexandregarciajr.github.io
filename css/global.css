@@ -3,7 +3,13 @@ body {
   margin: 0px;
   font-family: "Fira Sans", Arial, sans-serif;
   color: #141414;
-  background: linear-gradient( #b1aaaaf7, #ffffffff,#a5c6c7f7, #ffffffff,rgb(195, 216, 192));
+  background: linear-gradient(
+    #b1aaaaf7,
+    #ffffffff,
+    #a5c6c7f7,
+    #ffffffff,
+    rgb(195, 216, 192)
+  );
 }
 
 h1,
@@ -38,5 +44,11 @@ img {
     font-size: 5rem;
     text-transform: capitalize;
     max-width: initial !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .subtitulo {
+    max-width: 5ch !important;
   }
 }
