@@ -9,7 +9,7 @@
 
 .experiencia .subtitulo {
   display: inline-block;
-  color: #cfcfcfe0;
+  color: #8b8b8b6c;
   background: url(../img/onda.svg) repeat;
 }
 
@@ -98,7 +98,7 @@
     gap: 40px;
   }
   .experiencia .subtitulo {
-    color: #747474;
+    color: #44444465;
   }
 
   .experiencia-texto {
