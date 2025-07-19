@@ -1,0 +1,35 @@
+#voltarAoTopo {
+  opacity: 0;                  /* começa invisível */
+  visibility: hidden;          /* para não clicar */
+  transition: opacity 1s ease; /* inicial */
+  position: fixed;
+  top: 20px;            /* Agora fica no topo */
+  left: 50%;  
+  transform: translateX(-50%);
+  z-index: 9999;
+  background-color: #0000005e;
+  color: white;
+  cursor: pointer;
+  padding: 5px 20px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+#voltarAoTopo:hover {
+  background-color: #000000c7;
+   transition: 1s ease;
+}
+
+#voltarAoTopo .texto-botao {
+  display: block;           /* Quebra para baixo da seta */
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+#voltarAoTopo.mostrar {
+  opacity: 1;
+  visibility: visible;
+}

@@ -62,6 +62,7 @@
   box-shadow: 0 0 6px #bfca5b, 0 0 8px #bcdaa5;
   background: #141414;
   transition: 1.5s ease;
+  cursor: pointer;
 }
 
 .faculdade-tipo {
