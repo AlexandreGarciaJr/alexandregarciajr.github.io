@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Alexandre Garcia</title>
+  <title>Portfólio - Alexandre Garcia</title>
   <meta name="description" content="Desenvolvedor Backend e Frontend, Localizado em São Paulo">
   <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -34,7 +34,7 @@
   </header>
 
 
-  <main class="introducao">
+  <main class="introducao hidden">
 
     <img src="./img/perfil-2.png" alt=" Foto de Alexandre" width=" 360px" height="520px">
     <div>
@@ -45,10 +45,10 @@
 
   <section class="experiencia" id="experiencia" aria-label="Experiência">
     <h2 class="subtitulo">Experiência</h2>
-    <div>
-      <p class="experiencia-texto">Olá, sou Alexandre Garcia, estudante de Análise e Desenvolvimento de Sistemas pela instituição SENAC. <br> Na minha história, sou formado em Arquitetura e Urbanismo, com 12 anos de experiência na área de construção civil. Busco unir minha senioridade na área, minha capacidade de gestão de projetos e organização para impulsionar a busca por esta nova carreira na área de tecnologia e desenvolvimento de sistemas e softwares, com preferência por Backend, e conhecimento em Frontend. <br><br> Tecnologias: <strong>Java</strong> | <strong>Spring Boot</strong> | <strong>MySQL</strong> | <strong>VsCode</strong> | <strong>IntelliJ</strong> |<strong> HTML </strong> | <strong> CSS </strong> </p>
+    <div class="experiencia-empresas">
+      <p class="experiencia-texto hidden">Olá, sou Alexandre Garcia, estudante de Análise e Desenvolvimento de Sistemas pela instituição SENAC. <br> Na minha história, sou formado em Arquitetura e Urbanismo, com 12 anos de experiência na área de construção civil. Busco unir minha senioridade na área, minha capacidade de gestão de projetos e organização para impulsionar a busca por esta nova carreira na área de tecnologia e desenvolvimento de sistemas e softwares, com preferência por Backend, e conhecimento em Frontend. <br><br> Tecnologias: <strong>Java</strong> | <strong>Spring Boot</strong> | <strong>MySQL</strong> | <strong>VsCode</strong> | <strong>IntelliJ</strong> |<strong> HTML </strong> | <strong> CSS </strong> </p>
 
-      <div class="empresa">
+      <div class="empresa hidden">
         <span class="empresa-ano"> 2024<br>até<br>o momento</span>
         <h3 class="empresa-titulo">Alexandre Garcia</h3>
         <span class="empresa-titulo">Desenvolvedor Backend e Frontend</span>
@@ -62,7 +62,7 @@
         </ul>
       </div>
 
-      <div class="empresa">
+      <div class="empresa hidden">
         <span class="empresa-ano"> 2017<br>até<br>o momento</span>
         <h3 class="empresa-titulo">Nautilo Arquitetura e Gerenciamento</h3>
         <span class="empresa-titulo">Arquiteto</span>
@@ -77,7 +77,7 @@
         </ul>
       </div>
 
-      <div class="empresa">
+      <div class="empresa hidden">
         <span class="empresa-ano"> 2020<br>até<br>o momento</span>
         <h3 class="empresa-titulo">AG Arquitetura</h3>
         <span class="empresa-titulo">Arquiteto</span>
@@ -105,17 +105,17 @@
         </p>
 
         <ul class="faculdade-lista">
-          <li class="faculdade">
+          <li class="faculdade hidden">
             <span class="faculdade-tipo">Tecnólogo</span>
             <h3 class="faculdade-curso">Análise e Desenvolvimento de Sistemas</h3>
             <span class="faculdade-instituicao">SENAC</span>
           </li>
-          <li class="faculdade">
+          <li class="faculdade hidden">
             <span class="faculdade-tipo">Bacharel</span>
             <h3 class="faculdade-curso">Arquitetura e Urbanismo</h3>
             <span class="faculdade-instituicao">UNINOVE</span>
           </li>
-          <li class="faculdade">
+          <li class="faculdade hidden">
             <span class="faculdade-tipo">Cursos</span>
             <h3 class="faculdade-curso">Frontend e Backend</h3>
             <span class="faculdade-instituicao">Origamid - DIO.</span>
@@ -153,10 +153,10 @@
     <div class="footer-container">
       <p class=" footer-texto"> Estou disponível para novos projetos, entre em contato e será um prazer atende-lo(a)👋📲</p>
       <ul class="footer-contato">
-        <li class="email">alexandregojunior@gmail.com</li>
-        <li>+55 11 98618-6964</li>
-        <li class="linkedin"><a href="https://www.linkedin.com/in/alexandregarcia-junior/">Linkedin</a></li>
-        <li class="github"><a href="https://github.com/AlexandreGarciaJr">Github</a></li>
+        <li class="email hidden">alexandregojunior@gmail.com</li>
+        <li class=" numero hidden">+55 11 98618-6964</li>
+        <li class="linkedin hidden"><a href="https://www.linkedin.com/in/alexandregarcia-junior/">Linkedin</a></li>
+        <li class="github hidden"><a href="https://github.com/AlexandreGarciaJr">Github</a></li>
       </ul>
       <p class="footer-copy">Copyright © 2025 Alexandre Garcia</p>
     </div>
@@ -169,7 +169,7 @@
 
   <button id="voltarAoTopo" title="Voltar ao Topo"> &#8593; <br>Início</button>
   <script src="voltar-ao-topo.js"></script>
-
+  <script src="scroll-animation.js"></script>
 </body>
 
 </html>
