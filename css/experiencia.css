@@ -52,6 +52,7 @@
   border-left: 4px solid #67dd0a;
   box-shadow: 0 0 6px #bfca5b, 0 0 8px #bcdaa5;
   transition: 1.5s ease;
+  transition-delay: 0s !important;
   background: #c0c0c0;
   cursor: pointer;
 }

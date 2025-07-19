@@ -35,6 +35,7 @@
   color: #4ac546;
   text-shadow: 0 0 3px #67dd0a, 0 0 8px rgb(186, 238, 199);
   transition: 1s ease;
+  transition-delay: 0s !important;
 }
 
 .footer-contato li.linkedin {
