@@ -15,7 +15,7 @@
 
 ### Visualização:
 
-http://alexandregarciajr.com
+http://alexandregarciajr.com <br/>
 https://alexandregarciajr.github.io/
 
 ![alt text](./img/image.png)
