@@ -8,7 +8,10 @@
 
 ### Funcionalidades utilizadas:
 
-- Página Web de venda responsiva com efeitos de hover
+- Página Web de venda responsiva
+- Efeitos de hover
+- Menu Sanduiche
+- Botão de Whatsapp
 
 ### Visualização:
 
