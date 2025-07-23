@@ -1,7 +1,7 @@
 var btnVoltarAoTopo = document.getElementById("voltarAoTopo");
 
 window.addEventListener("scroll", function() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
     btnVoltarAoTopo.classList.add("mostrar");
   } else {
     btnVoltarAoTopo.classList.remove("mostrar");

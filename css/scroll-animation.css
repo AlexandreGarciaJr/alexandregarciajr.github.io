@@ -5,6 +5,20 @@
   transition: opacity 3s, filter 3s, transform 3s;
 }
 
+.hidden-up {
+  opacity: 0;
+  filter: blur(15px);
+  transform: translateY(50%);
+  transition: opacity 3s, filter 3s, transform 3s;
+}
+
+.hidden-up-forte {
+  opacity: 0;
+  filter: blur(15px);
+  transform: translateY(200%);
+  transition: opacity 3s, filter 3s, transform 3s;
+}
+
 .show{
   opacity: 1;
   filter: blur(0);
