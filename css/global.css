@@ -35,8 +35,8 @@ img {
   font-size: 8rem;
   line-height: 1;
   text-transform: uppercase;
-  max-width: 5ch;         /* Mantém o bloco estreito */
-  word-break: break-all;     /* Não força quebra no meio das palavras */
+  max-width: 5ch; /* Mantém o bloco estreito */
+  word-break: break-all; /* Não força quebra no meio das palavras */
   overflow-wrap: break-word; /* Permite quebra em palavras longas */
 }
 
@@ -45,25 +45,24 @@ img {
     font-size: 5rem;
     text-transform: capitalize;
     max-width: initial !important;
-    max-width: 5ch
   }
 }
 
 @media (max-width: 500px) {
   .subtitulo {
-    max-width: 5ch !important;
+    font-size: 4rem;
+    max-width: 6ch !important;
   }
 }
 
 @media (max-width: 300px) {
   .subtitulo {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 }
 
 @media (max-width: 250px) {
   .subtitulo {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 }
-
