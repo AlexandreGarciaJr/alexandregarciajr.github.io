@@ -35,7 +35,7 @@ img {
   font-size: 8rem;
   line-height: 1;
   text-transform: uppercase;
-  max-width: 4ch;         /* Mantém o bloco estreito */
+  max-width: 5ch;         /* Mantém o bloco estreito */
   word-break: break-all;     /* Não força quebra no meio das palavras */
   overflow-wrap: break-word; /* Permite quebra em palavras longas */
 }
@@ -45,6 +45,7 @@ img {
     font-size: 5rem;
     text-transform: capitalize;
     max-width: initial !important;
+    max-width: 5ch
   }
 }
 

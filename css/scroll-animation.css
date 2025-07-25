@@ -27,15 +27,15 @@
 }
 
 .experiencia-empresas :nth-child(2){
-  transition-delay: 400ms;
+  transition-delay: 100ms;
 }
 
 .experiencia-empresas :nth-child(3){
-  transition-delay: 700ms;
+  transition-delay: 300ms;
 }
 
 .experiencia-empresas :nth-child(4){
-  transition-delay: 1000ms;
+  transition-delay: 500ms;
 }
 
 .faculdade-lista :nth-child(2){
