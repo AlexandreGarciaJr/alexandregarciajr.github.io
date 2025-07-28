@@ -15,9 +15,9 @@
     <p class="nome">Alexandre Garcia</p>
 
     <nav class="header-menu">
-      <a href="#experiencia">Experiência</a>
-      <a href="#formacao">Formação</a>
-      <a href="#contato">Contato</a>
+      <a href="#experiencia" data-key="experienciatitulo">Experiência</a>
+      <a href="#formacao" data-key="experienciaformacao">Formação</a>
+      <a href="#contato" data-key="experienciacontato">Contato</a>
     </nav>
 
     <div id="menuToggle">
@@ -26,9 +26,9 @@
       <span></span>
       <span></span>
       <ul id="menu">
-        <li><a href="#experiencia">Experiência</a></li>
-        <li><a href="#formacao">Formação</a></li>
-        <li><a href="#contato">Contato</a></li>
+        <li><a href="#experiencia" data-key="experienciatitulo">Experiência</a></li>
+        <li><a href="#formacao" data-key="experienciaformacao">Formação</a></li>
+        <li><a href="#contato" data-key="experienciacontato">Contato</a></li>
       </ul>
     </div>
 
@@ -39,21 +39,21 @@
 
     <img src="./img/perfil-2.png" alt=" Foto de Alexandre" width=" 360px" height="520px">
     <div>
-      <h1>Desenvolvedor <br> Backend & <br> Frontend</h1>
-      <p>Localizado em São Paulo 🏨</p>
+      <h1 data-key="titulo">Desenvolvedor <br> Backend & <br> Frontend</h1>
+      <p data-key="localizacao">Localizado em São Paulo 🏨</p>
     </div>
   </main>
 
   <section class="experiencia" id="experiencia" aria-label="Experiência">
-    <h2 class="subtitulo">Experiência</h2>
+    <h2 class="subtitulo" data-key="experiencia">Experiência</h2>
     <div class="experiencia-empresas">
-      <p class="experiencia-texto hidden">Olá, sou Alexandre Garcia, estudante de Análise e Desenvolvimento de Sistemas pela instituição SENAC. <br> Na minha história, sou formado em Arquitetura e Urbanismo, com 12 anos de experiência na área de construção civil. Busco unir minha senioridade na área, minha capacidade de gestão de projetos e organização para impulsionar a busca por esta nova carreira na área de tecnologia e desenvolvimento de sistemas e softwares, com preferência por Backend, e conhecimento em Frontend. <br><br> Tecnologias: <strong>Java</strong> | <strong>Spring Boot</strong> | <strong>MySQL</strong> | <strong>VsCode</strong> | <strong>IntelliJ</strong> |<strong> HTML </strong> | <strong> CSS </strong> </p>
+      <p class="experiencia-texto hidden" data-key="experienciatexto">Olá, sou Alexandre Garcia, estudante de Análise e Desenvolvimento de Sistemas pela instituição SENAC. <br> Na minha história, sou formado em Arquitetura e Urbanismo, com 12 anos de experiência na área de construção civil. Busco unir minha senioridade na área, minha capacidade de gestão de projetos e organização para impulsionar a busca por esta nova carreira na área de tecnologia e desenvolvimento de sistemas e softwares, com preferência por Backend, e conhecimento em Frontend. <br><br> Tecnologias: <strong>Java</strong> | <strong>Spring Boot</strong> | <strong>MySQL</strong> | <strong>VsCode</strong> | <strong>IntelliJ</strong> |<strong> HTML </strong> | <strong> CSS </strong> </p>
 
       <div class="empresa hidden-up">
-        <span class="empresa-ano"> 2024<br>até<br>o momento</span>
+        <span class="empresa-ano" data-key="anoempresa1"> 2024<br>até<br>o momento</span>
         <h3 class="empresa-titulo">Alexandre Garcia</h3>
-        <span class="empresa-titulo">Desenvolvedor Backend e Frontend</span>
-        <p class="empresa-texto">Desenvolvimento de pequenos projetos, páginas Web, programas e APIs como programador Backend e desenvolvedor Frontend.</p>
+        <span class="empresa-titulo" data-key="tituloempresa1">Desenvolvedor Backend e Frontend</span>
+        <p class="empresa-texto" data-key="textoempresa1">Desenvolvimento de pequenos projetos, páginas Web, programas e APIs como programador Backend e desenvolvedor Frontend.</p>
         <ul class="empresa-habilidades">
           <li>Java</li>
           <li>Spring Boot</li>
@@ -64,10 +64,10 @@
       </div>
 
       <div class="empresa hidden-up">
-        <span class="empresa-ano"> 2017<br>até<br>o momento</span>
-        <h3 class="empresa-titulo">Nautilo Arquitetura e Gerenciamento</h3>
-        <span class="empresa-titulo">Arquiteto</span>
-        <p class="empresa-texto">Realização de diversos projetos de arquitetura de diferentes tipologias e tamanhos, realização de todas as etapas de projetos (estudo preliminar e projeto executivo), realização de estudos de materiais e gerenciamento de obras diversas, organização e gestão de equipes de obras, e execução de planilhas e cronogramas.</p>
+        <span class="empresa-ano" data-key="anoempresa2"> 2017<br>até<br>o momento</span>
+        <h3 class="empresa-titulo" data-key="nomeempresa2">Nautilo Arquitetura e Gerenciamento</h3>
+        <span class="empresa-titulo" data-key="tituloempresa2">Arquiteto</span>
+        <p class="empresa-texto" data-key="textoempresa2">Realização de diversos projetos de arquitetura de diferentes tipologias e tamanhos, realização de todas as etapas de projetos (estudo preliminar e projeto executivo), realização de estudos de materiais e gerenciamento de obras diversas, organização e gestão de equipes de obras, e execução de planilhas e cronogramas.</p>
         <ul class="empresa-habilidades">
           <li>Autocad</li>
           <li>Sketchup</li>
@@ -79,11 +79,10 @@
       </div>
 
       <div class="empresa hidden-up">
-        <span class="empresa-ano"> 2020<br>até<br>o momento</span>
-        <h3 class="empresa-titulo">AG Arquitetura</h3>
-        <span class="empresa-titulo">Arquiteto</span>
-        <p class="empresa-texto">Execução de diversos projetos residenciais e
-          comerciais como arquiteto autônomo em Alexandre Garcia Arquitetura.Dentre eles: projeto de casas unifamiliares, projeto e reforma de apartamentos e estúdios, lojas comerciais, restaurantes, e obras de diversos tipos.</p>
+        <span class="empresa-ano" data-key="anoempresa3"> 2020<br>até<br>o momento</span>
+        <h3 class="empresa-titulo" data-key="nomeempresa3">AG Arquitetura</h3>
+        <span class="empresa-titulo" data-key="tituloempresa3">Arquiteto</span>
+        <p class="empresa-texto" data-key="textoempresa3">Execução de diversos projetos residenciais e comerciais como arquiteto autônomo em Alexandre Garcia Arquitetura.Dentre eles: projeto de casas unifamiliares, projeto e reforma de apartamentos e estúdios, lojas comerciais, restaurantes, e obras de diversos tipos.</p>
         <ul class="empresa-habilidades">
           <li>Autocad</li>
           <li>Sketchup</li>
@@ -99,47 +98,47 @@
 
   <section class="formacao" id="formacao" aria-label="Formação">
     <div class="formacao-container">
-      <h2 class="subtitulo">Formação</h2>
+      <h2 class="subtitulo" data-key="formacao">Formação</h2>
       <div>
-        <p class="formacao-texto">
+        <p class="formacao-texto" data-key="formacaotexto">
           Estudante de <strong>Análise e Desenvolvimento de Sistemas</strong> pela instituição <strong>SENAC</strong>, e estudante de <strong>Backend</strong> e <strong>Frontend</strong>💻. Formado em <strong>Arquitetura e Urbanismo </strong>, pela Universidade Nove de Julho com 12 anos de experiência na área de construção civil🔨.
         </p>
 
         <ul class="faculdade-lista">
           <li class="faculdade hidden">
-            <span class="faculdade-tipo">Tecnólogo</span>
-            <h3 class="faculdade-curso">Análise e Desenvolvimento de Sistemas</h3>
+            <span class="faculdade-tipo" data-key="faculdadetipo1">Tecnólogo</span>
+            <h3 class="faculdade-curso" data-key="faculdadecurso1">Análise e Desenvolvimento de Sistemas</h3>
             <span class="faculdade-instituicao">SENAC</span>
           </li>
           <li class="faculdade hidden">
-            <span class="faculdade-tipo">Bacharel</span>
-            <h3 class="faculdade-curso">Arquitetura e Urbanismo</h3>
+            <span class="faculdade-tipo" data-key="faculdadetipo2">Bacharel</span>
+            <h3 class="faculdade-curso" data-key="faculdadecurso2">Arquitetura e Urbanismo</h3>
             <span class="faculdade-instituicao">UNINOVE</span>
           </li>
           <li class="faculdade hidden">
-            <span class="faculdade-tipo">Cursos</span>
-            <h3 class="faculdade-curso">Frontend e Backend</h3>
+            <span class="faculdade-tipo" data-key="faculdadetipo3">Cursos</span>
+            <h3 class="faculdade-curso" data-key="faculdadecurso3">Frontend e Backend</h3>
             <span class="faculdade-instituicao">Origamid - DIO.</span>
           </li>
         </ul>
 
         <div class="formacao-extra">
           <div class="cursos">
-            <h3>Cursos Intensivos</h3>
+            <h3 data-key="intensivos">Cursos Intensivos</h3>
             <ul>
               <li><span>Origamid </span> HTML e CSS <span>23h</span></li>
               <li><span>Dio. </span> Bootcamp Java, Springboot e MySQL <span>75h</span></li>
-              <li><span>Cisco </span> Fundamentos de Phyton <span>30h</span></li>
+              <li data-key="fundamentos"><span>Cisco </span> Fundamentos de Phyton <span>30h</span></li>
               <li><span>Cisco </span> Computer Hardware Basics <span>40h</span></li>
             </ul>
           </div>
 
           <div class="idiomas">
-            <h3>Idiomas</h3>
+            <h3 data-key="idiomas">Idiomas</h3>
             <ul>
-              <li>Portugues<span> Nativo</span></li>
-              <li>Ingles<span> Avançado</span></li>
-              <li>Espanhol<span> Intermediário</span></li>
+              <li data-key="lingua1">Portugues<span> Nativo</span></li>
+              <li data-key="lingua2">Ingles<span> Avançado</span></li>
+              <li data-key="lingua3">Espanhol<span> Intermediário</span></li>
             </ul>
           </div>
 
@@ -152,7 +151,7 @@
 
   <footer class="footer" id="contato">
     <div class="footer-container">
-      <p class=" footer-texto"> Estou disponível para novos projetos, entre em contato e será um prazer atende-lo(a)👋📲</p>
+      <p class=" footer-texto" data-key="disponivel"> Estou disponível para novos projetos, entre em contato e será um prazer atende-lo(a)👋📲</p>
       <ul class="footer-contato">
         <li class="email hidden-up-forte">alexandregojunior@gmail.com</li>
         <li class=" numero hidden-up-forte">+55 11 98618-6964</li>
@@ -163,15 +162,28 @@
     </div>
 
     <a class="whatsapp-button" href="https://wa.me/5511986186964?text=Olá,%20preciso%20de%20mais%20informações." target="_blank" aria-label="Fale conosco via WhatsApp">
-      <span class="whatsapp-text">Fale conosco</span>
+      <span class="whatsapp-text" data-key="whatsfale">Fale conosco</span>
       <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
     </a>
+
+    <div class="language-selector">
+  <div id="selected-lang">
+    <span class="flag"><img src="https://flagcdn.com/br.svg" width="20" alt="PT"></span> PT
+  </div>
+  <ul id="language-options">
+    <li data-lang="pt"><span class="flag"><img src="https://flagcdn.com/br.svg" width="20" alt="PT"></span>PT</li>
+    <li data-lang="en"><span class="flag"><img src="https://flagcdn.com/us.svg" width="20" alt="EN"></span>EN</li>
+    <li data-lang="es"><span class="flag"><img src="https://flagcdn.com/es.svg" width="20" alt="EN"></span>ES</li>
+  </ul>
+</div>
+
   </footer>
 
   <button id="voltarAoTopo" title="Voltar ao Topo"> &#8593; <br>Início</button>
   <script src="voltar-ao-topo.js"></script>
   <script src="scroll-animation.js"></script>
   <script src="link-scroll.js"></script>
+  <script src="linguas.js"></script>
 </body>
 
 </html>
