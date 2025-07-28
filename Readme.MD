@@ -18,5 +18,5 @@
 http://alexandregarciajr.com <br/>
 https://alexandregarciajr.github.io/
 
-![alt text](image.png)
+![alt text](./img/image.png)
 
