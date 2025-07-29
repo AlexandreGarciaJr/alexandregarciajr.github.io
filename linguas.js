@@ -39,6 +39,7 @@ const translations = {
     faculdadetipo3: "Cursos",
     faculdadecurso3: "Frontend e Backend",
 
+    intensivos: "Cursos Intensivos",
     fundamentos: "<span>Cisco </span> Fundamentos de Phyton <span>30h</span>",
 
     idiomas: "Idiomas",
@@ -71,7 +72,7 @@ const translations = {
     textoempresa2:
       "Carrying out various architectural projects of different types and sizes, carrying out all project stages (preliminary study and executive project), carrying out material studies and managing various works, organizing and managing construction teams, and executing spreadsheets and schedules.",
 
-    anoempresa3: "2020<br>tobr>date",
+    anoempresa3: "2020<br>to<br>date",
     nomeempresa3: "AG Architecture",
     tituloempresa3: "Architect",
     textoempresa3:
@@ -143,6 +144,7 @@ const translations = {
     faculdadetipo3: "Cursos",
     faculdadecurso3: "Frontend y Backend",
 
+    intensivos: "Cursos Intensivos",
     fundamentos: "<span>Cisco </span> Fundamentos de Phyton <span>30h</span>",
 
     idiomas: "Idiomas",
