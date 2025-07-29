@@ -3,7 +3,7 @@ const translations = {
     experienciatitulo: "Experiência",
     experienciaformacao: "Formação",
     experienciacontato: "Contato",
-    titulo: "Desenvolvedor <br> Backend & <br> Frontend",
+    titulo: "Desenvolvedor",
     localizacao: "Localizado em São Paulo 🏨",
     experiencia: "Experiência",
     experienciatexto:
@@ -55,7 +55,7 @@ const translations = {
     experienciatitulo: "Experience",
     experienciaformacao: "Education",
     experienciacontato: "Contact",
-    titulo: "Backend & <br> Frontend Developer",
+    titulo: "Developer for",
     localizacao: "Located in São Paulo 🏨",
     experiencia: "Experience",
     experienciatexto:
@@ -108,7 +108,7 @@ const translations = {
     experienciatitulo: "Experiencia",
     experienciaformacao: "Capacitación",
     experienciacontato: "Contacto",
-    titulo: "Desarrollador <br> Backend y <br> Frontend",
+    titulo: "Desarrollador",
     localizacao: "Ubicado en São Paulo 🏨",
     experiencia: "Experiencia",
     experienciatexto:

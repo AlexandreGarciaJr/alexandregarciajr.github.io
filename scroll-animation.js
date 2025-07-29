@@ -8,6 +8,6 @@ const myObserver = new IntersectionObserver((entries) => {
   });
 });
 
-const elements = document.querySelectorAll('.hidden, .hidden-up, .hidden-up-forte')
+const elements = document.querySelectorAll('.hidden, .hidden-up, .hidden-up-forte, .hidden-down')
 
 elements.forEach((Element) => myObserver.observe(Element))
