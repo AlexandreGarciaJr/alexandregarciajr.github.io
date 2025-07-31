@@ -1,0 +1,50 @@
+:root{
+  --base-variant: #101425;
+  --primary-color: #9ea4b4;
+}
+.darkmode{
+  --base-variant: #e8e9ed;
+  --primary-color: #1c2233;
+}
+
+button{
+  border: none;
+  padding: .8em 2em;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 4px;
+  font: inherit;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+  z-index: 1000;
+}
+.cta-button{
+  background-color: var(--accent-color);
+}
+#theme-switch {
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: var(--base-variant);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  position: fixed;
+  right: 20px;   /* distância da borda direita */
+  bottom: 80px;  /* altura acima do botão do WhatsApp */
+}
+#theme-switch svg{
+  fill: var(--primary-color);
+}
+#theme-switch svg:last-child{
+  display: none;
+}
+.darkmode #theme-switch svg:first-child{
+  display: none;
+}
+.darkmode #theme-switch svg:last-child{
+  display: block;
+}

@@ -23,7 +23,7 @@
   opacity: 0;
   filter: blur(15px);
   transform: translatex(30%);
-  transition: opacity 3s, filter 3s, transform 3s;
+  transition: opacity 2s, filter 2s, transform 2s;
 }
 
 .show{
@@ -46,11 +46,11 @@
 }
 
 .faculdade-lista :nth-child(2){
-  transition-delay: 400ms;
+  transition-delay: 300ms;
 }
 
 .faculdade-lista :nth-child(3){
-  transition-delay: 700ms;
+  transition-delay: 500ms;
 }
 
 .footer-contato :nth-child(2){

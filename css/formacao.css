@@ -50,6 +50,7 @@
 .faculdade {
   flex: 1;
   background: #000000;
+  box-shadow: 0 0 4px #2c2c2cb2, 0 0 10px #2c2c2cb2;
   padding: 20px;
   border-radius: 4px;
   display: flex;

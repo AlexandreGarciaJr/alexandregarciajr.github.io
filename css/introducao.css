@@ -23,11 +23,13 @@
   line-height: 1.125;
   margin-bottom: 0px;
   position: relative;
+  text-shadow: 0 0 4px #6e6e6eb2, 0 0 10px #7c7c7ccb;
 }
 .introducao h2 {
   font-size: 4.5rem;
   margin-bottom: 30px;
   position: relative;
+  text-shadow: 0 0 4px #6e6e6eb2, 0 0 10px #7c7c7ccb;
 }
 
 .introducao h1::before {
@@ -44,7 +46,8 @@
 
 .introducao p {
   font-size: 1.5rem;
-  color: #525252;
+  color: var(--cor-letralocal);
+  text-shadow: 0 0 4px #6e6e6eb2, 0 0 5px #7c7c7ccb;
 }
 
 @media (max-width: 1000px) {

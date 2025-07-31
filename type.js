@@ -12,7 +12,7 @@ function type() {
 
     // se for a última frase, pausa mais tempo antes de apagar
     if (idx === phrases.length - 1) {
-      setTimeout(type, 5000); // fica 3 segundos parada na tela
+      setTimeout(type, 6000); // fica 3 segundos parada na tela
       return;
     } else {
       setTimeout(type, 2000); // pausa normal
@@ -23,11 +23,11 @@ function type() {
   if (subIdx === 0) {
     direction = 1; // começa a digitar próxima
     idx = (idx + 1) % phrases.length;
-    setTimeout(type, 600); // pequena pausa antes de digitar próxima
+    setTimeout(type, 500); // pequena pausa antes de digitar próxima
     return;
   }
 
-  setTimeout(type, 200); // velocidade normal digitando ou apagando
+  setTimeout(type, 150); // velocidade normal digitando ou apagando
 }
 
 type();

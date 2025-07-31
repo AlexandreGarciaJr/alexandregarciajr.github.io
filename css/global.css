@@ -1,15 +1,41 @@
-body {
-  height: 100%;
-  margin: 0px;
-  font-family: "Fira Sans", Arial, sans-serif;
-  color: #141414;
-  background: linear-gradient(
+:root {
+  --cor-fundo: linear-gradient(
     #b1aaaaf7,
     #ffffffff,
     #a5c6c7f7,
     #ffffffff,
     rgb(195, 216, 192)
   );
+  --cor-letras: #141414;
+  --cor-menu: #2c2c2c;
+  --cor-hovermenus: #cacaca;
+  --cor-backgroundmenu: #ededed;
+  --cor-letralocal: #525252;
+  --cor-exp: #c9c9c9;
+  --cor-empback: #f5f5f5;
+  --cor-fundohab: #fff;
+  --cor-exphover: #c0c0c0;
+}
+
+.darkmode {
+  --cor-fundo: linear-gradient(to bottom, #000 0%, #100e22 50%, #141229 100%);
+  --cor-letras: #fff;
+  --cor-menu: #e6e6e6;
+  --cor-hovermenus: #4e4e4e;
+  --cor-backgroundmenu: #292929;
+  --cor-letralocal: #c0c0c0;
+  --cor-exp: #1a1a1a;
+  --cor-empback: #111111;
+  --cor-fundohab: #000000;
+  --cor-exphover: #3d3d3d;
+}
+
+body {
+  height: 100%;
+  margin: 0px;
+  font-family: "Fira Sans", Arial, sans-serif;
+  color: var(--cor-letras);
+  background: var(--cor-fundo);
 }
 
 h1,

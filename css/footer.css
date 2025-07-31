@@ -24,6 +24,7 @@
   font-size: 2.25rem;
   line-height: 1.1;
   color: #ffffff;
+  text-shadow: 0 0 5px #444444b2, 0 0 10px #7c7c7ccb;
   margin-bottom: 30px;
 }
 
@@ -119,12 +120,12 @@
   }
 
   .footer-contato li {
-    font-size:1.35rem;
+    font-size: 1.35rem;
     line-height: 1.1;
   }
 
-   .footer-contato .email {
-    font-size:1.15rem;
+  .footer-contato .email {
+    font-size: 1.15rem;
     line-height: 1.1;
   }
 
