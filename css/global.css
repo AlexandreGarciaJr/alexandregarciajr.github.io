@@ -15,6 +15,7 @@
   --cor-empback: #f5f5f5;
   --cor-fundohab: #fff;
   --cor-exphover: #c0c0c0;
+  --cor-voltar: #0000005e;
 }
 
 .darkmode {
@@ -28,6 +29,7 @@
   --cor-empback: #111111;
   --cor-fundohab: #000000;
   --cor-exphover: #3d3d3d;
+  --cor-voltar: #7777777a;
 }
 
 body {

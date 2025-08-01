@@ -7,7 +7,7 @@
   gap: 100px;
 }
 
-.experiencia .subtitulo {
+.experiencia .subtitulo{
   display: inline-block;
   color: var(--cor-exp);
 }
@@ -101,7 +101,7 @@
     gap: 40px;
   }
   .experiencia .subtitulo {
-    color: #44444465;
+    color: var(--cor-exp);
   }
 
   .experiencia-texto {
