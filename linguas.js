@@ -4,7 +4,7 @@ const translations = {
     experienciaformacao: "Formação",
     experienciacontato: "Contato",
     titulo: "Desenvolvedor",
-    localizacao: "Localizado em São Paulo 🏨",
+    localizacao: "Localizado em São Paulo 🏬",
     experiencia: "Experiência",
     experienciatexto:
       "Olá, sou Alexandre Garcia, estudante de Análise e Desenvolvimento de Sistemas pela instituição SENAC. <br> Na minha história, sou formado em Arquitetura e Urbanismo, com 12 anos de experiência na área de construção civil. Busco unir minha senioridade na área, minha capacidade de gestão de projetos e organização para impulsionar a busca por esta nova carreira na área de tecnologia e desenvolvimento de sistemas e softwares, com preferência por Backend, e conhecimento em Frontend. <br><br> Tecnologias: <strong>Java</strong> | <strong>Spring Boot</strong> | <strong>MySQL</strong> | <strong>VsCode</strong> | <strong>IntelliJ</strong> |<strong> HTML </strong> | <strong> CSS </strong> ",
@@ -56,7 +56,7 @@ const translations = {
     experienciaformacao: "Education",
     experienciacontato: "Contact",
     titulo: "Developer for",
-    localizacao: "Located in São Paulo 🏨",
+    localizacao: "Located in São Paulo 🏬",
     experiencia: "Experience",
     experienciatexto:
       "Hello, I'm Alexandre Garcia, a student of Systems Analysis and Development at SENAC. In my history, I have a degree in Architecture and Urbanism, with 12 years of experience in the area of civil construction. I seek to merge my seniority in the area, my project management and organization skills to boost the search for this new career in the area of technology and systems and software development, with a preference for Backend, and knowledge in Frontend. <br><br> Technologies: <strong>Java</strong> | <strong>Spring Boot</strong> | <strong>MySQL</strong> | <strong>VsCode</strong> | <strong>IntelliJ</strong> |<strong> HTML </strong> | <strong> CSS </strong>",
@@ -109,7 +109,7 @@ const translations = {
     experienciaformacao: "Capacitación",
     experienciacontato: "Contacto",
     titulo: "Desarrollador",
-    localizacao: "Ubicado en São Paulo 🏨",
+    localizacao: "Ubicado en São Paulo 🏬",
     experiencia: "Experiencia",
     experienciatexto:
       "Hola, soy Alexandre García, estudiante de Análisis y Desarrollo de Sistemas en SENAC. <br> Soy licenciado en Arquitectura y Urbanismo, con 12 años de experiencia en el sector de la construcción. Busco combinar mi experiencia en el área, mi gestión de proyectos y habilidades organizativas para impulsar la búsqueda de esta nueva carrera en el área de tecnología y desarrollo de sistemas y software, con preferencia por el backend y conocimientos en frontend. <br><br> Tecnologías: <strong>Java</strong> | <strong>Spring Boot</strong> | <strong>MySQL</strong> | <strong>VsCode</strong> | <strong>IntelliJ</strong> | <strong>HTML</strong> | <strong>CSS</strong>",
