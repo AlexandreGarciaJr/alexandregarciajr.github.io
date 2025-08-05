@@ -14,6 +14,13 @@
   cursor: pointer;
   color: #1f1f1f;
   background: #808080ad;
+  /* https://smoothshadows.com/#djEsMSw1LDAuMTcsMTcsMCwwLCMyYjMxNDAsI2YzZjRmNiwjZmZmZmZmLDI%3D */
+box-shadow: 0px 0px 1px rgba(43, 49, 64, 0.03),
+  0px 0px 3px rgba(43, 49, 64, 0.07),
+  0px 0px 6px rgba(43, 49, 64, 0.10),
+  0px 0px 11px rgba(43, 49, 64, 0.14),
+  0px 0px 17px rgba(43, 49, 64, 0.17);
+
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 1.2rem;
@@ -34,7 +41,6 @@
   padding: 0;
   background: #8b8b8bd2;
   border-radius: 5px;
-
   transform: scaleY(0); /* escondido */
   transform-origin: bottom; /* começa do bottom */
   transition: transform 0.3s ease;
@@ -45,6 +51,13 @@
   transform: scaleY(1);
   color: #1f1f1f;
   background: #808080ad;
+  /* https://smoothshadows.com/#djEsMSw1LDAuMTcsMTcsMCwwLCMyYjMxNDAsI2YzZjRmNiwjZmZmZmZmLDI%3D */
+box-shadow: 0px 0px 1px rgba(43, 49, 64, 0.03),
+  0px 0px 3px rgba(43, 49, 64, 0.07),
+  0px 0px 6px rgba(43, 49, 64, 0.10),
+  0px 0px 11px rgba(43, 49, 64, 0.14),
+  0px 0px 17px rgba(43, 49, 64, 0.17);
+
 }
 
 /* itens do menu */

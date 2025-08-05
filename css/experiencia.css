@@ -7,7 +7,7 @@
   gap: 100px;
 }
 
-.experiencia .subtitulo{
+.experiencia .subtitulo {
   display: inline-block;
   color: var(--cor-exp);
 }
@@ -30,7 +30,11 @@
   grid-template-columns: 1fr 1fr;
   padding: 20px;
   background: var(--cor-empback);
-  box-shadow: 0 0 2px #acacaccb, 0 0 5px #acacaccb;
+  /* https://smoothshadows.com/#djEsMSw1LDAuMTcsMTcsMCwwLCMyYjMxNDAsI2YzZjRmNiwjZmZmZmZmLDI%3D */
+  box-shadow: 0px 0px 1px rgba(43, 49, 64, 0.03),
+    0px 0px 3px rgba(43, 49, 64, 0.07), 0px 0px 6px rgba(43, 49, 64, 0.1),
+    0px 0px 11px rgba(43, 49, 64, 0.14), 0px 0px 17px rgba(43, 49, 64, 0.17);
+
   margin-bottom: 20px;
   border-radius: 4px;
   gap: 10px 20px;
