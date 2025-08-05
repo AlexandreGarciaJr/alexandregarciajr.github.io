@@ -1,6 +1,6 @@
 ### Página HTML e CSS
 
-- #### Portifólio pessoal com responsividade com informações, formação e experiência pessoal.
+- #### Portifólio pessoal com responsividade, informações, formação e experiência pessoal.
 
 ### Tecnologias:
 
@@ -12,11 +12,13 @@
 - Efeitos de hover
 - Menu Sanduiche
 - Botão de Whatsapp
+- Botão Darkmode
+- Botão de tradução para Inglês e Espanhol
 
 ### Visualização:
 
 http://alexandregarciajr.com <br/>
 https://alexandregarciajr.github.io/
 
-![alt text](./img/image.png)
+![alt text](./img/print-site.JPG)
 
