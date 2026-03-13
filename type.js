@@ -1,4 +1,4 @@
-const phrases = ['Frontend', 'Backend', 'Backend & Frontend'];
+const phrases = ['Frontend', 'Backend', 'Fullstack'];
 let idx = 0, subIdx = 0, direction = 1;
 
 function type() {

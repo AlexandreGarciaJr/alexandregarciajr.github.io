@@ -1,6 +1,7 @@
 const translations = {
   pt: {
     experienciatitulo: "Experiência",
+    experienciaprojetos:"Projetos",
     experienciaformacao: "Formação",
     experienciacontato: "Contato",
     titulo: "Desenvolvedor",
@@ -10,9 +11,9 @@ const translations = {
       "Olá, sou Alexandre Garcia, estudante de Análise e Desenvolvimento de Sistemas pela instituição SENAC. <br> Na minha história, sou formado em Arquitetura e Urbanismo, com 12 anos de experiência na área de construção civil. Busco unir minha senioridade na área, minha capacidade de gestão de projetos e organização para impulsionar a busca por esta nova carreira na área de tecnologia e desenvolvimento de sistemas e softwares, com preferência por Backend, e conhecimento em Frontend. <br><br> Tecnologias: <strong>Java</strong> | <strong>Spring Boot</strong> | <strong>MySQL</strong> | <strong>VsCode</strong> | <strong>IntelliJ</strong> |<strong> HTML </strong> | <strong> CSS </strong> ",
 
     anoempresa1: "2024<br>até<br>o momento",
-    tituloempresa1: "Desenvolvedor Backend e Frontend",
+    tituloempresa1: "Desenvolvedor Frontend",
     textoempresa1:
-      "Desenvolvimento de pequenos projetos, páginas Web, programas e APIs como programador Backend e desenvolvedor Frontend.",
+      "Desenvolvimento de pequenos projetos, páginas Web, programas e APIs como desenvolvedor Frontend e Backend.",
 
     anoempresa2: "2017<br>até<br>o momento",
     nomeempresa2: "Nautilo Arquitetura e Gerenciamento",
