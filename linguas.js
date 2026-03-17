@@ -8,7 +8,7 @@ const translations = {
     localizacao: "Localizado em São Paulo 🏬",
     experiencia: "Experiência",
     experienciatexto:
-      "Olá, sou Alexandre Garcia, estudante de Análise e Desenvolvimento de Sistemas pela instituição SENAC. <br> Na minha história, sou formado em Arquitetura e Urbanismo, com 12 anos de experiência na área de construção civil. Busco unir minha senioridade na área, minha capacidade de gestão de projetos e organização para impulsionar a busca por esta nova carreira na área de tecnologia e desenvolvimento de sistemas e softwares, com preferência por Backend, e conhecimento em Frontend. <br><br> Tecnologias: <strong>Java</strong> | <strong>Spring Boot</strong> | <strong>MySQL</strong> | <strong>VsCode</strong> | <strong>IntelliJ</strong> |<strong> HTML </strong> | <strong> CSS </strong> ",
+      "Olá, sou Alexandre Garcia, estudante de Análise e Desenvolvimento de Sistemas pela instituição SENAC. <br> Na minha história, sou formado em Arquitetura e Urbanismo, com 12 anos de experiência na área de construção civil. Busco unir minha senioridade na área, minha capacidade de gestão de projetos e organização para impulsionar a busca por esta nova carreira na área de tecnologia e desenvolvimento de sistemas e softwares, com conhecimento em Frontend e Backend. <br><br> Tecnologias: <strong> HTML </strong> | <strong> CSS </strong> | <strong> JavaScript </strong> | <strong>Java</strong> | <strong>Spring Boot</strong> | <strong>MySQL</strong> | <strong>VsCode</strong> | <strong>IntelliJ</strong> ",
 
     anoempresa1: "2024<br>até<br>o momento",
     tituloempresa1: "Desenvolvedor Frontend",
@@ -60,12 +60,12 @@ const translations = {
     localizacao: "Located in São Paulo 🏬",
     experiencia: "Experience",
     experienciatexto:
-      "Hello, I'm Alexandre Garcia, a student of Systems Analysis and Development at SENAC. In my history, I have a degree in Architecture and Urbanism, with 12 years of experience in the area of civil construction. I seek to merge my seniority in the area, my project management and organization skills to boost the search for this new career in the area of technology and systems and software development, with a preference for Backend, and knowledge in Frontend. <br><br> Technologies: <strong>Java</strong> | <strong>Spring Boot</strong> | <strong>MySQL</strong> | <strong>VsCode</strong> | <strong>IntelliJ</strong> |<strong> HTML </strong> | <strong> CSS </strong>",
+      "Hello, I'm Alexandre Garcia, a student of Systems Analysis and Development at SENAC. <br> My background includes a degree in Architecture and Urban Planning and 12 years of experience in the civil construction field. I seek to combine my seniority in the area with my project management and organizational skills to contribute to this new career in technology and systems/software development, with knowledge in Frontend and Backend. <br><br> Technologies:  <strong> HTML </strong> | <strong> CSS </strong> | <strong> JavaScript </strong> | <strong>Java</strong> | <strong>Spring Boot</strong> | <strong>MySQL</strong> | <strong>VsCode</strong> | <strong>IntelliJ</strong> ",
 
     anoempresa1: "2024<br>to<br>date",
-    tituloempresa1: "Backend e Frontend Developer",
+    tituloempresa1: "Frontend Developer",
     textoempresa1:
-      "Development of small projects, web pages, programs and APIs as a Backend programmer and Frontend developer.",
+      "Development of small projects, web pages, programs and APIs as a Frontend and Backend developer.",
 
     anoempresa2: "2017<br>to<br>date",
     nomeempresa2: "Nautilo Architecture and Management",
@@ -113,12 +113,12 @@ const translations = {
     localizacao: "Ubicado en São Paulo 🏬",
     experiencia: "Experiencia",
     experienciatexto:
-      "Hola, soy Alexandre García, estudiante de Análisis y Desarrollo de Sistemas en SENAC. <br> Soy licenciado en Arquitectura y Urbanismo, con 12 años de experiencia en el sector de la construcción. Busco combinar mi experiencia en el área, mi gestión de proyectos y habilidades organizativas para impulsar la búsqueda de esta nueva carrera en el área de tecnología y desarrollo de sistemas y software, con preferencia por el backend y conocimientos en frontend. <br><br> Tecnologías: <strong>Java</strong> | <strong>Spring Boot</strong> | <strong>MySQL</strong> | <strong>VsCode</strong> | <strong>IntelliJ</strong> | <strong>HTML</strong> | <strong>CSS</strong>",
+      "Hola, soy Alexandre Garcia, estudiante de Análisis y Desarrollo de Sistemas en SENAC. <br> Soy licenciado en Arquitectura y Urbanismo y cuento con 12 años de experiencia en el sector de la construcción civil. Busco combinar mi experiencia en el área con mis habilidades de gestión de proyectos y organización para contribuir a esta nueva carrera en tecnología y desarrollo de sistemas/software, con conocimientos en Frontend y Backend. <br><br> Tecnologías: <strong>Java</strong> | <strong>Spring Boot</strong> | <strong>MySQL</strong> | <strong>VsCode</strong> | <strong>IntelliJ</strong> | <strong>HTML</strong> | <strong>CSS</strong>",
 
     anoempresa1: "2024<br>hasta<br>la fecha",
-    tituloempresa1: "Desarrollador backend y frontend",
+    tituloempresa1: "Desarrollador frontend",
     textoempresa1:
-      "Desarrollo de pequeños proyectos, páginas web, programas y APIs como programador Backend y desarrollador Frontend.",
+      "Desarrollo de pequeños proyectos, páginas web, programas y APIs como desarrollador Frontend y Backend.",
 
     anoempresa2: "2017<br>hasta<br>la fecha",
     nomeempresa2: "Nautilo Arquitectura y Gestión",

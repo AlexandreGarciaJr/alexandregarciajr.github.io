@@ -79,6 +79,7 @@
   aspect-ratio: 16 / 10;
   background: #000;
   cursor: pointer;
+  box-shadow: 4px 7px 10px 2px rgba(0, 0, 0, 0.514);
 }
 
 .projeto-card:hover {
