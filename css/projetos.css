@@ -1,6 +1,6 @@
 
 .projetos {
-  background: #141414;
+  background: #0f0f0f;
   color: #fff;
 }
 
@@ -68,7 +68,7 @@
 .projetos-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
+  gap: 40px;
 }
 
 /* ---- Card ---- */
