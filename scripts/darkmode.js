@@ -26,6 +26,9 @@ themeSwitch.addEventListener("click", () => {
 
   // Se rolou mais que a altura da tela + 800px
   if (scrollY > viewportHeight + 700) {
-    scrollToTop(1000);
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
   }
 });
