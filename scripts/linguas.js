@@ -107,6 +107,7 @@ const translations = {
 
   es: {
     experienciatitulo: "Experiencia",
+    experienciaprojetos:"Proyectos",
     experienciaformacao: "Capacitación",
     experienciacontato: "Contacto",
     titulo: "Desarrollador",
@@ -180,6 +181,9 @@ document.addEventListener("DOMContentLoaded", () => {
     document
       .querySelectorAll('[data-key="experienciatitulo"]')
       .forEach((el) => (el.textContent = translations[lang].experienciatitulo));
+      document
+      .querySelectorAll('[data-key="experienciaprojetos"]')
+      .forEach((el) => (el.textContent = translations[lang].experienciaprojetos));
     document
       .querySelectorAll('[data-key="experienciaformacao"]')
       .forEach(
