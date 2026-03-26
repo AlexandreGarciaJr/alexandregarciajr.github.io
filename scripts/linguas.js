@@ -51,6 +51,13 @@ const translations = {
     disponivel:
       "Estou disponível para novos projetos, entre em contato e será um prazer atende-lo(a)👋📲",
     whatsfale: "Fale conosco",
+
+    /* Projetos Container */
+
+    projetostitle:"Projetos",
+    projetostexto:"Projetos desenvolvidos ao longo da minha jornada em tecnologia, unindo <strong>Backend</strong>, <strong>Frontend</strong>e a visão analítica da <strong>Arquitetura de Software</strong>",
+    linkgithub:"Ver mais no GitHub",
+
   },
   en: {
     experienciatitulo: "Experience",
@@ -103,6 +110,12 @@ const translations = {
     disponivel:
       "I am available for new projects, get in touch and it will be a pleasure to assist you👋📲",
     whatsfale: "Call us",
+
+     /* Projetos Container */
+
+    projetostitle:"Projects",
+    projetostexto:"Projects developed throughout my journey in technology, combining <strong>Backend</strong>, <strong>Frontend</strong>and the analytical vision of <strong>Software Architecture</strong>",
+    linkgithub:"See more on GitHub",
   },
 
   es: {
@@ -157,6 +170,12 @@ const translations = {
     disponivel:
       "Estoy disponible para nuevos proyectos, contáctame y será un placer atenderte👋📲",
     whatsfale: "Contáctenos",
+
+    /* Projetos Container */
+
+    projetostitle:"Proyectos",
+    projetostexto:"Proyectos desarrollados a lo largo de mi trayectoria en tecnología, combinando el desarrollo <strong>Backend</strong>, <strong>Frontend</strong>y la visión analítica de la <strong>Arquitectura de Software</strong>",
+    linkgithub:"Ver mais no GitHub",
   },
 };
 
@@ -267,5 +286,14 @@ document.addEventListener("DOMContentLoaded", () => {
       translations[lang].disponivel;
     document.querySelector('[data-key="whatsfale"]').innerHTML =
       translations[lang].whatsfale;
+
+       /* Projetos Container */
+       document.querySelector('[data-key="projetostitle"]').innerHTML =
+      translations[lang].projetostitle;
+      document.querySelector('[data-key="projetostexto"]').innerHTML =
+      translations[lang].projetostexto;
+      document.querySelector('[data-key="linkgithub"]').innerHTML =
+      translations[lang].linkgithub;
+
   }
 });
