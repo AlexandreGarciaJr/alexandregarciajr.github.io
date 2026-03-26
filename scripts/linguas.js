@@ -61,6 +61,7 @@ const translations = {
   },
   en: {
     experienciatitulo: "Experience",
+    experienciaprojetos:"Projects",
     experienciaformacao: "Education",
     experienciacontato: "Contact",
     titulo: "Developer for",
