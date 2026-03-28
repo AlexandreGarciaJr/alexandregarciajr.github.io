@@ -1,8 +1,4 @@
-// ============================================================
-//  contato.js — Lógica do formulário de contato
-//  Salve em: js/contato.js
-// ============================================================
- 
+
 // ---- Máscara telefone ----
 const telInput = document.getElementById('telefone');
 telInput.addEventListener('input', () => {

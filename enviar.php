@@ -1,11 +1,11 @@
 <?php
 
-// SUAS CONFIGURAÇÕES
+// ------- CONFIGURAÇÕES
 define('MAIL_TO',       'contato@alexandregarciajr.com'); // E-mail criado no cPanel (que encaminha pro Gmail)
 define('MAIL_FROM',     'contato@alexandregarciajr.com'); // Mesmo e-mail (remetente)
 define('MAIL_FROM_NAME','Alexandre Garcia');
 define('SITE_URL',      'https://alexandregarciajr.com');
-// -----------------------------------------
+
 
 header('Content-Type: application/json; charset=utf-8');
 
