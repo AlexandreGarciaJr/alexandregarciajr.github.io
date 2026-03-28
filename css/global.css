@@ -1,11 +1,19 @@
 :root {
-  --cor-fundo: linear-gradient(
+  --cor-fundo-light: linear-gradient(
     #b1aaaaf7,
     #ffffffff,
     #a5c6c7f7,
     #ffffffff,
     rgb(195, 216, 192)
   );
+
+  --cor-fundo-dark: linear-gradient(
+    to bottom,
+    #000 0%,
+    #100e22 50%,
+    #141229 100%
+  );
+
   --cor-letras: #141414;
   --cor-menu: #2c2c2c;
   --cor-hovermenus: #cacaca;
@@ -19,7 +27,6 @@
 }
 
 .darkmode {
-  --cor-fundo: linear-gradient(to bottom, #000 0%, #100e22 50%, #141229 100%);
   --cor-letras: #fff;
   --cor-menu: #e6e6e6;
   --cor-hovermenus: #4e4e4e;
@@ -32,24 +39,53 @@
   --cor-voltar: #7777777a;
 }
 
+/* RESET BASE */
 body {
   height: 100%;
-  margin: 0px;
+  margin: 0;
   font-family: "Fira Sans", Arial, sans-serif;
   color: var(--cor-letras);
-  background: var(--cor-fundo);
+  position: relative;
+  transition: color 0.3s ease;
 }
 
+/* FUNDO LIGHT (camada base) */
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--cor-fundo-light);
+  z-index: -2;
+}
+
+/* FUNDO DARK (camada animada) */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: var(--cor-fundo-dark);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+/* ATIVA DARKMODE COM FADE */
+.darkmode body::after,
+body.darkmode::after {
+  opacity: 1;
+}
+
+/* RESET ELEMENTOS */
 h1,
 h2,
 h3,
 p {
-  margin: 0px;
+  margin: 0;
 }
 
 ul {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -59,15 +95,17 @@ img {
   display: block;
 }
 
+/* TITULO */
 .subtitulo {
   font-size: 8rem;
   line-height: 1;
   text-transform: uppercase;
-  max-width: 4ch; /* Mantém o bloco estreito */
-  word-break: break-all; /* Não força quebra no meio das palavras */
-  overflow-wrap: break-word; /* Permite quebra em palavras longas */
+  max-width: 4ch;
+  word-break: break-all;
+  overflow-wrap: break-word;
 }
 
+/* RESPONSIVO */
 @media (max-width: 800px) {
   .subtitulo {
     font-size: 5rem;
