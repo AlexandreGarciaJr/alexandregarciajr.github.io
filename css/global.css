@@ -7,6 +7,13 @@
     rgb(195, 216, 192)
   );
 
+   --cor-fundo-lightcontato: linear-gradient(
+    #b1aaaaf7,
+    #ffffffff,
+    #b2d2d3f7,
+    rgb(195, 216, 192)
+  );
+
   --cor-fundo-dark: linear-gradient(
     to bottom,
     #000 0%,

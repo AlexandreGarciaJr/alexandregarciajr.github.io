@@ -1,3 +1,11 @@
+/* FUNDO LIGHT (camada base) */
+.contato-body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--cor-fundo-lightcontato);
+  z-index: -2;
+}
 
 .contato-page {
   min-height: calc(100vh - 100px);
@@ -113,14 +121,34 @@
   margin-bottom: 2px;
 }
 
+.canal-valor::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* distância da linha em relação ao texto */
+  width: 100%;
+  height: 2px; /* espessura da linha */
+  background-color: #67dd0a;
+  transform: scaleX(0); /* começa escondido */
+  transform-origin: left; /* anima da esquerda para direita */
+  transition: transform 0.3s ease;
+}
+
+.canal-valor:hover::after{
+  transform: scaleX(1); /* mostra a linha ao passar o mouse */
+}
+
 .canal-valor {
   font-size: 0.95rem;
   color: var(--cor-letras);
   text-decoration: none;
   transition: color 0.25s;
+    position: relative;
 }
 
-.canal-valor:hover { color: #67dd0a; }
+.canal-valor:hover {
+  color: #67dd0a;
+}
 
 /* ---- Status dot ---- */
 .contato-status {
