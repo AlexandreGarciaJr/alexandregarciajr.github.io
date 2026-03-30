@@ -8,7 +8,7 @@
   <meta name="description" content="Desenvolvedor Fullstack, Localizado em São Paulo">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="shortcut icon" type="image/x-icon" href="./img/favicon-ag.png">
-  
+
   <script type="module" src="./scripts/voltar-ao-topo.js"></script>
   <script type="module" src="./scripts/scroll-animation.js"></script>
   <script type="module" src="./scripts/link-scroll.js"></script>
@@ -22,43 +22,52 @@
   <header class="header">
     <a href="./index.html" class="nome" style="text-decoration:none;">Alexandre Garcia</a>
     <button id="theme-switch">
-      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
-      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px">
+        <path
+          d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z" />
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px">
+        <path
+          d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z" />
+      </svg>
     </button>
     <nav class="header-menu">
-      <a href="./index.html#experiencia">Experiência</a>
-      <a href="./index.html#formacao">Formação</a>
-      <a href="./index.html#projetos">Projetos</a>
-      <a href="./contato.html" class="header-menu-ativo">Contato</a>
+      <a href="./index.html#experiencia" data-key="experienciatitulo">Experiência</a>
+      <a href="./index.html#projetos" data-key="experienciaprojetos">Projetos</a>
+      <a href="./index.html#formacao" data-key="experienciaformacao">Formação</a>
+      <a href="./contato.html" data-key="experienciacontato" class="header-menu-ativo">Contato</a>
     </nav>
     <div id="menuToggle">
       <input type="checkbox" />
       <span></span><span></span><span></span>
       <ul id="menu">
-        <li><a href="./index.html#experiencia">Experiência</a></li>
-        <li><a href="./index.html#formacao">Formação</a></li>
-        <li><a href="./index.html#projetos">Projetos</a></li>
-        <li><a href="./contato.html" class="header-menu-ativo">Contato</a></li>
+        <li><a href="./index.html#experiencia" data-key="experienciatitulo">Experiência</a></li>
+        <li><a href="./index.html#projetos" data-key="experienciaprojetos">Projetos</a></li>
+        <li><a href="./index.html#formacao" data-key="experienciaformacao">Formação</a></li>
+        <li><a href="./contato.html" data-key="experienciacontato" class="header-menu-ativo">Contato</a></li>
       </ul>
     </div>
   </header>
 
-<main class="contato-page">
+  <main class="contato-page">
     <div class="contato-container">
- 
+
       <!-- Info esquerda -->
       <div class="contato-info hidden-up">
-        <span class="contato-tag">Contato</span>
-        <h1 class="contato-titulo">Vamos trabalhar<br><span>juntos?</span></h1>
-        <p class="contato-subtitulo">
+        <span class="contato-tag" data-key="experienciacontato">Contato</span>
+        <h1 class="contato-titulo" data-key="formtitulo">Vamos trabalhar<br><span>juntos?</span></h1>
+        <p class="contato-subtitulo" data-key="formsubtitulo">
           Estou disponível para novos projetos, freelas e oportunidades.
           Preencha o formulário ou fale diretamente pelos canais abaixo.
         </p>
- 
+
         <ul class="contato-canais">
           <li>
             <div class="canal-icone">
-              <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px">
+                <path
+                  d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z" />
+              </svg>
             </div>
             <div>
               <span class="canal-label">E-mail</span>
@@ -67,7 +76,10 @@
           </li>
           <li>
             <div class="canal-icone">
-              <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"><path d="M798-120q-125 0-247-54.5T329-329Q224-434 169.5-556T115-803q0-18 12-27.5t28-9.5h150q14 0 23 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v145q0 16-9.5 28T798-120Z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px">
+                <path
+                  d="M798-120q-125 0-247-54.5T329-329Q224-434 169.5-556T115-803q0-18 12-27.5t28-9.5h150q14 0 23 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v145q0 16-9.5 28T798-120Z" />
+              </svg>
             </div>
             <div>
               <span class="canal-label">WhatsApp</span>
@@ -76,16 +88,23 @@
           </li>
           <li>
             <div class="canal-icone">
-              <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 24 24" width="20px"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 24 24" width="20px">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
             </div>
             <div>
               <span class="canal-label">LinkedIn</span>
-              <a href="https://www.linkedin.com/in/alexandregarcia-junior/" target="_blank" class="canal-valor">alexandregarcia-junior</a>
+              <a href="https://www.linkedin.com/in/alexandregarcia-junior/" target="_blank"
+                class="canal-valor">alexandregarcia-junior</a>
             </div>
           </li>
           <li>
             <div class="canal-icone">
-              <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 24 24" width="20px"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.165c-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.729.083-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.762-1.605-2.665-.3-5.467-1.332-5.467-5.93 0-1.31.468-2.382 1.236-3.222-.124-.303-.536-1.524.117-3.176 0 0 1.008-.322 3.3 1.23A11.51 11.51 0 0 1 12 6.803c1.02.005 2.047.138 3.006.404 2.29-1.552 3.297-1.23 3.297-1.23.655 1.652.243 2.873.12 3.176.77.84 1.235 1.912 1.235 3.222 0 4.61-2.807 5.625-5.48 5.92.43.372.823 1.102.823 2.222v3.293c0 .322.218.694.825.576C20.565 21.796 24 17.298 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 24 24" width="20px">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.165c-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.729.083-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.762-1.605-2.665-.3-5.467-1.332-5.467-5.93 0-1.31.468-2.382 1.236-3.222-.124-.303-.536-1.524.117-3.176 0 0 1.008-.322 3.3 1.23A11.51 11.51 0 0 1 12 6.803c1.02.005 2.047.138 3.006.404 2.29-1.552 3.297-1.23 3.297-1.23.655 1.652.243 2.873.12 3.176.77.84 1.235 1.912 1.235 3.222 0 4.61-2.807 5.625-5.48 5.92.43.372.823 1.102.823 2.222v3.293c0 .322.218.694.825.576C20.565 21.796 24 17.298 24 12c0-6.63-5.37-12-12-12z" />
+              </svg>
             </div>
             <div>
               <span class="canal-label">GitHub</span>
@@ -93,87 +112,100 @@
             </div>
           </li>
         </ul>
- 
-        <div class="contato-status">
+
+        <div class="contato-status" data-key="formstatus">
           <span class="status-dot"></span>
           Disponível para novos projetos
         </div>
       </div>
- 
+
       <!-- Formulário direita -->
       <div class="contato-form-wrap hidden-up">
         <form class="contato-form" id="contatoForm" novalidate>
- 
+
           <div class="form-row">
             <div class="form-group">
-              <label for="nome">Nome <span class="obrigatorio">*</span></label>
-              <input type="text" id="nome" name="nome" placeholder="Seu nome completo" autocomplete="name" required />
+              <label for="nome" data-key="formnome">Nome <span class="obrigatorio">*</span></label>
+              <input type="text" id="nome" name="nome" data-key-placeholder="formplaceholdernome"
+                placeholder="Seu nome completo" autocomplete="name" required />
               <span class="form-erro" id="erro-nome"></span>
             </div>
             <div class="form-group">
-              <label for="email">E-mail <span class="obrigatorio">*</span></label>
-              <input type="email" id="email" name="email" placeholder="seu@email.com" autocomplete="email" required />
+              <label for="email" data-key="formemail">E-mail <span class="obrigatorio">*</span></label>
+              <input type="email" id="email" name="email" data-key-placeholder="formplaceholderemail"
+                placeholder="seu@email.com" autocomplete="email" required />
               <span class="form-erro" id="erro-email"></span>
             </div>
           </div>
- 
+
           <div class="form-row">
             <div class="form-group">
-              <label for="telefone">Telefone / WhatsApp</label>
-              <input type="tel" id="telefone" name="telefone" placeholder="+55 11 00000-0000" autocomplete="tel" />
+              <label for="telefone" data-key="formtelefone">Telefone / WhatsApp</label>
+              <input type="tel" id="telefone" name="telefone" data-key-placeholder="formplaceholdertelefone"
+                placeholder="+55 11 00000-0000" autocomplete="tel" />
             </div>
             <div class="form-group">
-              <label for="tipo">Tipo de projeto <span class="obrigatorio">*</span></label>
+              <label for="tipo" data-key="formtipo">Tipo de projeto <span class="obrigatorio">*</span></label>
               <div class="select-wrap">
                 <select id="tipo" name="tipo" required>
-                  <option value="" disabled selected>Selecione...</option>
-                  <option value="site">Site / Landing Page</option>
-                  <option value="api">API / Backend</option>
-                  <option value="fullstack">Aplicação Fullstack</option>
-                  <option value="arquitetura">Arquitetura de Software</option>
-                  <option value="outro">Outro</option>
+                  <option value="" disabled selected data-key="formplaceholdersel">Selecione...</option>
+                  <option value="site" data-key="tipo1">Site / Landing Page</option>
+                  <option value="api" data-key="tipo2">API / Backend</option>
+                  <option value="fullstack" data-key="tipo3">Aplicação Fullstack</option>
+                  <option value="arquitetura" data-key="tipo4">Arquitetura de Software</option>
+                  <option value="outro" data-key="tipo5">Outro</option>
                 </select>
-                <svg class="select-arrow" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"><path d="M480-360 280-560h400L480-360Z"/></svg>
+                <svg class="select-arrow" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960"
+                  width="20px">
+                  <path d="M480-360 280-560h400L480-360Z" />
+                </svg>
               </div>
               <span class="form-erro" id="erro-tipo"></span>
             </div>
           </div>
- 
+
           <div class="form-group">
-            <label for="mensagem">Mensagem <span class="obrigatorio">*</span></label>
-            <textarea id="mensagem" name="mensagem" rows="6" placeholder="Descreva seu projeto, prazo e qualquer detalhe relevante..." required></textarea>
+            <label for="mensagem" data-key="formmensagem">Mensagem <span class="obrigatorio">*</span></label>
+            <textarea id="mensagem" name="mensagem" rows="6" data-key-placeholder="formmensagemplaceholder"
+              placeholder="Descreva seu projeto, prazo e qualquer detalhe relevante..." required></textarea>
             <div class="textarea-footer">
               <span class="form-erro" id="erro-mensagem"></span>
               <span class="char-count" id="charCount">0 / 600</span>
             </div>
           </div>
- 
+
           <button type="submit" class="form-btn" id="formBtn">
-            <span class="btn-texto">Enviar mensagem</span>
-            <svg class="btn-icone" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
+            <span class="btn-texto" data-key="formbtn">Enviar mensagem</span>
+            <svg class="btn-icone" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960"
+              width="20px">
+              <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z" />
+            </svg>
           </button>
- 
+
           <div class="form-feedback" id="formFeedback" aria-live="polite"></div>
- 
+
         </form>
       </div>
- 
+
     </div>
   </main>
- 
+
   <footer class="footer" id="contato">
     <div class="footer-container">
-      <p class=" footer-texto" data-key="disponivel"> Estou disponível para novos projetos, entre em contato e será um prazer atende-lo(a)👋📲</p>
+      <p class=" footer-texto" data-key="disponivel"> Estou disponível para novos projetos, entre em contato e será um
+        prazer atende-lo(a)👋📲</p>
       <ul class="footer-contato">
         <li class="email hidden-up-forte">alexandregojunior@gmail.com</li>
         <li class=" numero hidden-up-forte">+55 11 98618-6964</li>
-        <li class="linkedin hidden-up-forte"><a href="https://www.linkedin.com/in/alexandregarcia-junior/">Linkedin</a></li>
+        <li class="linkedin hidden-up-forte"><a href="https://www.linkedin.com/in/alexandregarcia-junior/">Linkedin</a>
+        </li>
         <li class="github hidden-up-forte"><a href="https://github.com/AlexandreGarciaJr">Github</a></li>
       </ul>
       <p class="footer-copy">Copyright © 2025 Alexandre Garcia</p>
     </div>
 
-    <a class="whatsapp-button" href="https://wa.me/5511986186964?text=Olá,%20preciso%20de%20mais%20informações." target="_blank" aria-label="Fale conosco via WhatsApp">
+    <a class="whatsapp-button" href="https://wa.me/5511986186964?text=Olá,%20preciso%20de%20mais%20informações."
+      target="_blank" aria-label="Fale conosco via WhatsApp">
       <span class="whatsapp-text" data-key="whatsfale">Fale conosco</span>
       <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
     </a>
@@ -192,7 +224,7 @@
   </footer>
 
   <button id="voltarAoTopo" title="Voltar ao Topo"> &#8593; <br></button>
- 
+
 </body>
 
 </html>

@@ -1,7 +1,7 @@
 const translations = {
   pt: {
     experienciatitulo: "Experiência",
-    experienciaprojetos:"Projetos",
+    experienciaprojetos: "Projetos",
     experienciaformacao: "Formação",
     experienciacontato: "Contato",
     titulo: "Desenvolvedor",
@@ -54,14 +54,38 @@ const translations = {
 
     /* Projetos Container */
 
-    projetostitle:"Projetos",
-    projetostexto:"Projetos desenvolvidos ao longo da minha jornada em tecnologia, unindo <strong>Backend</strong>, <strong>Frontend</strong>e a visão analítica da <strong>Arquitetura de Software</strong>",
-    linkgithub:"Ver mais no GitHub",
+    projetostitle: "Projetos",
+    projetostexto: "Projetos desenvolvidos ao longo da minha jornada em tecnologia, unindo <strong>Backend</strong>, <strong>Frontend</strong>e a visão analítica da <strong>Arquitetura de Software</strong>",
+    linkgithub: "Ver mais no GitHub",
+
+    /* Formularios */
+
+    formtitulo: "Vamos trabalhar<br><span>juntos?</span>",
+    formsubtitulo: "Estou disponível para novos projetos, freelas e oportunidades. Preencha o formulário ou fale diretamente pelos canais abaixo.",
+    formnome: 'Nome <span class="obrigatorio">*</span>',
+    formemail: 'E-mail <span class="obrigatorio">*</span>',
+    formtelefone: "Telefone / WhatsApp",
+    formtipo: 'Tipo de projeto <span class="obrigatorio">*</span>',
+    formmensagem: 'Mensagem <span class="obrigatorio">*</span>',
+    formplaceholdernome: "Seu nome completo",
+    formplaceholderemail: "seu@email.com",
+    formplaceholdertelefone: "+55 11 00000-0000",
+    formplaceholdersel: "Selecione...",
+    formmensagemplaceholder: "Descreva seu projeto, prazo e qualquer detalhe relevante...",
+    formbtn: "Enviar mensagem",
+    formstatus: '<span class="status-dot"></span> Disponível para novos projetos',
+
+    // opções select
+    tipo1: "Site / Landing Page",
+    tipo2: "API / Backend",
+    tipo3: "Aplicação Fullstack",
+    tipo4: "Arquitetura de Software",
+    tipo5: "Outro",
 
   },
   en: {
     experienciatitulo: "Experience",
-    experienciaprojetos:"Projects",
+    experienciaprojetos: "Projects",
     experienciaformacao: "Education",
     experienciacontato: "Contact",
     titulo: "Developer for",
@@ -112,16 +136,43 @@ const translations = {
       "I am available for new projects, get in touch and it will be a pleasure to assist you👋📲",
     whatsfale: "Call us",
 
-     /* Projetos Container */
+    /* Projetos Container */
 
-    projetostitle:"Projects",
-    projetostexto:"Projects developed throughout my journey in technology, combining <strong>Backend</strong>, <strong>Frontend</strong>and the analytical vision of <strong>Software Architecture</strong>",
-    linkgithub:"See more on GitHub",
+    projetostitle: "Projects",
+    projetostexto: "Projects developed throughout my journey in technology, combining <strong>Backend</strong>, <strong>Frontend</strong>and the analytical vision of <strong>Software Architecture</strong>",
+    linkgithub: "See more on GitHub",
+
+    /* Formularios */
+
+    formtitulo: "Let's work<br><span>together?</span>",
+    formsubtitulo: "I am available for new projects, freelance work and opportunities. Fill out the form or contact me directly through the channels below.",
+    formnome: 'Name <span class="obrigatorio">*</span>',
+    formemail: 'E-mail <span class="obrigatorio">*</span>',
+    formtelefone: "Phone / WhatsApp",
+    formtipo: 'Project type <span class="obrigatorio">*</span>',
+    formmensagem: 'Message <span class="obrigatorio">*</span>',
+
+    formplaceholdernome: "Your full name",
+    formplaceholderemail: "your@email.com",
+    formplaceholdertelefone: "+55 11 00000-0000",
+    formplaceholdersel: "Select...",
+    formmensagemplaceholder: "Describe your project, deadline and any relevant details...",
+
+    formbtn: "Send message",
+    formstatus: '<span class="status-dot"></span> Available for new projects',
+
+    // select options
+    tipo1: "Website / Landing Page",
+    tipo2: "API / Backend",
+    tipo3: "Fullstack Application",
+    tipo4: "Software Architecture",
+    tipo5: "Other",
+
   },
 
   es: {
     experienciatitulo: "Experiencia",
-    experienciaprojetos:"Proyectos",
+    experienciaprojetos: "Proyectos",
     experienciaformacao: "Capacitación",
     experienciacontato: "Contacto",
     titulo: "Desarrollador",
@@ -174,9 +225,36 @@ const translations = {
 
     /* Projetos Container */
 
-    projetostitle:"Proyectos",
-    projetostexto:"Proyectos desarrollados a lo largo de mi trayectoria en tecnología, combinando el desarrollo <strong>Backend</strong>, <strong>Frontend</strong>y la visión analítica de la <strong>Arquitectura de Software</strong>",
-    linkgithub:"Ver mais no GitHub",
+    projetostitle: "Proyectos",
+    projetostexto: "Proyectos desarrollados a lo largo de mi trayectoria en tecnología, combinando el desarrollo <strong>Backend</strong>, <strong>Frontend</strong>y la visión analítica de la <strong>Arquitectura de Software</strong>",
+    linkgithub: "Ver mais no GitHub",
+
+    /* Formularios */
+
+    formtitulo: "¿Trabajamos<br><span>juntos?</span>",
+    formsubtitulo: "Estoy disponible para nuevos proyectos, trabajos freelance y oportunidades. Completa el formulario o contáctame directamente a través de los canales abajo.",
+    formnome: 'Nombre <span class="obrigatorio">*</span>',
+    formemail: 'Correo electrónico <span class="obrigatorio">*</span>',
+    formtelefone: "Teléfono / WhatsApp",
+    formtipo: 'Tipo de proyecto <span class="obrigatorio">*</span>',
+    formmensagem: 'Mensaje <span class="obrigatorio">*</span>',
+
+    formplaceholdernome: "Tu nombre completo",
+    formplaceholderemail: "tu@email.com",
+    formplaceholdertelefone: "+55 11 00000-0000",
+    formplaceholdersel: "Selecciona...",
+    formmensagemplaceholder: "Describe tu proyecto, plazo y cualquier detalle relevante...",
+
+    formbtn: "Enviar mensaje",
+    formstatus: '<span class="status-dot"></span> Disponible para nuevos proyectos',
+
+    // select options
+    tipo1: "Sitio web / Landing Page",
+    tipo2: "API / Backend",
+    tipo3: "Aplicación Fullstack",
+    tipo4: "Arquitectura de Software",
+    tipo5: "Otro",
+
   },
 };
 
@@ -198,103 +276,22 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   function changeLanguage(lang) {
-    document
-      .querySelectorAll('[data-key="experienciatitulo"]')
-      .forEach((el) => (el.textContent = translations[lang].experienciatitulo));
-      document
-      .querySelectorAll('[data-key="experienciaprojetos"]')
-      .forEach((el) => (el.textContent = translations[lang].experienciaprojetos));
-    document
-      .querySelectorAll('[data-key="experienciaformacao"]')
-      .forEach(
-        (el) => (el.textContent = translations[lang].experienciaformacao)
-      );
-    document
-      .querySelectorAll('[data-key="experienciacontato"]')
-      .forEach(
-        (el) => (el.textContent = translations[lang].experienciacontato)
-      );
 
-    document.querySelector('[data-key="titulo"]').innerHTML =
-      translations[lang].titulo;
-    document.querySelector('[data-key="localizacao"]').textContent =
-      translations[lang].localizacao;
-    document.querySelector('[data-key="experiencia"]').textContent =
-      translations[lang].experiencia;
-    document.querySelector('[data-key="experienciatexto"]').innerHTML =
-      translations[lang].experienciatexto;
+    // TEXTOS
+    document.querySelectorAll("[data-key]").forEach(el => {
+      const key = el.getAttribute("data-key");
+      if (translations[lang][key]) {
+        el.innerHTML = translations[lang][key];
+      }
+    });
 
-    document.querySelector('[data-key="anoempresa1"]').innerHTML =
-      translations[lang].anoempresa1;
-    document.querySelector('[data-key="tituloempresa1"]').innerHTML =
-      translations[lang].tituloempresa1;
-    document.querySelector('[data-key="textoempresa1"]').innerHTML =
-      translations[lang].textoempresa1;
-
-    document.querySelector('[data-key="anoempresa2"]').innerHTML =
-      translations[lang].anoempresa2;
-    document.querySelector('[data-key="nomeempresa2"]').innerHTML =
-      translations[lang].nomeempresa2;
-    document.querySelector('[data-key="tituloempresa2"]').innerHTML =
-      translations[lang].tituloempresa2;
-    document.querySelector('[data-key="textoempresa2"]').innerHTML =
-      translations[lang].textoempresa2;
-
-    document.querySelector('[data-key="anoempresa3"]').innerHTML =
-      translations[lang].anoempresa3;
-    document.querySelector('[data-key="nomeempresa3"]').innerHTML =
-      translations[lang].nomeempresa3;
-    document.querySelector('[data-key="tituloempresa3"]').innerHTML =
-      translations[lang].tituloempresa3;
-    document.querySelector('[data-key="textoempresa3"]').innerHTML =
-      translations[lang].textoempresa3;
-
-    document.querySelector('[data-key="formacao"]').innerHTML =
-      translations[lang].formacao;
-    document.querySelector('[data-key="formacaotexto"]').innerHTML =
-      translations[lang].formacaotexto;
-
-    document.querySelector('[data-key="faculdadetipo1"]').innerHTML =
-      translations[lang].faculdadetipo1;
-    document.querySelector('[data-key="faculdadecurso1"]').innerHTML =
-      translations[lang].faculdadecurso1;
-
-    document.querySelector('[data-key="faculdadetipo2"]').innerHTML =
-      translations[lang].faculdadetipo2;
-    document.querySelector('[data-key="faculdadecurso2"]').innerHTML =
-      translations[lang].faculdadecurso2;
-
-    document.querySelector('[data-key="faculdadetipo3"]').innerHTML =
-      translations[lang].faculdadetipo3;
-    document.querySelector('[data-key="faculdadecurso3"]').innerHTML =
-      translations[lang].faculdadecurso3;
-
-    document.querySelector('[data-key="intensivos"]').innerHTML =
-      translations[lang].intensivos;
-    document.querySelector('[data-key="fundamentos"]').innerHTML =
-      translations[lang].fundamentos;
-
-    document.querySelector('[data-key="idiomas"]').innerHTML =
-      translations[lang].idiomas;
-    document.querySelector('[data-key="lingua1"]').innerHTML =
-      translations[lang].lingua1;
-    document.querySelector('[data-key="lingua2"]').innerHTML =
-      translations[lang].lingua2;
-    document.querySelector('[data-key="lingua3"]').innerHTML =
-      translations[lang].lingua3;
-
-    document.querySelector('[data-key="disponivel"]').innerHTML =
-      translations[lang].disponivel;
-    document.querySelector('[data-key="whatsfale"]').innerHTML =
-      translations[lang].whatsfale;
-
-       /* Projetos Container */
-       document.querySelector('[data-key="projetostitle"]').innerHTML =
-      translations[lang].projetostitle;
-      document.querySelector('[data-key="projetostexto"]').innerHTML =
-      translations[lang].projetostexto;
-      document.querySelector('[data-key="linkgithub"]').innerHTML =
-      translations[lang].linkgithub;
+    // PLACEHOLDERS
+    document.querySelectorAll("[data-key-placeholder]").forEach(el => {
+      const key = el.getAttribute("data-key-placeholder");
+      if (translations[lang][key]) {
+        el.placeholder = translations[lang][key];
+      }
+    });
 
   }
 });

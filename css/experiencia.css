@@ -55,7 +55,7 @@
 .empresa:hover {
   border-left: 4px solid #67dd0a;
   box-shadow: 0 0 8px #bfca5b, 0 0 15px #bcdaa5;
-  transition: 1.5s ease;
+  transition: 1s ease !important;
   transition-delay: 0s !important;
   background: var(--cor-exphover);
   cursor: pointer;

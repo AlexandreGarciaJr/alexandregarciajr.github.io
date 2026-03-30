@@ -2,21 +2,21 @@
   opacity: 0;
   filter: blur(15px);
   transform: translateX(-30%) ;
-  transition: opacity 3s, filter 3s, transform 3s;
+  transition: opacity 2s, filter 2s, transform 2s;
 }
 
 .hidden-up {
   opacity: 0;
   filter: blur(15px);
-  transform: translateY(20%);
-  transition: opacity 3s, filter 3s, transform 3s;
+  transform: translateY(40%);
+  transition: opacity 2s, filter 2s, transform 2s;
 }
 
 .hidden-up-forte {
   opacity: 0;
   filter: blur(15px);
   transform: translateY(100%);
-  transition: opacity 3s, filter 3s, transform 3s;
+  transition: opacity 2s, filter 2s, transform 2s;
 }
 
 .hidden-down {
@@ -30,7 +30,7 @@
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
-  transition: opacity 3s, filter 3s, transform 3s;
+  transition: opacity 2s, filter 2s, transform 2s;
 }
 
 .experiencia-empresas :nth-child(2){
