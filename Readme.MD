@@ -20,5 +20,5 @@
 http://alexandregarciajr.com <br/>
 https://alexandregarciajr.github.io/
 
-![alt text](./img/print-site.JPG)
+![alt text](./img/print-sitev2.JPG)
 
