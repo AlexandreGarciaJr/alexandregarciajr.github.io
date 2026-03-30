@@ -39,6 +39,17 @@
   background: #67dd0a;
 }
 
+.contato-tag::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 1px;
+  background: #67dd0a;
+}
+
 .contato-titulo {
   font-size: clamp(2.5rem, 4vw, 4rem);
   line-height: 1.1;
