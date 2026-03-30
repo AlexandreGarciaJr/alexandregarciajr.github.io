@@ -64,3 +64,7 @@
 .footer-contato  :nth-child(4){
   transition-delay: 1000ms;
 }
+
+.footer-contato  :nth-child(5){
+  transition-delay: 1200ms;
+}

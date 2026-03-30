@@ -54,22 +54,12 @@
 .footer-contato ul li a,
 .footer-contato ul li {
   font-size: 1rem;
+  position: relative;
   font-weight: 500;
   color: #cccccc;
   text-decoration: none;
   transition: 0.5s ease;
   cursor: pointer;
-}
-
-.footer-nav ul li a,
-.footer-contato ul li a {
-  position: relative; /* necessário para o pseudo-elemento */
-  font-size: 1rem;
-  font-weight: 500;
-  color: #cccccc;
-  text-decoration: none;
-  cursor: pointer;
-  transition: color 0.5s ease;
 }
 
 .footer-nav ul li a::after,
