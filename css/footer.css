@@ -61,10 +61,39 @@
   cursor: pointer;
 }
 
+.footer-nav ul li a,
+.footer-contato ul li a {
+  position: relative; /* necessário para o pseudo-elemento */
+  font-size: 1rem;
+  font-weight: 500;
+  color: #cccccc;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.5s ease;
+}
+
+.footer-nav ul li a::after,
+.footer-contato ul li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* distância da linha em relação ao texto */
+  width: 100%;
+  height: 2px; /* espessura da linha */
+  background-color: #67dd0a;
+  transform: scaleX(0); /* começa escondido */
+  transform-origin: left; /* anima da esquerda para direita */
+  transition: transform 0.3s ease;
+}
+
+.footer-nav ul li a:hover::after,
+.footer-contato ul li a:hover::after {
+  transform: scaleX(1); /* mostra a linha ao passar o mouse */
+}
+
 .footer-nav ul li a:hover,
 .footer-contato ul li a:hover {
   color: #67dd0a;
-  text-shadow: 0 0 2px #bfca5b, 0 0 5px rgba(188, 218, 165, 0.4);
 }
 
 /* Ícones LinkedIn e GitHub */

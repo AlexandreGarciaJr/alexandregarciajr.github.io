@@ -185,7 +185,7 @@
 .form-group textarea,
 .form-group select {
   background: var(--cor-backgroundmenu, #0d0d0d);
-  border: 1.5px solid rgba(255, 255, 255, 0.08);
+  border: 1.5px solid rgba(0, 0, 0, 0.171);
   border-radius: 4px;
   color: var(--cor-letras);
   font-family: inherit;
@@ -290,11 +290,11 @@
 
 .form-btn svg {
   fill: #0a0a0a;
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 }
 
 .form-btn:hover {
-  background: #b6f829;
+  color: #67dd0a;
   box-shadow: 0 0 8px #bfca5b, 0 0 18px rgba(188, 218, 165, 0.4);
   transform: translateY(-1px);
 }
