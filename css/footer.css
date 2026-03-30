@@ -1,165 +1,154 @@
 .footer {
   background: #000000;
+  border-top: 1px solid #1a1a1a;
 }
 
 .footer-container {
-  max-width: 1500px;
-  padding: 120px 20px 60px 20px;
+  max-width: 1200px;
+  padding: 80px 40px 60px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 100px;
-  position: relative;
-  align-items: center;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+/* Brand */
+.footer-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #67dd0a;
+  margin-bottom: 16px;
+  letter-spacing: -0.5px;
 }
 
 .footer-texto {
-  font-size: 1.5rem;
-  line-height: 1.33;
-  color: #cccccc;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: #888888;
+  max-width: 320px;
 }
 
-.footer-contato li {
-  font-weight: bold;
-  font-size: 2.25rem;
-  line-height: 1.1;
-  color: #ffffff;
-  text-shadow: 0 0 5px #444444b2, 0 0 10px #7c7c7ccb;
-  margin-bottom: 30px;
+/* Nav e Contato — títulos */
+.footer-nav-title {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #444444;
+  margin-bottom: 20px;
 }
 
-.footer-contato li a {
-  color: #ffffff;
-}
-
-.footer-contato li a:hover {
-  color: #4ac546;
-  text-shadow: 0 0 3px #67dd0a, 0 0 8px rgb(186, 238, 199);
-  transition: 1s ease;
-  transition-delay: 0s !important;
-}
-
-.footer-contato li.linkedin {
+/* Nav links */
+.footer-nav ul,
+.footer-contato ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.footer-nav ul li a,
+.footer-contato ul li a,
+.footer-contato ul li {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #cccccc;
+  text-decoration: none;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.footer-nav ul li a:hover,
+.footer-contato ul li a:hover {
+  color: #67dd0a;
+  text-shadow: 0 0 2px #bfca5b, 0 0 5px rgba(188, 218, 165, 0.4);
+}
+
+/* Ícones LinkedIn e GitHub */
+.footer-contato li.linkedin,
+.footer-contato li.github {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   position: relative;
+  padding-left: 30px;
 }
 
 .footer-contato li.linkedin::before {
   content: "";
   position: absolute;
-  width: 40px;
-  height: 40px;
+  left: 0;
+  width: 20px;
+  height: 20px;
   background: url(../img/linkedin.svg) no-repeat center;
   background-size: contain;
-  left: -50px;
-}
-
-.footer-contato li.github {
-  display: flex;
-  position: relative;
+  filter: brightness(0.6);
 }
 
 .footer-contato li.github::before {
   content: "";
   position: absolute;
-  width: 45px;
-  height: 45px;
+  left: 0;
+  width: 20px;
+  height: 20px;
   background: url(../img/github.svg) no-repeat center;
   background-size: contain;
-  left: -52px;
+  filter: brightness(0.6);
+}
+
+.footer-contato li.linkedin:hover::before,
+.footer-contato li.github:hover::before {
+  filter: invert(72%) sepia(90%) saturate(500%) hue-rotate(60deg);
+}
+
+/* Bottom bar */
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 40px;
+  border-top: 1px solid #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .footer-copy {
-  grid-column: 1 / -1;
-  font-size: 1.125rem;
-  color: #8f8f8f;
-  text-align: center;
+  font-size: 1rem;
+  color: #444444;
+  justify-content: center;
 }
 
-@media (max-width: 800px) {
+/* Responsivo */
+@media (max-width: 900px) {
   .footer-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 40px;
   }
 
-  .footer-contato li.linkedin {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* texto vai para a direita */
-    position: relative;
-    padding-left: 50px; /* garante espaço para o ícone */
-  }
-
-  .footer-contato li.github {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* texto vai para a direita */
-    position: relative;
-    padding-left: 50px; /* garante espaço para o ícone */
-  }
-
-  .footer-contato li.github::before {
-    content: "";
-    position: absolute;
-    left: 0px;
-    align-self: center;
-  }
-
-  .footer-contato li.linkedin::before {
-    content: "";
-    position: absolute;
-    left: 0px;
-    align-self: center;
+  .footer-brand {
+    grid-column: 1 / -1;
   }
 }
 
-@media (max-width: 500px) {
-  .formacao-extra span {
-    margin-left: 10px;
-    margin-right: 10px;
+@media (max-width: 560px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    padding: 60px 24px 40px;
+    gap: 36px;
   }
 
-  .footer-contato li {
-    font-size: 1.35rem;
-    line-height: 1.1;
+  .footer-bottom {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+    padding: 20px 24px;
   }
 
-  .footer-contato .email {
-    font-size: 1.15rem;
-    line-height: 1.1;
-  }
-
-  .footer-contato li.linkedin {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* texto vai para a direita */
-    position: relative;
-    padding-left: 35px; /* garante espaço para o ícone */
-  }
-
+  .footer-contato li.linkedin,
   .footer-contato li.github {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* texto vai para a direita */
-    position: relative;
-    padding-left: 35px; /* garante espaço para o ícone */
-  }
-
-  .footer-contato li.github::before {
-    content: "";
-    position: absolute;
-    left: -10px;
-    align-self: center;
-    width: 40px;
-    height: 30px;
-  }
-
-  .footer-contato li.linkedin::before {
-    content: "";
-    position: absolute;
-    left: -10px;
-    align-self: center;
-    width: 40px;
-    height: 30px;
+    padding-left: 28px;
   }
 }
