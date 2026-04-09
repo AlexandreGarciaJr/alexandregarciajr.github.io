@@ -1,6 +1,6 @@
 ### Página HTML e CSS
 
-- #### Portifólio pessoal com responsividade, informações, formação e experiência pessoal.
+- #### Portifólio pessoal com responsividade, informações, formação e experiência pessoal
 
 ### Tecnologias:
 
