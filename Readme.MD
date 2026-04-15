@@ -13,7 +13,7 @@
 - Menu Sanduiche
 - Botão de Whatsapp
 - Botão Darkmode
-- Botão de tradução para Inglês e Espanhol
+- Botão de tradução para três línguas
 
 ### Visualização:
 
