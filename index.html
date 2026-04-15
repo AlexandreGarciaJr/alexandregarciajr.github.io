@@ -8,7 +8,7 @@
   <meta name="description" content="Desenvolvedor Fullstack, Localizado em São Paulo">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="shortcut icon" type="image/x-icon" href="./img/favicon-ag.png">
-  
+
   <script type="module" src="./scripts/voltar-ao-topo.js"></script>
   <script type="module" src="./scripts/scroll-animation.js"></script>
   <script type="module" src="./scripts/link-scroll.js"></script>
@@ -22,10 +22,12 @@
     <p class="nome">Alexandre Garcia</p>
     <button id="theme-switch">
       <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px">
-        <path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z" />
+        <path
+          d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z" />
       </svg>
       <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px">
-        <path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z" />
+        <path
+          d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z" />
       </svg>
     </button>
     <nav class="header-menu">
@@ -63,13 +65,38 @@
   <section class="experiencia" id="experiencia" aria-label="Experiência">
     <h2 class="subtitulo" data-key="experiencia">Experiência</h2>
     <div class="experiencia-empresas">
-      <p class="experiencia-texto hidden" data-key="experienciatexto">Olá, sou Alexandre Garcia, estudante de Análise e Desenvolvimento de Sistemas pela instituição SENAC. <br> Na minha história, sou formado em Arquitetura e Urbanismo, com 12 anos de experiência na área de construção civil. Busco unir minha senioridade na área, minha capacidade de gestão de projetos e organização para impulsionar a busca por esta nova carreira na área de tecnologia e desenvolvimento de sistemas e softwares, com conhecimento em Frontend e Backend. <br><br> Tecnologias: <strong> HTML </strong> | <strong> CSS </strong> | <strong> JavaScript </strong> | <strong>Java</strong> | <strong>Spring Boot</strong> | <strong>MySQL</strong> | <strong>VsCode</strong> | <strong>IntelliJ</strong> </p>
+      <p class="experiencia-texto hidden" data-key="experienciatexto">Olá, sou Alexandre Garcia, estudante de Análise e
+        Desenvolvimento de Sistemas pela instituição SENAC. <br> Na minha história, sou formado em Arquitetura e
+        Urbanismo, com 12 anos de experiência na área de construção civil. Busco unir minha senioridade na área, minha
+        capacidade de gestão de projetos e organização para impulsionar a busca por esta nova carreira na área de
+        tecnologia e desenvolvimento de sistemas e softwares, com conhecimento em Frontend e Backend. <br><br>
+        Tecnologias: <strong> HTML </strong> | <strong> CSS </strong> | <strong> JavaScript </strong> |
+        <strong>Java</strong> | <strong>Spring Boot</strong> | <strong>MySQL</strong> | <strong>VsCode</strong> |
+        <strong>IntelliJ</strong> </p>
+
+      <div class="empresa hidden-down">
+        <span class="empresa-ano" data-key="anosynx"> 2026<br>até<br>o momento</span>
+        <h3 class="empresa-titulo">Synx Space</h3>
+        <span class="empresa-titulo" data-key="titulosynx">Analista de Tecnologia e Inovação</span>
+        <p class="empresa-texto" data-key="textosynx">Desenvolvedor focado na criação, manutenção e evolução de soluções
+          SaaS voltadas à gestão de relacionamento com clientes (CRM), atuando com JavaScript e Node.js para construir
+          sistemas mais eficientes, escaláveis e alinhados às necessidades do negócio.</p>
+        <ul class="empresa-habilidades">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Next.Js</li>
+          <li>Node.Js</li>
+          <li>TypeScript</li>
+        </ul>
+      </div>
 
       <div class="empresa hidden-down">
         <span class="empresa-ano" data-key="anoempresa1"> 2024<br>até<br>o momento</span>
         <h3 class="empresa-titulo">Alexandre Garcia</h3>
         <span class="empresa-titulo" data-key="tituloempresa1">Desenvolvedor Frontend</span>
-        <p class="empresa-texto" data-key="textoempresa1">Desenvolvimento de pequenos projetos, páginas Web, programas e APIs como desenvolvedor Frontend e Backend.</p>
+        <p class="empresa-texto" data-key="textoempresa1">Desenvolvimento de pequenos projetos, páginas Web, programas e
+          APIs como desenvolvedor Frontend e Backend.</p>
         <ul class="empresa-habilidades">
           <li>Java</li>
           <li>Spring Boot</li>
@@ -85,7 +112,10 @@
         <span class="empresa-ano" data-key="anoempresa2"> 2017<br>até<br>o momento</span>
         <h3 class="empresa-titulo" data-key="nomeempresa2">Nautilo Arquitetura e Gerenciamento</h3>
         <span class="empresa-titulo" data-key="tituloempresa2">Arquiteto</span>
-        <p class="empresa-texto" data-key="textoempresa2">Realização de diversos projetos de arquitetura de diferentes tipologias e tamanhos, realização de todas as etapas de projetos (estudo preliminar e projeto executivo), realização de estudos de materiais e gerenciamento de obras diversas, organização e gestão de equipes de obras, e execução de planilhas e cronogramas.</p>
+        <p class="empresa-texto" data-key="textoempresa2">Realização de diversos projetos de arquitetura de diferentes
+          tipologias e tamanhos, realização de todas as etapas de projetos (estudo preliminar e projeto executivo),
+          realização de estudos de materiais e gerenciamento de obras diversas, organização e gestão de equipes de
+          obras, e execução de planilhas e cronogramas.</p>
         <ul class="empresa-habilidades">
           <li>Autocad</li>
           <li>Sketchup</li>
@@ -99,10 +129,12 @@
       </div>
 
       <div class="empresa hidden-down">
-        <span class="empresa-ano" data-key="anoempresa3"> 2020<br>até<br>o momento</span>
+        <span class="empresa-ano" data-key="anoempresa3"> 2020<br>até<br>2026</span>
         <h3 class="empresa-titulo" data-key="nomeempresa3">AG Arquitetura</h3>
         <span class="empresa-titulo" data-key="tituloempresa3">Arquiteto</span>
-        <p class="empresa-texto" data-key="textoempresa3">Execução de diversos projetos residenciais e comerciais como arquiteto autônomo em Alexandre Garcia Arquitetura.Dentre eles: projeto de casas unifamiliares, projeto e reforma de apartamentos e estúdios, lojas comerciais, restaurantes, e obras de diversos tipos.</p>
+        <p class="empresa-texto" data-key="textoempresa3">Execução de diversos projetos residenciais e comerciais como
+          arquiteto autônomo em Alexandre Garcia Arquitetura.Dentre eles: projeto de casas unifamiliares, projeto e
+          reforma de apartamentos e estúdios, lojas comerciais, restaurantes, e obras de diversos tipos.</p>
         <ul class="empresa-habilidades">
           <li>Autocad</li>
           <li>Sketchup</li>
@@ -119,144 +151,170 @@
   </section>
 
 
-<section class="projetos" id="projetos" aria-label="Projetos">
-  <div class="projetos-container">
+  <section class="projetos" id="projetos" aria-label="Projetos">
+    <div class="projetos-container">
 
-    <div class="projetos-grid">
+      <div class="projetos-grid">
 
-      <!-- Projeto 1 -->
-      <div class="projeto-card hidden-down">
-        <div class="projeto-imagem">
-          <img src="./img/projeto-bikecraft.jpg" alt="Print do Portfólio Pessoal" loading="lazy" />
+        <!-- Projeto 1 -->
+        <div class="projeto-card hidden-down">
+          <div class="projeto-imagem">
+            <img src="./img/projeto-bikecraft.jpg" alt="Print do Portfólio Pessoal" loading="lazy" />
+          </div>
+          <div class="projeto-overlay">
+            <div class="projeto-overlay-content">
+              <ul class="projeto-tech">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <h3 class="projeto-nome">Projeto Bikecraft</h3>
+              <p class="projeto-descricao">Site pensado para ciclistas apaixonados, lojistas e curiosos que desejam
+                explorar o universo das bikes.</p>
+              <div class="projeto-links">
+                <a href="https://github.com/AlexandreGarciaJr/bikecraft-project" target="_blank" aria-label="GitHub">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 24 24" width="20px">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.165c-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.729.083-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.762-1.605-2.665-.3-5.467-1.332-5.467-5.93 0-1.31.468-2.382 1.236-3.222-.124-.303-.536-1.524.117-3.176 0 0 1.008-.322 3.3 1.23A11.51 11.51 0 0 1 12 6.803c1.02.005 2.047.138 3.006.404 2.29-1.552 3.297-1.23 3.297-1.23.655 1.652.243 2.873.12 3.176.77.84 1.235 1.912 1.235 3.222 0 4.61-2.807 5.625-5.48 5.92.43.372.823 1.102.823 2.222v3.293c0 .322.218.694.825.576C20.565 21.796 24 17.298 24 12c0-6.63-5.37-12-12-12z" />
+                  </svg>
+                  GitHub
+                </a>
+                <a href="https://alexandregarciajr.github.io/bikecraft-project/" target="_blank"
+                  aria-label="Ver projeto">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px">
+                    <path
+                      d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z" />
+                  </svg>
+                  Ver projeto
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="projeto-overlay">
-          <div class="projeto-overlay-content">
-            <ul class="projeto-tech">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-            </ul>
-            <h3 class="projeto-nome">Projeto Bikecraft</h3>
-            <p class="projeto-descricao">Site pensado para ciclistas apaixonados, lojistas e curiosos que desejam explorar o universo das bikes.</p>
-            <div class="projeto-links">
-              <a href="https://github.com/AlexandreGarciaJr/bikecraft-project" target="_blank" aria-label="GitHub">
-                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 24 24" width="20px"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.165c-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.729.083-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.762-1.605-2.665-.3-5.467-1.332-5.467-5.93 0-1.31.468-2.382 1.236-3.222-.124-.303-.536-1.524.117-3.176 0 0 1.008-.322 3.3 1.23A11.51 11.51 0 0 1 12 6.803c1.02.005 2.047.138 3.006.404 2.29-1.552 3.297-1.23 3.297-1.23.655 1.652.243 2.873.12 3.176.77.84 1.235 1.912 1.235 3.222 0 4.61-2.807 5.625-5.48 5.92.43.372.823 1.102.823 2.222v3.293c0 .322.218.694.825.576C20.565 21.796 24 17.298 24 12c0-6.63-5.37-12-12-12z"/></svg>
-                GitHub
-              </a>
-              <a href="https://alexandregarciajr.github.io/bikecraft-project/" target="_blank" aria-label="Ver projeto">
-                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg>
-                Ver projeto
-              </a>
+
+        <!-- Projeto 2 -->
+        <div class="projeto-card hidden-down">
+          <div class="projeto-imagem">
+            <img src="./img/projeto-personal.jpg" alt="Print da API REST" loading="lazy" />
+          </div>
+          <div class="projeto-overlay">
+            <div class="projeto-overlay-content">
+              <ul class="projeto-tech">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <h3 class="projeto-nome">Alexandre Personal</h3>
+              <p class="projeto-descricao">Página de profissional autônomo no ramo de Personal Trainer.</p>
+              <div class="projeto-links">
+                <a href="https://github.com/AlexandreGarciaJr/alexandre-personal-landing-page" target="_blank"
+                  aria-label="GitHub">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 24 24" width="20px">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.165c-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.729.083-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.762-1.605-2.665-.3-5.467-1.332-5.467-5.93 0-1.31.468-2.382 1.236-3.222-.124-.303-.536-1.524.117-3.176 0 0 1.008-.322 3.3 1.23A11.51 11.51 0 0 1 12 6.803c1.02.005 2.047.138 3.006.404 2.29-1.552 3.297-1.23 3.297-1.23.655 1.652.243 2.873.12 3.176.77.84 1.235 1.912 1.235 3.222 0 4.61-2.807 5.625-5.48 5.92.43.372.823 1.102.823 2.222v3.293c0 .322.218.694.825.576C20.565 21.796 24 17.298 24 12c0-6.63-5.37-12-12-12z" />
+                  </svg>
+                  GitHub
+                </a>
+                <a href="https://alexandregarciajr.github.io/alexandre-personal-landing-page/" target="_blank"
+                  aria-label="Ver projeto">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px">
+                    <path
+                      d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z" />
+                  </svg>
+                  Ver projeto
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto 3 -->
+        <div class="projeto-card hidden-down">
+          <div class="projeto-imagem">
+            <img src="./img/projeto-banco" alt="Print da Landing Page AG" loading="lazy" />
+          </div>
+          <div class="projeto-overlay">
+            <div class="projeto-overlay-content">
+              <ul class="projeto-tech">
+                <li>Java</li>
+                <li>Spring Boot</li>
+                <li>MySQL</li>
+              </ul>
+              <h3 class="projeto-nome">Projeto Banco DIO 2024</h3>
+              <p class="projeto-descricao">API para demonstrar o funcionamento de um sistema de banco de um cliente e
+                sua interação com Swagger.</p>
+              <div class="projeto-links">
+                <a href="hhttps://github.com/AlexandreGarciaJr/projeto-final-dio" target="_blank" aria-label="GitHub">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 24 24" width="20px">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.165c-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.729.083-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.762-1.605-2.665-.3-5.467-1.332-5.467-5.93 0-1.31.468-2.382 1.236-3.222-.124-.303-.536-1.524.117-3.176 0 0 1.008-.322 3.3 1.23A11.51 11.51 0 0 1 12 6.803c1.02.005 2.047.138 3.006.404 2.29-1.552 3.297-1.23 3.297-1.23.655 1.652.243 2.873.12 3.176.77.84 1.235 1.912 1.235 3.222 0 4.61-2.807 5.625-5.48 5.92.43.372.823 1.102.823 2.222v3.293c0 .322.218.694.825.576C20.565 21.796 24 17.298 24 12c0-6.63-5.37-12-12-12z" />
+                  </svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto 4 -->
+        <div class="projeto-card hidden-down">
+          <div class="projeto-imagem">
+            <img src="./img/projeto-celular.jpg" alt="Print do Sistema de Cadastro" loading="lazy" />
+          </div>
+          <div class="projeto-overlay">
+            <div class="projeto-overlay-content">
+              <ul class="projeto-tech">
+                <li>Java</li>
+                <li>Spring Boot</li>
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+              <h3 class="projeto-nome">Sistema de Loja de Eletrônicos
+              </h3>
+              <p class="projeto-descricao">API para controlar o caixa de uma loja de eletrônicos</p>
+              <div class="projeto-links">
+                <a href="https://github.com/AlexandreGarciaJr/PTI-loja-celular" target="_blank" aria-label="GitHub">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 24 24" width="20px">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.165c-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.729.083-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.762-1.605-2.665-.3-5.467-1.332-5.467-5.93 0-1.31.468-2.382 1.236-3.222-.124-.303-.536-1.524.117-3.176 0 0 1.008-.322 3.3 1.23A11.51 11.51 0 0 1 12 6.803c1.02.005 2.047.138 3.006.404 2.29-1.552 3.297-1.23 3.297-1.23.655 1.652.243 2.873.12 3.176.77.84 1.235 1.912 1.235 3.222 0 4.61-2.807 5.625-5.48 5.92.43.372.823 1.102.823 2.222v3.293c0 .322.218.694.825.576C20.565 21.796 24 17.298 24 12c0-6.63-5.37-12-12-12z" />
+                  </svg>
+                  GitHub
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Projeto 2 -->
-      <div class="projeto-card hidden-down">
-        <div class="projeto-imagem">
-          <img src="./img/projeto-personal.jpg" alt="Print da API REST" loading="lazy" />
-        </div>
-        <div class="projeto-overlay">
-          <div class="projeto-overlay-content">
-            <ul class="projeto-tech">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-            </ul>
-            <h3 class="projeto-nome">Alexandre Personal</h3>
-            <p class="projeto-descricao">Página de profissional autônomo no ramo de Personal Trainer.</p>
-            <div class="projeto-links">
-              <a href="https://github.com/AlexandreGarciaJr/alexandre-personal-landing-page" target="_blank" aria-label="GitHub">
-                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 24 24" width="20px"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.165c-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.729.083-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.762-1.605-2.665-.3-5.467-1.332-5.467-5.93 0-1.31.468-2.382 1.236-3.222-.124-.303-.536-1.524.117-3.176 0 0 1.008-.322 3.3 1.23A11.51 11.51 0 0 1 12 6.803c1.02.005 2.047.138 3.006.404 2.29-1.552 3.297-1.23 3.297-1.23.655 1.652.243 2.873.12 3.176.77.84 1.235 1.912 1.235 3.222 0 4.61-2.807 5.625-5.48 5.92.43.372.823 1.102.823 2.222v3.293c0 .322.218.694.825.576C20.565 21.796 24 17.298 24 12c0-6.63-5.37-12-12-12z"/></svg>
-                GitHub
-              </a>
-              <a href="https://alexandregarciajr.github.io/alexandre-personal-landing-page/" target="_blank" aria-label="Ver projeto">
-                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg>
-                Ver projeto
-              </a>
-            </div>
-          </div>
-        </div>
+      <!-- /projetos-grid -->
+      <!-- Título e texto — lado DIREITO -->
+      <div class="projetos-info">
+        <h2 class="subtitulo" data-key="projetostitle">Projetos</h2>
+        <p class="projetos-texto" data-key="projetostexto">
+          Projetos desenvolvidos ao longo da minha jornada em tecnologia,
+          unindo <strong>Backend</strong>, <strong>Frontend</strong>
+          e a visão analítica da <strong>Arquitetura de Software</strong>.
+        </p>
+        <a href="https://github.com/AlexandreGarciaJr" target="_blank" class="projetos-github-link">
+          <p data-key="linkgithub">Ver mais no GitHub</p>
+          <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px">
+            <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z" />
+          </svg>
+        </a>
       </div>
 
-      <!-- Projeto 3 -->
-      <div class="projeto-card hidden-down">
-        <div class="projeto-imagem">
-          <img src="./img/projeto-banco" alt="Print da Landing Page AG" loading="lazy" />
-        </div>
-        <div class="projeto-overlay">
-          <div class="projeto-overlay-content">
-            <ul class="projeto-tech">
-              <li>Java</li>
-              <li>Spring Boot</li>
-              <li>MySQL</li>
-            </ul>
-            <h3 class="projeto-nome">Projeto Banco DIO 2024</h3>
-            <p class="projeto-descricao">API para demonstrar o funcionamento de um sistema de banco de um cliente e sua interação com Swagger.</p>
-            <div class="projeto-links">
-              <a href="hhttps://github.com/AlexandreGarciaJr/projeto-final-dio" target="_blank" aria-label="GitHub">
-                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 24 24" width="20px"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.165c-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.729.083-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.762-1.605-2.665-.3-5.467-1.332-5.467-5.93 0-1.31.468-2.382 1.236-3.222-.124-.303-.536-1.524.117-3.176 0 0 1.008-.322 3.3 1.23A11.51 11.51 0 0 1 12 6.803c1.02.005 2.047.138 3.006.404 2.29-1.552 3.297-1.23 3.297-1.23.655 1.652.243 2.873.12 3.176.77.84 1.235 1.912 1.235 3.222 0 4.61-2.807 5.625-5.48 5.92.43.372.823 1.102.823 2.222v3.293c0 .322.218.694.825.576C20.565 21.796 24 17.298 24 12c0-6.63-5.37-12-12-12z"/></svg>
-                GitHub
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Projeto 4 -->
-      <div class="projeto-card hidden-down">
-        <div class="projeto-imagem">
-          <img src="./img/projeto-celular.jpg" alt="Print do Sistema de Cadastro" loading="lazy" />
-        </div>
-        <div class="projeto-overlay">
-          <div class="projeto-overlay-content">
-            <ul class="projeto-tech">
-              <li>Java</li>
-              <li>Spring Boot</li>
-              <li>HTML</li>
-              <li>CSS</li>
-            </ul>
-            <h3 class="projeto-nome">Sistema de Loja de Eletrônicos
-            </h3>
-            <p class="projeto-descricao">API para controlar o caixa de uma loja de eletrônicos</p>
-            <div class="projeto-links">
-              <a href="https://github.com/AlexandreGarciaJr/PTI-loja-celular" target="_blank" aria-label="GitHub">
-                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 24 24" width="20px"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.165c-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.729.083-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.762-1.605-2.665-.3-5.467-1.332-5.467-5.93 0-1.31.468-2.382 1.236-3.222-.124-.303-.536-1.524.117-3.176 0 0 1.008-.322 3.3 1.23A11.51 11.51 0 0 1 12 6.803c1.02.005 2.047.138 3.006.404 2.29-1.552 3.297-1.23 3.297-1.23.655 1.652.243 2.873.12 3.176.77.84 1.235 1.912 1.235 3.222 0 4.61-2.807 5.625-5.48 5.92.43.372.823 1.102.823 2.222v3.293c0 .322.218.694.825.576C20.565 21.796 24 17.298 24 12c0-6.63-5.37-12-12-12z"/></svg>
-                GitHub
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- /projetos-grid -->
-    <!-- Título e texto — lado DIREITO -->
-    <div class="projetos-info">
-      <h2 class="subtitulo" data-key="projetostitle">Projetos</h2>
-      <p class="projetos-texto" data-key="projetostexto">
-        Projetos desenvolvidos ao longo da minha jornada em tecnologia,
-        unindo <strong>Backend</strong>, <strong>Frontend</strong>
-        e a visão analítica da <strong>Arquitetura de Software</strong>.
-      </p>
-      <a href="https://github.com/AlexandreGarciaJr" target="_blank" class="projetos-github-link">
-        <p data-key="linkgithub">Ver mais no GitHub</p>
-        <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px">
-          <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/>
-        </svg>
-      </a>
-    </div>
-
-  </div><!-- /projetos-container -->
-</section>
+    </div><!-- /projetos-container -->
+  </section>
 
   <section class="formacao" id="formacao" aria-label="Formação">
     <div class="formacao-container">
       <h2 class="subtitulo" data-key="formacao">Formação</h2>
       <div>
         <p class="formacao-texto" data-key="formacaotexto">
-          Estudante de <strong>Análise e Desenvolvimento de Sistemas</strong> pela instituição <strong>SENAC</strong>, e estudante de <strong>Backend</strong> e <strong>Frontend</strong>💻. Formado em <strong>Arquitetura e Urbanismo </strong>, pela Universidade Nove de Julho com 12 anos de experiência na área de construção civil🔨.
+          Estudante de <strong>Análise e Desenvolvimento de Sistemas</strong> pela instituição <strong>SENAC</strong>, e
+          estudante de <strong>Backend</strong> e <strong>Frontend</strong>💻. Formado em <strong>Arquitetura e
+            Urbanismo </strong>, pela Universidade Nove de Julho com 12 anos de experiência na área de construção
+          civil🔨.
         </p>
 
         <ul class="faculdade-lista">
@@ -309,65 +367,66 @@
 
 
   <footer class="footer" id="contato">
-  <div class="footer-container">
+    <div class="footer-container">
 
-    <div class="footer-brand">
-      <p class="footer-logo">Alexandre Garcia</p>
-      <p class="footer-texto" data-key="disponivel">
-        Estou disponível para novos projetos, entre em contato e será um prazer atende-lo(a) 👋📲
-      </p>
-    </div>
-
-    <nav class="footer-nav footer-contato">
-      <p class="footer-nav-title">Menu</p>
-      <ul>
-        <li class="hidden-up-forte"><a href="#sobre"      data-key="nav-sobre">Sobre</a></li>
-        <li class="hidden-up-forte"><a href="#experiencia" data-key="nav-exp">Experiência</a></li>
-        <li class="hidden-up-forte"><a href="#projetos"   data-key="nav-proj">Projetos</a></li>
-        <li class="hidden-up-forte"><a href="#formacao"   data-key="nav-form">Formação</a></li>
-        <li class="hidden-up-forte"><a href="./contato.html"    data-key="nav-cont">Contato</a></li>
-      </ul>
-    </nav>
-
-    <div class="footer-contato">
-      <p class="footer-nav-title">Contato</p>
-      <ul>
-        <li class="email hidden-up-forte">
-          <a href="mailto:alexandregojunior@gmail.com">alexandregojunior@gmail.com</a>
-        </li>
-        <li class="numero hidden-up-forte">
-          <a href="https://wa.me/5511986186964?text=Olá,%20preciso%20de%20mais%20informações.">+55 11 98618-6964</a>
-        </li>
-        <li class="linkedin hidden-up-forte">
-          <a href="https://www.linkedin.com/in/alexandregarcia-junior/" target="_blank">LinkedIn</a>
-        </li>
-        <li class="github hidden-up-forte">
-          <a href="https://github.com/AlexandreGarciaJr" target="_blank">GitHub</a>
-        </li>
-      </ul>
-    </div>
-
-  </div>
-
-  <div class="footer-bottom">
-    <p class="footer-copy">Copyright © 2025 Alexandre Garcia</p>
-    <div class="language-selector">
-      <div id="selected-lang">
-        <span class="flag"><img src="https://flagcdn.com/br.svg" width="20" alt="PT"></span> PT
+      <div class="footer-brand">
+        <p class="footer-logo">Alexandre Garcia</p>
+        <p class="footer-texto" data-key="disponivel">
+          Estou disponível para novos projetos, entre em contato e será um prazer atende-lo(a) 👋📲
+        </p>
       </div>
-      <ul id="language-options">
-        <li data-lang="pt"><span class="flag"><img src="https://flagcdn.com/br.svg" width="20" alt="PT"></span>PT</li>
-        <li data-lang="en"><span class="flag"><img src="https://flagcdn.com/us.svg" width="20" alt="EN"></span>EN</li>
-        <li data-lang="es"><span class="flag"><img src="https://flagcdn.com/es.svg" width="20" alt="ES"></span>ES</li>
-      </ul>
-    </div>
-  </div>
 
-  <a class="whatsapp-button" href="https://wa.me/5511986186964?text=Olá,%20preciso%20de%20mais%20informações." target="_blank" aria-label="Fale conosco via WhatsApp">
-    <span class="whatsapp-text" data-key="whatsfale">Fale conosco</span>
-    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
-  </a>
-</footer>
+      <nav class="footer-nav footer-contato">
+        <p class="footer-nav-title">Menu</p>
+        <ul>
+          <li class="hidden-up-forte"><a href="#sobre" data-key="nav-sobre">Sobre</a></li>
+          <li class="hidden-up-forte"><a href="#experiencia" data-key="nav-exp">Experiência</a></li>
+          <li class="hidden-up-forte"><a href="#projetos" data-key="nav-proj">Projetos</a></li>
+          <li class="hidden-up-forte"><a href="#formacao" data-key="nav-form">Formação</a></li>
+          <li class="hidden-up-forte"><a href="./contato.html" data-key="nav-cont">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-contato">
+        <p class="footer-nav-title">Contato</p>
+        <ul>
+          <li class="email hidden-up-forte">
+            <a href="mailto:alexandregojunior@gmail.com">alexandregojunior@gmail.com</a>
+          </li>
+          <li class="numero hidden-up-forte">
+            <a href="https://wa.me/5511986186964?text=Olá,%20preciso%20de%20mais%20informações.">+55 11 98618-6964</a>
+          </li>
+          <li class="linkedin hidden-up-forte">
+            <a href="https://www.linkedin.com/in/alexandregarcia-junior/" target="_blank">LinkedIn</a>
+          </li>
+          <li class="github hidden-up-forte">
+            <a href="https://github.com/AlexandreGarciaJr" target="_blank">GitHub</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">Copyright © 2025 Alexandre Garcia</p>
+      <div class="language-selector">
+        <div id="selected-lang">
+          <span class="flag"><img src="https://flagcdn.com/br.svg" width="20" alt="PT"></span> PT
+        </div>
+        <ul id="language-options">
+          <li data-lang="pt"><span class="flag"><img src="https://flagcdn.com/br.svg" width="20" alt="PT"></span>PT</li>
+          <li data-lang="en"><span class="flag"><img src="https://flagcdn.com/us.svg" width="20" alt="EN"></span>EN</li>
+          <li data-lang="es"><span class="flag"><img src="https://flagcdn.com/es.svg" width="20" alt="ES"></span>ES</li>
+        </ul>
+      </div>
+    </div>
+
+    <a class="whatsapp-button" href="https://wa.me/5511986186964?text=Olá,%20preciso%20de%20mais%20informações."
+      target="_blank" aria-label="Fale conosco via WhatsApp">
+      <span class="whatsapp-text" data-key="whatsfale">Fale conosco</span>
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+    </a>
+  </footer>
 
   <button id="voltarAoTopo" title="Voltar ao Topo"> &#8593; <br></button>
 

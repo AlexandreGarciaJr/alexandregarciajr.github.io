@@ -10,6 +10,11 @@ const translations = {
     experienciatexto:
       "Olá, sou Alexandre Garcia, estudante de Análise e Desenvolvimento de Sistemas pela instituição SENAC. <br> Na minha história, sou formado em Arquitetura e Urbanismo, com 12 anos de experiência na área de construção civil. Busco unir minha senioridade na área, minha capacidade de gestão de projetos e organização para impulsionar a busca por esta nova carreira na área de tecnologia e desenvolvimento de sistemas e softwares, com conhecimento em Frontend e Backend. <br><br> Tecnologias: <strong> HTML </strong> | <strong> CSS </strong> | <strong> JavaScript </strong> | <strong>Java</strong> | <strong>Spring Boot</strong> | <strong>MySQL</strong> | <strong>VsCode</strong> | <strong>IntelliJ</strong> ",
 
+    anosynx: "2026<br>até<br>o momento</span>",
+    titulosynx: "Analista de Tecnologia e Inovação",
+    textosynx:
+      "Desenvolvedor focado na criação, manutenção e evolução de soluções SaaS voltadas à gestão de relacionamento com clientes (CRM), atuando com JavaScript e Node.js para construir sistemas mais eficientes, escaláveis e alinhados às necessidades do negócio.",
+
     anoempresa1: "2024<br>até<br>o momento",
     tituloempresa1: "Desenvolvedor Frontend",
     textoempresa1:
@@ -21,7 +26,7 @@ const translations = {
     textoempresa2:
       "Realização de diversos projetos de arquitetura de diferentes tipologias e tamanhos, realização de todas as etapas de projetos (estudo preliminar e projeto executivo), realização de estudos de materiais e gerenciamento de obras diversas, organização e gestão de equipes de obras, e execução de planilhas e cronogramas.",
 
-    anoempresa3: "2020<br>até<br>o momento",
+    anoempresa3: "2020<br>até<br>2026</span>",
     nomeempresa3: "AG Arquitetura",
     tituloempresa3: "Arquiteto",
     textoempresa3:
@@ -94,6 +99,11 @@ const translations = {
     experienciatexto:
       "Hello, I'm Alexandre Garcia, a student of Systems Analysis and Development at SENAC. <br> My background includes a degree in Architecture and Urban Planning and 12 years of experience in the civil construction field. I seek to combine my seniority in the area with my project management and organizational skills to contribute to this new career in technology and systems/software development, with knowledge in Frontend and Backend. <br><br> Technologies:  <strong> HTML </strong> | <strong> CSS </strong> | <strong> JavaScript </strong> | <strong>Java</strong> | <strong>Spring Boot</strong> | <strong>MySQL</strong> | <strong>VsCode</strong> | <strong>IntelliJ</strong> ",
 
+    anosynx: "2026<br>to<br>date</span>",
+    titulosynx: "Technology and Innovation Analyst",
+    textosynx:
+      "Developer focused on creating, maintaining, and evolving SaaS solutions for customer relationship management (CRM), working with JavaScript and Node.js to build more efficient, scalable systems aligned with business needs.",
+
     anoempresa1: "2024<br>to<br>date",
     tituloempresa1: "Frontend Developer",
     textoempresa1:
@@ -105,7 +115,7 @@ const translations = {
     textoempresa2:
       "Carrying out various architectural projects of different types and sizes, carrying out all project stages (preliminary study and executive project), carrying out material studies and managing various works, organizing and managing construction teams, and executing spreadsheets and schedules.",
 
-    anoempresa3: "2020<br>to<br>date",
+    anoempresa3: "2020<br>to<br>2026</span>",
     nomeempresa3: "AG Architecture",
     tituloempresa3: "Architect",
     textoempresa3:
@@ -181,6 +191,11 @@ const translations = {
     experienciatexto:
       "Hola, soy Alexandre Garcia, estudiante de Análisis y Desarrollo de Sistemas en SENAC. <br> Soy licenciado en Arquitectura y Urbanismo y cuento con 12 años de experiencia en el sector de la construcción civil. Busco combinar mi experiencia en el área con mis habilidades de gestión de proyectos y organización para contribuir a esta nueva carrera en tecnología y desarrollo de sistemas/software, con conocimientos en Frontend y Backend. <br><br> Tecnologías: <strong>Java</strong> | <strong>Spring Boot</strong> | <strong>MySQL</strong> | <strong>VsCode</strong> | <strong>IntelliJ</strong> | <strong>HTML</strong> | <strong>CSS</strong>",
 
+    anosynx: "2026<br>hasta<br>la fecha</span>",
+    titulosynx: "Analista de Tecnología e Innovación",
+    textosynx:
+      "Desarrollador especializado en la creación, el mantenimiento y la evolución de soluciones SaaS para la gestión de relaciones con el cliente (CRM), trabajando con JavaScript y Node.js para construir sistemas más eficientes y escalables que se ajusten a las necesidades del negocio.",
+
     anoempresa1: "2024<br>hasta<br>la fecha",
     tituloempresa1: "Desarrollador frontend",
     textoempresa1:
@@ -192,7 +207,7 @@ const translations = {
     textoempresa2:
       "Realizar diversos proyectos arquitectónicos de diferente tipología y tamaño, realizando todas las etapas del proyecto (estudio preliminar y proyecto ejecutivo), realizando estudios de materiales y dirigiendo obras diversas, organizando y gestionando equipos de construcción, y ejecutando hojas de cálculo y cronogramas.",
 
-    anoempresa3: "2020<br>hasta<br>la fecha",
+    anoempresa3: "2020<br>hasta<br>2026</span>",
     nomeempresa3: "AG Arquitectura",
     tituloempresa3: "Arquitecto",
     textoempresa3:
