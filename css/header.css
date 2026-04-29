@@ -13,10 +13,16 @@ body {
 
 /* Estilos base */
 .nome {
-  font-size: 3rem;
-  font-weight: bold;
-  color: var(--cor-letras);
-  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+}
+
+.logomarca {
+  height: 40px;
+  /* ajuste a altura conforme o tamanho da logo */
+  width: auto;
+  /* mantém proporção */
+  display: block;
 }
 
 .header {
@@ -91,25 +97,26 @@ body {
 #menuToggle span:first-child {
   transform-origin: 0% 0%;
 }
+
 #menuToggle span:nth-last-child(3) {
   transform-origin: 0% 100%;
 }
 
 /* Animação para X */
-#menuToggle input:checked ~ span {
+#menuToggle input:checked~span {
   background: var(--cor-menu);
 }
 
-#menuToggle input:checked ~ span:nth-last-child(3) {
+#menuToggle input:checked~span:nth-last-child(3) {
   transform: rotate(-45deg) translate(0, -1px);
 }
 
-#menuToggle input:checked ~ span:nth-last-child(2) {
+#menuToggle input:checked~span:nth-last-child(2) {
   opacity: 0;
   transform: scale(0.2, 0.2);
 }
 
-#menuToggle input:checked ~ span:first-child {
+#menuToggle input:checked~span:first-child {
   transform: rotate(45deg) translate(-2px, -1px);
 }
 
@@ -157,7 +164,7 @@ body {
 }
 
 /* Mostrar menu ao clicar */
-#menuToggle input:checked ~ ul {
+#menuToggle input:checked~ul {
   transform: translateX(0);
   opacity: 1;
   pointer-events: auto;
@@ -168,6 +175,7 @@ body {
   .header-menu {
     display: none;
   }
+
   #menuToggle {
     display: block;
   }
@@ -177,6 +185,7 @@ body {
   #menuToggle {
     display: none;
   }
+
   .header-menu {
     display: flex;
   }
@@ -191,7 +200,9 @@ body {
 }
 
 @media (max-width: 500px) {
-  .nome {
-    font-size: 2rem;
+  .logomarca {
+    height: 25px;
+    width: auto;
+    display: block;
   }
 }
