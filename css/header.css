@@ -19,9 +19,7 @@ body {
 
 .logomarca {
   height: 40px;
-  /* ajuste a altura conforme o tamanho da logo */
   width: auto;
-  /* mantém proporção */
   display: block;
 }
 
@@ -171,6 +169,18 @@ body {
 }
 
 /* Responsividade */
+@media (max-width: 1100px) {
+  .header-menu {
+    display: none;
+  }
+
+  #menuToggle {
+    display: block;
+  }
+
+}
+
+/* Responsividade */
 @media (max-width: 850px) {
   .header-menu {
     display: none;
@@ -181,17 +191,6 @@ body {
   }
 }
 
-@media (min-width: 851px) {
-  #menuToggle {
-    display: none;
-  }
-
-  .header-menu {
-    display: flex;
-  }
-  
-}
-
 /* Textos */
 .experiencia-texto,
 .formacao-texto {
@@ -200,9 +199,25 @@ body {
   color: var(--cor-letras);
 }
 
+@media (max-width: 600px) {
+  .logomarca {
+    height: 30px;
+    width: auto;
+    display: block;
+  }
+}
+
 @media (max-width: 500px) {
   .logomarca {
     height: 25px;
+    width: auto;
+    display: block;
+  }
+}
+
+@media (max-width: 400px) {
+  .logomarca {
+    height: 20px;
     width: auto;
     display: block;
   }
