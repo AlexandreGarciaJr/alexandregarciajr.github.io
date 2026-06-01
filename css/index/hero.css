@@ -229,6 +229,7 @@ font-family: 'JetBrains Mono', monospace;
 .btn-outline:hover {
   color: var(--text-primary);
   border-color: var(--blue-bright);
+  box-shadow: 0 20px 20px rgba(0,0,0,0.4), 0 0 30px rgba(59,130,246,0.1);
 }
 
 /* Floating code snippet */
