@@ -56,7 +56,6 @@
     position: relative;
     transition: border-color 0.3s, transform 0.3s;
     group: true;
-    
   }
 
   .project-card:hover {
