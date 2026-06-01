@@ -1,8 +1,12 @@
 
   /* Scrollbar */
-  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar {width: 6px; }
   ::-webkit-scrollbar-track { background: var(--bg-deep); }
   ::-webkit-scrollbar-thumb { background: var(--blue-mid); }
+  ::-webkit-scrollbar-thumb {
+  background: var(--blue-mid);
+  cursor: default;
+}
 
   /* Animations */
   @keyframes fadeUp {

@@ -26,6 +26,8 @@
   <script type="module" src="./js/contato/translate-contato.js"></script>
   <script type="module" src="./js/theme.js"></script>
   <script type="module" src="./js/touch-reticle.js"></script>
+  <script type="module" src="./js/scroll.js"></script>
+
 </head>
 
 <body>
@@ -115,16 +117,16 @@
 
     <!-- Left: info -->
     <div class="contact-left">
-      <div class="page-tag" data-i18n="form.tag">// contato</div>
-      <h1 class="page-title">
+      <div class="page-tag reveal" data-i18n="form.tag">// contato</div>
+      <h1 class="page-title reveal">
         <span><span data-i18n="form.title1">Vamos trabalhar</span></span>
         <span data-i18n="form.title2">juntos?</span>
       </h1>
-      <p class="page-desc">
+      <p class="page-desc reveal">
         <span data-i18n="form.desc">Estou disponível para novos projetos, freelas e oportunidades. Preencha o formulário ou fale diretamente pelos canais abaixo.</span>
       </p>
 
-      <div class="contact-info">
+      <div class="contact-info reveal">
         <a href="mailto:alexandregojunior@gmail.com" class="info-item">
           <div class="info-icon">✉</div>
           <div class="info-text">
@@ -163,14 +165,14 @@
         </a>
       </div>
 
-      <div class="available-badge">
+      <div class="available-badge reveal">
         <div class="badge-dot"></div>
         <span data-i18n="footer.badge">Disponível para novos projetos</span>
       </div>
     </div>
 
     <!-- Right: form -->
-    <div class="contact-right">
+    <div class="contact-right reveal">
       <div class="form-border-wrap">
         <div class="form-card">
           <form id="contactForm">
@@ -291,7 +293,7 @@
 
   <!-- Footer -->
   <footer>
-    <div class="footer-main">
+    <div class="footer-main reveal">
       <div class="footer-brand">
         <a href="index.html" class="logo">
           <img src="./assets/svg/logo-header-no1993.svg" alt="Logo Alexandre Garcia">
@@ -305,13 +307,13 @@
         </div>
       </div>
       <div class="footer-nav">
-        <div class="footer-nav-label" data-i18n="footer.menu">Menu</div>
+        <div class="footer-nav-label reveal" data-i18n="footer.menu">Menu</div>
         <ul class="footer-nav-links">
-          <li><a href="index.html#about"     data-i18n="nav.about">Sobre</a></li>
-          <li><a href="index.html#skills"    data-i18n="nav.exp">Experiência</a></li>
-          <li><a href="index.html#projects"  data-i18n="nav.proj">Projetos</a></li>
-          <li><a href="index.html#education" data-i18n="nav.edu">Formação</a></li>
-          <li><a href="contato.html"         data-i18n="nav.contact">Contato</a></li>
+          <li class="reveal"><a href="index.html#about"     data-i18n="nav.about">Sobre</a></li>
+          <li class="reveal"><a href="index.html#skills"    data-i18n="nav.exp">Experiência</a></li>
+          <li class="reveal"><a href="index.html#projects"  data-i18n="nav.proj">Projetos</a></li>
+          <li class="reveal"><a href="index.html#education" data-i18n="nav.edu">Formação</a></li>
+          <li class="reveal"><a href="contato.html"         data-i18n="nav.contact">Contato</a></li>
         </ul>
       </div>
     </div>
