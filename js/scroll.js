@@ -5,7 +5,7 @@
         if (entry.isIntersecting)
           setTimeout(() => entry.target.classList.add('visible'), i * 200);
       });
-    }, { threshold: 0.1 });
+    }, { threshold: 0.2 });
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
     // ─── NAV SCROLL + HAMBURGER ──────────────────────────────────────────────────

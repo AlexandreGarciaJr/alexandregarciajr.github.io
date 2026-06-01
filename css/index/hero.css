@@ -296,3 +296,16 @@
     65%  { left: 130px; opacity: 0; }
     100% { left: -16px; opacity: 0; }
   }
+
+  .hero-location {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  letter-spacing: 0.06em;
+  margin-bottom: 1.8rem;
+  opacity: 0;                              /* ← adicione */
+  animation: fadeUp 0.8s 0.85s forwards;  /* ← adicione */
+}
