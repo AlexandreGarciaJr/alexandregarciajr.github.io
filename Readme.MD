@@ -10,7 +10,6 @@
 
 - Página Web de venda responsiva
 - Three.js
-- Atom.js
 - Efeitos de hover
 - Menu Sanduiche
 - Botão de Whatsapp
