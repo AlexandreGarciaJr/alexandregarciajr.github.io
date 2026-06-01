@@ -1,0 +1,21 @@
+*.php
+PHPMAiler
+
+# Dependencies
+node_modules/
+vendor/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env / secrets
+.env
+*.env
+
+# IDE
+.vscode/settings.json
+.idea/
+
+# Uploads / cache
+*.log

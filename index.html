@@ -1,0 +1,1573 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alexandre Garcia | Desenvolvedor Full-Stack</title>
+  <meta name="description"
+    content="Olá, sou Alexandre Garcia, desenvolvedor fullstack especializado em criar sites e aplicações modernas. Veja meus projetos e entre em contato.">
+
+  <!-- Open Graph (WhatsApp, LinkedIn etc.) -->
+  <meta property="og:title" content="Alexandre Garcia | Desenvolvedor Full-Stack">
+  <meta property="og:description"
+    content="Olá, sou Alexandre Garcia, desenvolvedor fullstack especializado em criar sites e aplicações modernas. Veja meus projetos e entre em contato.">
+  <meta property="og:url" content="https://alexandregarciajr.com">
+  <meta property="og:type" content="website">
+
+  <meta name="google-site-verification" content="2QKHCZj3wgOugxfSx3sNjqQC33ZaWWy0VXbdjHZkFhU" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="./assets/svg/favicon-laptop.svg">
+
+</head>
+
+<body>
+
+  <!-- ── LOADER ── -->
+  <div id="loader">
+    <div class="loader-monitor">
+      <svg viewBox="0 0 220 170" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Monitor bezel -->
+        <rect x="4" y="4" width="212" height="140" rx="6" fill="#0f1219" stroke="#2e3d52" stroke-width="1.5" />
+        <!-- Inner bezel -->
+        <rect x="12" y="12" width="196" height="124" rx="3" fill="#070910" />
+        <!-- Screen area -->
+        <rect class="monitor-screen-bg" x="14" y="14" width="192" height="120" rx="2" fill="url(#screenGrad)" />
+        <!-- Scanlines -->
+        <rect class="monitor-scanlines" x="14" y="14" width="192" height="120" rx="2" fill="url(#scanlines)"
+          opacity="0.06" />
+        <!-- Screen border glow -->
+        <rect x="14" y="14" width="192" height="120" rx="2" fill="none" stroke="#22d3ee" stroke-width="0.5"
+          opacity="0.3" />
+        <!-- Boot text foreignObject -->
+        <foreignObject x="22" y="20" width="178" height="108">
+          <div xmlns="http://www.w3.org/1999/xhtml" class="loader-boot-text" id="loaderBootText"></div>
+        </foreignObject>
+        <!-- Stand neck -->
+        <rect x="101" y="144" width="18" height="16" rx="1" fill="#1c2333" />
+        <!-- Base -->
+        <rect x="72" y="158" width="76" height="7" rx="3.5" fill="#1c2333" stroke="#2e3d52" stroke-width="1" />
+        <!-- Power LED -->
+        <circle cx="110" cy="148" r="1.5" fill="#22d3ee" opacity="0.8">
+          <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2s" repeatCount="indefinite" />
+        </circle>
+        <!-- Corner accent lines on bezel -->
+        <path d="M4 20 L4 10 Q4 4 10 4 L20 4" stroke="#3b82f6" stroke-width="1.5" opacity="0.5" />
+        <path d="M216 20 L216 10 Q216 4 210 4 L200 4" stroke="#3b82f6" stroke-width="1.5" opacity="0.5" />
+        <path d="M4 128 L4 138 Q4 144 10 144 L20 144" stroke="#3b82f6" stroke-width="1.5" opacity="0.5" />
+        <path d="M216 128 L216 138 Q216 144 210 144 L200 144" stroke="#3b82f6" stroke-width="1.5" opacity="0.5" />
+
+        <defs>
+          <linearGradient id="screenGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#0d1526" />
+            <stop offset="100%" stop-color="#070c14" />
+          </linearGradient>
+          <pattern id="scanlines" x="0" y="0" width="2" height="2" patternUnits="userSpaceOnUse">
+            <rect x="0" y="0" width="2" height="1" fill="#000" />
+          </pattern>
+        </defs>
+      </svg>
+    </div>
+
+    <div class="loader-name" id="loaderName">Alexandre<br>Garcia</div>
+    <div class="loader-role" id="loaderRole">Full Stack Developer</div>
+
+    <div class="loader-progress-wrap">
+      <div class="loader-progress-bar" id="loaderBar"></div>
+    </div>
+    <div class="loader-progress-label" id="loaderLabel">INITIALIZING...</div>
+  </div>
+
+
+
+
+  <!-- Lang Switcher -->
+  <div class="lang-switcher" id="langSwitcher">
+    <div class="lang-panel" id="langPanel">
+      <div class="lang-option active" data-lang="pt">
+        <span class="lang-flag">🇧🇷</span>
+        <span class="lang-name">Português</span>
+      </div>
+      <div class="lang-option" data-lang="en">
+        <span class="lang-flag">🇺🇸</span>
+        <span class="lang-name">English</span>
+      </div>
+      <div class="lang-option" data-lang="es">
+        <span class="lang-flag">🇪🇸</span>
+        <span class="lang-name">Español</span>
+      </div>
+    </div>
+    <button class="lang-toggle-btn" id="langToggleBtn" aria-label="Idioma">PT</button>
+  </div>
+
+
+  <!-- WhatsApp Button -->
+  <div class="wa-pulse"></div>
+  <a href="https://wa.me/5511986186964" target="_blank" class="wa-btn" aria-label="WhatsApp">
+    <span class="wa-tip">WhatsApp</span>
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    </svg>
+  </a>
+
+  <!-- Theme Switcher -->
+  <div class="theme-switcher" id="themeSwitcher">
+    <div class="theme-panel" id="themePanel">
+      <div class="theme-panel-label">// tema</div>
+      <div class="theme-option active" data-theme-value="default">
+        <div class="theme-dot" style="background:linear-gradient(135deg,#3b82f6,#22d3ee)"></div>
+        <span class="theme-option-name">Dark Blue</span>
+      </div>
+      <div class="theme-option" data-theme-value="purple">
+        <div class="theme-dot" style="background:linear-gradient(135deg,#7c3aed,#a78bfa)"></div>
+        <span class="theme-option-name">Midnight Purple</span>
+      </div>
+      <div class="theme-option" data-theme-value="amber">
+        <div class="theme-dot" style="background:linear-gradient(135deg,#d97706,#fbbf24)"></div>
+        <span class="theme-option-name">Warm Amber</span>
+      </div>
+    </div>
+    <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Trocar tema">
+      <div class="theme-toggle-icon"></div>
+    </button>
+  </div>
+
+
+  <!-- Touch Reticle -->
+  <div class="touch-reticle" id="touchReticle"></div>
+  <div class="touch-reticle-b" id="touchReticleB"></div>
+  <div class="touch-dot" id="touchDot"></div>
+  <div class="touch-burst" id="touchBurst"></div>
+  <div class="touch-burst2" id="touchBurst2"></div>
+
+  <!-- Cursor Tech Reticle -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <div class="cursor-corner-b" id="cursorCorner"></div>
+  <div class="cursor-cross-h" id="cursorH"></div>
+  <div class="cursor-cross-v" id="cursorV"></div>
+
+  <!-- Nav -->
+  <nav id="mainNav">
+    <a href="#" class="logo"><img src="./assets/svg/logo-header-no1993.svg" alt="Logo ALexandre Garcia"></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" class="nav-item" data-i18n="nav.about">Sobre</a></li>
+      <li><a href="#skills" class="nav-item" data-i18n="nav.exp">Experiência</a></li>
+      <li><a href="#education" class="nav-item" data-i18n="nav.edu">Formação</a></li>
+      <li><a href="#projects" class="nav-item" data-i18n="nav.proj">Projetos</a></li>
+      <li><a href="contato.html" class="nav-item" data-i18n="nav.contact">Contato</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero">
+    <canvas id="threeCanvas"></canvas>
+    <div class="hero-bg"></div>
+    <div class="grid-lines"></div>
+
+    <div class="hero-content">
+      <div class="hero-label" data-i18n="hero.available">// disponível para novos projetos</div>
+      <h1 class="hero-title">
+        <span class="name">Alexandre Garcia</span>
+        <span class="role"><span id="typingText"></span><span class="typing-cursor"></span></span>
+      </h1>
+      <p class="hero-desc">
+        <span data-i18n="hero.desc">Construo produtos digitais escaláveis com foco em performance e experiência do
+          usuário. Apaixonado por código limpo e arquitetura sólida.</span>
+      </p>
+      <div class="hero-location">
+        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+          <circle cx="12" cy="10" r="3" />
+        </svg>
+        <span data-i18n="hero.location">Localizado em São Paulo, Brasil</span><span>🏬</span>
+      </div>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary"><span data-i18n="hero.btn1">Ver Projetos</span></a>
+        <a href="#contact" class="btn-outline" data-i18n="hero.btn2">Fale Comigo</a>
+      </div>
+    </div>
+
+    <div class="hero-code">
+      <div class="code-header">
+        <div class="dot dot-r"></div>
+        <div class="dot dot-y"></div>
+        <div class="dot dot-g"></div>
+      </div>
+      <span class="line"><span class="cm">// developer.config.ts</span></span>
+      <span class="line"></span>
+      <span class="line"><span class="kw">const</span> <span class="fn">developer</span> = {</span>
+      <span class="line"> name: <span class="str">"Alexandre Garcia"</span>,</span>
+      <span class="line"> role: <span class="str">"Full Stack Dev"</span>,</span>
+      <span class="line"> experience: <span class="num">5</span>,</span>
+      <span class="line"> stack: [</span>
+      <span class="line"> <span class="str">"React"</span>, <span class="str">"Node"</span>,</span>
+      <span class="line"> <span class="str">"TypeScript"</span>, <span class="str">"Go"</span></span>
+      <span class="line"> ],</span>
+      <span class="line"> available: <span class="kw">true</span>,</span>
+      <span class="line">}</span>
+      <span class="line"></span>
+      <span class="line"><span class="kw">export default</span> <span class="fn">developer</span></span>
+    </div>
+  </section>
+
+  <div class="glow-line"></div>
+
+  <!-- About -->
+  <section id="about">
+    <div class="about-grid">
+
+      <!-- Coluna esquerda: foto -->
+      <div class="about-photo-col reveal">
+        <div class="about-photo-wrap">
+          <img src="./assets/img/foto-perfil.jpg" alt="Alexandre Garcia"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="photo-placeholder" style="display:none">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+              <circle cx="12" cy="7" r="4" />
+            </svg>
+          </div>
+        </div>
+        <p class="photo-upload-hint">// src="alexandre-garcia.jpg"
+      </div>
+
+      <!-- Coluna direita: texto -->
+      <div class="about-text reveal">
+        <div class="section-tag" data-i18n="about.tag">01 // sobre</div>
+        <h2 class="section-title" data-i18n="about.title">Quem sou eu</h2>
+        <div class="section-line"></div>
+        <p>
+          <span data-i18n="about.p1">Olá, sou Alexandre Garcia, estudante de Análise e Desenvolvimento de Sistemas pela
+            instituição SENAC.</span>
+        </p>
+        <p>
+          <span data-i18n="about.p2">Na minha história, sou formado em Arquitetura e Urbanismo, com 12 anos de
+            experiência na área de construção civil. Busco unir minha senioridade na área, minha capacidade de gestão de
+            projetos e organização para impulsionar a busca por esta nova carreira na área de tecnologia e
+            desenvolvimento de sistemas e softwares, com conhecimento em Frontend e Backend.</span>
+        </p>
+      </div>
+
+      <!-- Tech Stack ────────────────────────────── -->
+      <div class="about-stack reveal">
+        <div class="stack-label" data-i18n="about.stack">// stack</div>
+        <div class="stack-tags">
+          <span class="stack-item" data-cat="front">HTML</span>
+          <span class="stack-item" data-cat="front">CSS</span>
+          <span class="stack-item" data-cat="front">JavaScript</span>
+          <span class="stack-item" data-cat="front">React</span>
+          <span class="stack-item" data-cat="back">Java</span>
+          <span class="stack-item" data-cat="back">Spring Boot</span>
+          <span class="stack-item" data-cat="back">MySQL</span>
+          <span class="stack-item" data-cat="back">PHP</span>
+          <span class="stack-item" data-cat="tool">VsCode</span>
+          <span class="stack-item" data-cat="tool">IntelliJ</span>
+        </div>
+        <div class="stack-legend">
+          <span class="legend-item"><span class="legend-dot" style="background:var(--cyan)"></span><span
+              data-i18n="about.front">Frontend</span></span>
+          <span class="legend-item"><span class="legend-dot" style="background:var(--blue-bright)"></span><span
+              data-i18n="about.back">Backend</span></span>
+          <span class="legend-item"><span class="legend-dot" style="background:var(--text-muted)"></span><span
+              data-i18n="about.tools">Ferramentas</span></span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="skills">
+    <div class="section-tag reveal" data-i18n="exp.tag">02 // experiência</div>
+    <h2 class="section-title reveal" data-i18n="exp.title">Trajetória</h2>
+    <div class="section-line reveal"></div>
+    <div class="exp-timeline">
+
+      <!-- Synx Space -->
+      <div class="exp-item reveal">
+        <div class="exp-date">
+          <div class="exp-date-year">2026</div>
+          <div class="exp-date-until">até<br>o momento</div>
+        </div>
+        <div class="exp-card">
+          <div class="exp-left">
+            <div class="exp-company">Synx Space</div>
+            <div class="exp-desc" data-i18n="exp.synx.desc">Desenvolvedor focado na criação, manutenção e evolução de
+              soluções SaaS voltadas à gestão de relacionamento com clientes (CRM), atuando com JavaScript e Node.js
+              para construir sistemas mais eficientes, escaláveis e alinhados às necessidades do negócio.</div>
+          </div>
+          <div class="exp-right">
+            <div class="exp-role" data-i18n="exp.synx.role">Analista de Tecnologia e Inovação</div>
+            <div class="exp-tags">
+              <span class="exp-tag">HTML</span>
+              <span class="exp-tag">CSS</span>
+              <span class="exp-tag">JavaScript</span>
+              <span class="exp-tag">Next.js</span>
+              <span class="exp-tag">Node.js</span>
+              <span class="exp-tag">TypeScript</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Alexandre Garcia (Freelance) -->
+      <div class="exp-item reveal">
+        <div class="exp-date">
+          <div class="exp-date-year">2024</div>
+          <div class="exp-date-until">até<br>o momento</div>
+        </div>
+        <div class="exp-card">
+          <div class="exp-left">
+            <div class="exp-company">Alexandre Garcia</div>
+            <div class="exp-desc" data-i18n="exp.ag.desc">Desenvolvimento de pequenos projetos, páginas Web, programas e
+              APIs como desenvolvedor Frontend e Backend.</div>
+          </div>
+          <div class="exp-right">
+            <div class="exp-role" data-i18n="exp.ag.role">Desenvolvedor Frontend</div>
+            <div class="exp-tags">
+              <span class="exp-tag">Java</span>
+              <span class="exp-tag">Spring Boot</span>
+              <span class="exp-tag">MySQL</span>
+              <span class="exp-tag">HTML</span>
+              <span class="exp-tag">CSS</span>
+              <span class="exp-tag">Javascript</span>
+              <span class="exp-tag">PHP</span>
+              <span class="exp-tag">UI/UX Design</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nautilo -->
+      <div class="exp-item reveal">
+        <div class="exp-date">
+          <div class="exp-date-year">2017</div>
+          <div class="exp-date-until">até<br>o momento</div>
+        </div>
+        <div class="exp-card">
+          <div class="exp-left">
+            <div class="exp-company">Nautilo Arquitetura e Gerenciamento</div>
+            <div class="exp-desc" data-i18n="exp.nautilo.desc">Realização de diversos projetos de arquitetura de
+              diferentes tipologias e tamanhos, realização de todas as etapas dos projetos, estudos de materiais e
+              gerenciamento de obras, organização e gestão de equipes e execução de planilhas e cronogramas.</div>
+          </div>
+          <div class="exp-right">
+            <div class="exp-role" data-i18n="exp.arch.role">Arquiteto</div>
+            <div class="exp-tags">
+              <span class="exp-tag">Autocad</span>
+              <span class="exp-tag">Sketchup</span>
+              <span class="exp-tag">Lumion</span>
+              <span class="exp-tag">Word</span>
+              <span class="exp-tag">Excel</span>
+              <span class="exp-tag">Office</span>
+              <span class="exp-tag">Photoshop</span>
+              <span class="exp-tag">Premiere</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- AG Arquitetura -->
+      <div class="exp-item reveal">
+        <div class="exp-date">
+          <div class="exp-date-year">2020</div>
+          <div class="exp-date-until">até<br>2026</div>
+        </div>
+        <div class="exp-card">
+          <div class="exp-left">
+            <div class="exp-company">AG Arquitetura</div>
+            <div class="exp-desc" data-i18n="exp.agarch.desc">Execução de diversos projetos residenciais e comerciais
+              como arquiteto autônomo em Alexandre Garcia Arquitetura. Projetos de casas unifamiliares, apartamentos,
+              estúdios, lojas comerciais, restaurantes e obras de diversos tipos.</div>
+          </div>
+          <div class="exp-right">
+            <div class="exp-role" data-i18n="exp.arch.role">Arquiteto</div>
+            <div class="exp-tags">
+              <span class="exp-tag">Autocad</span>
+              <span class="exp-tag">Sketchup</span>
+              <span class="exp-tag">Lumion</span>
+              <span class="exp-tag">Word</span>
+              <span class="exp-tag">Excel</span>
+              <span class="exp-tag">Office</span>
+              <span class="exp-tag">Photoshop</span>
+              <span class="exp-tag">Premiere</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="glow-line"></div>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="section-header-row reveal">
+      <div>
+        <div class="section-tag" data-i18n="proj.tag">03 // projetos</div>
+        <h2 class="section-title" data-i18n="proj.title">Projetos</h2>
+        <p class="section-subtitle" data-i18n-html="proj.subtitle">Projetos desenvolvidos ao longo da minha jornada em
+          tecnologia, unindo <strong>Backend</strong>, <strong>Frontend</strong> e a visão analítica da
+          <strong>Arquitetura de Software</strong>.
+        </p>
+        <div class="section-line"></div>
+      </div>
+      <a href="https://github.com/alexandregarcia" target="_blank" class="github-all-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
+        </svg>
+        <span data-i18n="proj.github">Ver todos no GitHub</span>
+      </a>
+    </div>
+    <div class="projects-grid">
+
+      <div class="project-card proj-1 reveal">
+        <div class="project-img">
+          <div class="project-img-bg"></div>
+          <div class="project-icon">🌐</div>
+        </div>
+        <div class="project-body">
+          <div class="project-meta">
+            <div class="project-name">SaaS Dashboard</div>
+            <div class="project-year">2024</div>
+          </div>
+          <p class="project-desc">Plataforma de analytics em tempo real com dashboards customizáveis e relatórios
+            automatizados para equipes de produto.</p>
+          <div class="project-stack">
+            <span class="stack-tag">Next.js</span>
+            <span class="stack-tag">TypeScript</span>
+            <span class="stack-tag">PostgreSQL</span>
+            <span class="stack-tag">Redis</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">→ Demo</a>
+            <a href="#" class="project-link">→ GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card proj-2 reveal">
+        <div class="project-img">
+          <div class="project-img-bg"></div>
+          <div class="project-icon">🛒</div>
+        </div>
+        <div class="project-body">
+          <div class="project-meta">
+            <div class="project-name">E-commerce API</div>
+            <div class="project-year">2024</div>
+          </div>
+          <p class="project-desc">Backend robusto para marketplace com sistema de pagamentos, gestão de estoque e
+            notificações em tempo real.</p>
+          <div class="project-stack">
+            <span class="stack-tag">Go</span>
+            <span class="stack-tag">GraphQL</span>
+            <span class="stack-tag">MongoDB</span>
+            <span class="stack-tag">Docker</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">→ Docs</a>
+            <a href="#" class="project-link">→ GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card proj-3 reveal">
+        <div class="project-img">
+          <div class="project-img-bg"></div>
+          <div class="project-icon">🤖</div>
+        </div>
+        <div class="project-body">
+          <div class="project-meta">
+            <div class="project-name">AI Chat Platform</div>
+            <div class="project-year">2023</div>
+          </div>
+          <p class="project-desc">Plataforma de atendimento inteligente com integração LLM, histórico de conversas e
+            análise de sentimentos.</p>
+          <div class="project-stack">
+            <span class="stack-tag">React</span>
+            <span class="stack-tag">Node.js</span>
+            <span class="stack-tag">OpenAI</span>
+            <span class="stack-tag">AWS</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">→ Demo</a>
+            <a href="#" class="project-link">→ GitHub</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="glow-line"></div>
+
+  <!-- Education -->
+  <section id="education">
+    <div class="section-tag reveal" data-i18n="edu.tag">04 // formação</div>
+    <h2 class="section-title reveal" data-i18n="edu.title">Formação</h2>
+    <div class="section-line reveal"></div>
+
+    <p class="edu-intro reveal" data-i18n-html="edu.intro">Estudante de <strong>Análise e Desenvolvimento de
+        Sistemas</strong> pela instituição <strong>SENAC</strong>, com foco em <strong>Backend</strong> e
+      <strong>Frontend</strong>. Formado em <strong>Arquitetura e Urbanismo</strong> pela Universidade Nove de Julho,
+      com 12 anos de experiência na área de construção civil.
+    </p>
+
+    <!-- Graduações -->
+    <div class="edu-degrees">
+      <div class="edu-card reveal">
+        <div class="edu-card-type" data-i18n="edu.type1">Tecnólogo</div>
+        <div class="edu-card-title" data-i18n="edu.card1.title">Análise e Desenvolvimento de Sistemas</div>
+        <div class="edu-card-inst">SENAC</div>
+      </div>
+      <div class="edu-card reveal">
+        <div class="edu-card-type" data-i18n="edu.type2">Bacharel</div>
+        <div class="edu-card-title" data-i18n="edu.card2.title">Arquitetura e Urbanismo</div>
+        <div class="edu-card-inst">UNINOVE</div>
+      </div>
+      <div class="edu-card reveal">
+        <div class="edu-card-type" data-i18n="edu.type3">Cursos</div>
+        <div class="edu-card-title" data-i18n="edu.card3.title">Frontend e Backend</div>
+        <div class="edu-card-inst">Origamid · DIO.</div>
+      </div>
+    </div>
+
+    <!-- Cursos + Idiomas -->
+    <div class="edu-bottom">
+      <div class="reveal">
+        <div class="edu-courses-title" data-i18n="edu.courses">Cursos Intensivos</div>
+        <div class="edu-course-row">
+          <span class="edu-course-inst">Origamid</span>
+          <span class="edu-course-name">HTML &amp; CSS</span>
+          <span class="edu-course-hours">23h</span>
+        </div>
+        <div class="edu-course-row">
+          <span class="edu-course-inst">Origamid</span>
+          <span class="edu-course-name">CSS Flexbox &amp; Grid Layout</span>
+          <span class="edu-course-hours">8h</span>
+        </div>
+        <div class="edu-course-row">
+          <span class="edu-course-inst">Origamid</span>
+          <span class="edu-course-name">UI Design</span>
+          <span class="edu-course-hours">17h</span>
+        </div>
+        <div class="edu-course-row">
+          <span class="edu-course-inst">Origamid</span>
+          <span class="edu-course-name">JavaScript CS6</span>
+          <span class="edu-course-hours">37h</span>
+        </div>
+        <div class="edu-course-row">
+          <span class="edu-course-inst">Origamid</span>
+          <span class="edu-course-name">React</span>
+          <span class="edu-course-hours">18h</span>
+        </div>
+        <div class="edu-course-row">
+          <span class="edu-course-inst">DIO.</span>
+          <span class="edu-course-name">Bootcamp Java, Springboot e MySQL</span>
+          <span class="edu-course-hours">75h</span>
+        </div>
+        <div class="edu-course-row">
+          <span class="edu-course-inst">Cisco</span>
+          <span class="edu-course-name">Fundamentos de Python</span>
+          <span class="edu-course-hours">30h</span>
+        </div>
+        <div class="edu-course-row">
+          <span class="edu-course-inst">Cisco</span>
+          <span class="edu-course-name">Computer Hardware Basics</span>
+          <span class="edu-course-hours">40h</span>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <div class="edu-lang-title" data-i18n="edu.langs">Idiomas</div>
+        <div class="edu-lang-item">
+          <span class="edu-lang-name">Português</span>
+          <span class="edu-lang-level" data-i18n="lang.native">Nativo</span>
+        </div>
+        <div class="edu-lang-item">
+          <span class="edu-lang-name">Inglês</span>
+          <span class="edu-lang-level" data-i18n="lang.advanced">Avançado</span>
+        </div>
+        <div class="edu-lang-item">
+          <span class="edu-lang-name">Espanhol</span>
+          <span class="edu-lang-level" data-i18n="lang.intermediate">Intermediário</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="contact-inner">
+      <div class="section-tag reveal" data-i18n="contact.tag">05 // contato</div>
+      <h2 class="section-title reveal" data-i18n="contact.title">Vamos conversar?</h2>
+      <div class="section-line reveal"></div>
+      <p class="reveal"><span data-i18n="contact.desc">Estou aberto a novos projetos, colaborações e oportunidades de
+          trabalho. Entre em contato e vamos construir algo incrível juntos.</span></p>
+      <div class="contact-links reveal">
+        <a href="mailto:alexandregojunior@gmail.com" class="contact-link">
+          <span>✉</span> alexandregojunior@gmail.com
+        </a>
+        <a href="https://linkedin.com/in/alexandregarcia-junior" class="contact-link" target="_blank">
+          <span>in</span> LinkedIn
+        </a>
+        <a href="https://github.com/AlexandreGarciaJr" class="contact-link" target="_blank">
+          <span>⌥</span> GitHub
+        </a>
+      </div>
+      <div class="contact-cta-row reveal">
+        <a href="contato.html" class="btn-primary"><span data-i18n="contact.btn1">Entre em contato</span></a>
+        <a href="#" class="btn-outline"><span data-i18n="contact.btn2">Download Currículo</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a href="#" class="logo"><img src="./assets/svg/logo-header-no1993.svg" alt="Logo ALexandre Garcia"></a>
+        <p class="footer-desc"><span data-i18n="footer.desc">Estou disponível para novos projetos, entre em contato e
+            será um prazer atendê-lo(a).</span></p>
+        <div class="footer-badge">
+          <div class="footer-badge-dot"></div>
+          <span data-i18n="footer.badge">Disponível para novos projetos</span>
+        </div>
+      </div>
+      <div class="footer-nav">
+        <div class="footer-nav-label" data-i18n="footer.menu">Menu</div>
+        <ul class="footer-nav-links">
+          <li><a href="#about" data-i18n="nav.about">Sobre</a></li>
+          <li><a href="#skills" data-i18n="nav.exp">Experiência</a></li>
+          <li><a href="#projects" data-i18n="nav.proj">Projetos</a></li>
+          <li><a href="#education" data-i18n="nav.edu">Formação</a></li>
+          <li><a href="contato.html" data-i18n="nav.contact">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy"><span data-i18n="footer.copy">© 2025 Alexandre Garcia. Todos os direitos
+          reservados.</span></span>
+      <span class="footer-made">Feito com ☕ e TypeScript</span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script>
+    // ═══════════════════════════════════════════════════════════════════════════
+    //  HERO THREE.JS — Atoms + Cursor Trail + Atom Hover Interaction
+    // ═══════════════════════════════════════════════════════════════════════════
+    (function () {
+      const canvas = document.getElementById('threeCanvas');
+      const hero = document.getElementById('hero');
+
+      const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+      renderer.setClearColor(0x000000, 0);
+
+      const scene = new THREE.Scene();
+      const camera = new THREE.PerspectiveCamera(55, 1, 0.1, 100);
+      camera.position.z = 7;
+
+      function resize() {
+        const w = hero.clientWidth, h = hero.clientHeight;
+        renderer.setSize(w, h);
+        camera.aspect = w / h;
+        camera.updateProjectionMatrix();
+      }
+      resize();
+      window.addEventListener('resize', resize);
+
+      // ── Palette ────────────────────────────────────────────────────────────
+      const C = {
+        nucleus: 0x93c5fd,
+        orbitLine: 0x2563a8,
+        electron: 0x60a5fa,
+        electronHi: 0xe2e8f0,
+        trail1: 0x22d3ee,   // cyan — main trail
+        trail2: 0x3b82f6,   // blue — secondary trail
+        burst: 0x60a5fa,
+        dust: 0x1e3a5f,
+      };
+
+      // (trail removed — atoms react to cursor directly)
+
+      // ══════════════════════════════════════════════════════════════════════
+      //  ATOMS
+      // ══════════════════════════════════════════════════════════════════════
+      function makeOrbitRing(rx, ry, tilt, az, segments = 120) {
+        const pts = [];
+        for (let i = 0; i <= segments; i++) {
+          const a = (i / segments) * Math.PI * 2;
+          pts.push(new THREE.Vector3(Math.cos(a) * rx, Math.sin(a) * ry, 0));
+        }
+        const geo = new THREE.BufferGeometry().setFromPoints(pts);
+        const mat = new THREE.LineBasicMaterial({ color: C.orbitLine, transparent: true, opacity: 0.35 });
+        const ring = new THREE.LineLoop(geo, mat);
+        ring.rotation.x = tilt;
+        ring.rotation.y = az;
+        return ring;
+      }
+
+      function makeSphere(radius, color, opacity = 1) {
+        const geo = new THREE.SphereGeometry(radius, 14, 14);
+        const mat = new THREE.MeshBasicMaterial({ color, transparent: opacity < 1, opacity });
+        return new THREE.Mesh(geo, mat);
+      }
+
+      // Screen-space proximity hover (no raycasting bugs)
+      let hoveredAtom = null;
+      let mouseScreenX = -9999, mouseScreenY = -9999;
+
+      function toScreenPx(worldPos) {
+        const v = worldPos.clone().project(camera);
+        return {
+          x: (v.x + 1) / 2 * canvas.clientWidth,
+          y: (-v.y + 1) / 2 * canvas.clientHeight,
+        };
+      }
+
+      // Global hook — buttons and scroll can fire atom effects
+      window.__triggerAtomEffect = function () {
+        atoms.forEach(atom => {
+          triggerBurst(atom.position.clone());
+          atom.userData.hoverT = 1;
+        });
+      };
+
+      // Burst particles pool
+      const BURST_COUNT = 10;
+      function makeBurstParticles() {
+        const group = new THREE.Group();
+        const particles = [];
+        for (let i = 0; i < BURST_COUNT; i++) {
+          const m = makeSphere(0.04, C.burst, 0.9);
+          m.visible = false;
+          group.add(m);
+          particles.push({ mesh: m, vel: new THREE.Vector3(), life: 0, maxLife: 0 });
+        }
+        scene.add(group);
+        return particles;
+      }
+      const burstPool = makeBurstParticles();
+
+      function triggerBurst(pos) {
+        burstPool.forEach((p, i) => {
+          p.mesh.position.copy(pos);
+          p.mesh.visible = true;
+          p.mesh.material.opacity = 0.9;
+          p.life = 1;
+          p.maxLife = 0.6 + Math.random() * 0.4;
+          const angle = (i / BURST_COUNT) * Math.PI * 2 + Math.random() * 0.5;
+          const speed = 0.04 + Math.random() * 0.04;
+          p.vel.set(
+            Math.cos(angle) * speed,
+            Math.sin(angle) * speed,
+            (Math.random() - 0.5) * speed
+          );
+        });
+      }
+
+      function updateBurst(dt) {
+        burstPool.forEach(p => {
+          if (!p.mesh.visible) return;
+          p.life -= dt / p.maxLife;
+          if (p.life <= 0) { p.mesh.visible = false; return; }
+          p.mesh.position.add(p.vel);
+          p.vel.multiplyScalar(0.94);
+          p.mesh.material.opacity = p.life * 0.9;
+          const s = 0.5 + p.life * 0.5;
+          p.mesh.scale.setScalar(s);
+        });
+      }
+
+      function buildAtom(config) {
+        const root = new THREE.Group();
+        root.position.set(...config.pos);
+        root.userData = {
+          basePos: [...config.pos],
+          scrollTarget: config.scrollTarget ? [...config.scrollTarget] : [...config.pos],
+          driftPhase: config.phase,
+          scrollRot: config.scrollRot || new THREE.Vector3(0.4, 0.6, 0.1),
+          hovered: false,
+          hoverT: 0,       // 0→1 transition
+          burstDone: false,
+        };
+
+        const nuc = makeSphere(config.nucR, C.nucleus);
+        const halo = makeSphere(config.nucR * 2.4, 0x22d3ee, 0.06);
+        // hover glow ring (starts invisible)
+        const glowRingGeo = new THREE.SphereGeometry(config.nucR * 4, 16, 16);
+        const glowRingMat = new THREE.MeshBasicMaterial({
+          color: C.trail1, transparent: true, opacity: 0,
+          blending: THREE.AdditiveBlending, depthWrite: false, wireframe: true,
+        });
+        const glowRing = new THREE.Mesh(glowRingGeo, glowRingMat);
+        root.add(nuc, halo, glowRing);
+        root.userData.nuc = nuc;
+        root.userData.halo = halo;
+        root.userData.glowRing = glowRing;
+        root.userData.glowMat = glowRingMat;
+
+
+
+        config.shells.forEach(shell => {
+          const shell3D = new THREE.Group();
+          shell3D.rotation.x = shell.tilt;
+          shell3D.rotation.y = shell.az;
+          root.add(shell3D);
+
+          const ring = makeOrbitRing(shell.rx, shell.ry, 0, 0);
+          shell3D.add(ring);
+          shell3D.userData = { ringMat: ring.material };
+
+          shell.electrons.forEach(e => {
+            const el = makeSphere(config.elR, e.hi ? C.electronHi : C.electron);
+            el.userData = { speed: e.speed, baseSpeed: e.speed, angle: e.startAngle, rx: shell.rx, ry: shell.ry };
+            shell3D.add(el);
+            if (!shell3D.electrons) shell3D.electrons = [];
+            shell3D.electrons.push(el);
+          });
+
+          if (!root.shells) root.shells = [];
+          root.shells.push(shell3D);
+        });
+
+        scene.add(root);
+        return root;
+      }
+
+      const atoms = [
+        buildAtom({
+          pos: [3.8, 0.4, -1.0], scrollTarget: [6.5, 2.8, -3.0], phase: 0.0,
+          nucR: 0.13, elR: 0.055, scrollRot: new THREE.Vector3(0.5, 0.8, 0.2),
+          shells: [
+            { rx: 1.1, ry: 1.1, tilt: 0.3, az: 0.0, electrons: [{ speed: 0.9, startAngle: 0, hi: true }] },
+            { rx: 1.4, ry: 0.7, tilt: 1.1, az: 0.6, electrons: [{ speed: -0.6, startAngle: 1.0, hi: false }] },
+            {
+              rx: 1.5, ry: 1.0, tilt: 0.6, az: 2.1, electrons: [{ speed: 0.45, startAngle: 2.5, hi: false },
+              { speed: 0.45, startAngle: 5.2, hi: false }]
+            },
+          ],
+        }),
+        buildAtom({
+          pos: [-3.6, 1.0, -2.0], scrollTarget: [-6.0, -2.5, -4.0], phase: 1.8,
+          nucR: 0.10, elR: 0.045, scrollRot: new THREE.Vector3(-0.4, 0.5, 0.3),
+          shells: [
+            { rx: 0.9, ry: 0.9, tilt: 0.7, az: 1.2, electrons: [{ speed: 1.1, startAngle: 0, hi: true }] },
+            { rx: 1.2, ry: 0.6, tilt: 1.4, az: 0.3, electrons: [{ speed: -0.7, startAngle: 3.0, hi: false }] },
+          ],
+        }),
+        buildAtom({
+          pos: [1.8, -2.5, -2.5], scrollTarget: [-1.0, -5.0, -2.0], phase: 3.2,
+          nucR: 0.08, elR: 0.038, scrollRot: new THREE.Vector3(0.3, -0.5, 0.6),
+          shells: [
+            { rx: 0.7, ry: 0.7, tilt: 0.2, az: 0.8, electrons: [{ speed: 1.3, startAngle: 0, hi: false }] },
+            { rx: 1.0, ry: 0.5, tilt: 1.0, az: 2.4, electrons: [{ speed: -0.9, startAngle: 1.6, hi: true }] },
+          ],
+        }),
+        buildAtom({
+          pos: [-1.2, 2.4, -3.0], scrollTarget: [3.5, 4.5, -5.0], phase: 5.0,
+          nucR: 0.07, elR: 0.034, scrollRot: new THREE.Vector3(0.6, 0.3, -0.4),
+          shells: [
+            { rx: 0.75, ry: 0.75, tilt: 0.5, az: 1.5, electrons: [{ speed: 1.5, startAngle: 0, hi: false }] },
+          ],
+        }),
+        buildAtom({
+          pos: [0.4, -0.8, -4.0], scrollTarget: [-4.0, 1.5, -6.0], phase: 2.4,
+          nucR: 0.06, elR: 0.028, scrollRot: new THREE.Vector3(-0.3, 0.7, 0.2),
+          shells: [
+            { rx: 0.6, ry: 0.6, tilt: 0.9, az: 0.4, electrons: [{ speed: 2.0, startAngle: 0, hi: false }] },
+            { rx: 0.85, ry: 0.45, tilt: 1.5, az: 1.8, electrons: [{ speed: -1.4, startAngle: 2.0, hi: false }] },
+          ],
+        }),
+      ];
+
+      // All hit meshes for raycasting
+
+      // ── Dust ──────────────────────────────────────────────────────────────
+      const dustCount = 1000;
+      const dustPos = new Float32Array(dustCount * 3);
+      for (let i = 0; i < dustCount; i++) {
+        dustPos[i * 3] = (Math.random() - 0.5) * 16;
+        dustPos[i * 3 + 1] = (Math.random() - 0.5) * 10;
+        dustPos[i * 3 + 2] = (Math.random() - 0.5) * 8 - 2;
+      }
+      const dustGeo = new THREE.BufferGeometry();
+      dustGeo.setAttribute('position', new THREE.BufferAttribute(dustPos, 3));
+      scene.add(new THREE.Points(dustGeo, new THREE.PointsMaterial({
+        size: 0.018, color: C.dust, transparent: true, opacity: 0.7, sizeAttenuation: true,
+      })));
+
+      // ── Mouse parallax ──────────────────────────────────────────────────
+      let targetX = 0, targetY = 0, camX = 0, camY = 0;
+      document.addEventListener('mousemove', e => {
+        const rect = canvas.getBoundingClientRect();
+        mouseScreenX = e.clientX - rect.left;
+        mouseScreenY = e.clientY - rect.top;
+        targetX = (e.clientX / window.innerWidth - 0.5) * 1.6;
+        targetY = (e.clientY / window.innerHeight - 0.5) * 1.2;
+      });
+
+      // ── Scroll ───────────────────────────────────────────────────────────
+      let scrollProgress = 0;
+      let lastScrollBurst = 0;
+      window.addEventListener('scroll', () => {
+        scrollProgress = Math.min(window.scrollY / hero.clientHeight, 1);
+        // Trigger atom burst on scroll (throttled)
+        if (scrollProgress < 0.9 && Date.now() - lastScrollBurst > 400) {
+          lastScrollBurst = Date.now();
+          window.__triggerAtomEffect && window.__triggerAtomEffect();
+        }
+      });
+
+      const clock = new THREE.Clock();
+      let lastT = 0;
+
+      // ── Animate ──────────────────────────────────────────────────────────
+      function animate() {
+        requestAnimationFrame(animate);
+        const t = clock.getElapsedTime();
+        const dt = t - lastT;
+        lastT = t;
+        const sp = scrollProgress;
+
+        // camera parallax
+        camX += (targetX - camX) * 0.04;
+        camY += (-targetY - camY) * 0.04;
+        camera.position.x = camX;
+        camera.position.y = camY;
+        camera.lookAt(scene.position);
+
+        // ── Screen-space proximity hover ──
+        let newHovered = null;
+        const HOVER_RADIUS = 80; // px
+        atoms.forEach(atom => {
+          const sp2d = toScreenPx(atom.position);
+          const dx = mouseScreenX - sp2d.x;
+          const dy = mouseScreenY - sp2d.y;
+          if (Math.sqrt(dx * dx + dy * dy) < HOVER_RADIUS) newHovered = atom;
+        });
+        if (newHovered !== hoveredAtom) {
+          if (newHovered) triggerBurst(newHovered.position.clone());
+          hoveredAtom = newHovered;
+        }
+
+        // ── Atoms ──
+        const spinBoost = 1 + sp * 6;
+
+        atoms.forEach(atom => {
+          const { basePos, scrollTarget, driftPhase, scrollRot,
+            nuc, halo, glowRing, glowMat } = atom.userData;
+
+          // lerp toward scroll target
+          const lx = basePos[0] + (scrollTarget[0] - basePos[0]) * sp;
+          const ly = basePos[1] + (scrollTarget[1] - basePos[1]) * sp;
+          const lz = basePos[2] + (scrollTarget[2] - basePos[2]) * sp;
+          atom.position.x += (lx + Math.cos(t * 0.18 + driftPhase) * 0.08 - atom.position.x) * 0.06;
+          atom.position.y += (ly + Math.sin(t * 0.28 + driftPhase) * 0.18 - atom.position.y) * 0.06;
+          atom.position.z += (lz - atom.position.z) * 0.06;
+
+          atom.rotation.x += 0.002 * spinBoost * scrollRot.x;
+          atom.rotation.y += 0.002 * spinBoost * scrollRot.y;
+          atom.rotation.z += 0.001 * spinBoost * scrollRot.z;
+
+          // hover state
+          const isHovered = atom === hoveredAtom;
+          atom.userData.hoverT = THREE.MathUtils.lerp(
+            atom.userData.hoverT, isHovered ? 1 : 0, 0.08
+          );
+          const ht = atom.userData.hoverT;
+
+          // nucleus pulse on hover
+          const nucScale = 1 + ht * (0.5 + Math.sin(t * 10) * 0.2);
+          nuc.scale.setScalar(nucScale);
+          halo.scale.setScalar(1 + ht * 1.2);
+          halo.material.opacity = 0.06 + ht * 0.18;
+
+          // glow ring on hover
+          glowRing.rotation.y = t * 2;
+          glowRing.rotation.x = t * 1.3;
+          glowMat.opacity = ht * 0.25;
+
+          // electrons
+          if (atom.shells) {
+            atom.shells.forEach(shell => {
+              // orbit ring brightens
+              if (shell.userData && shell.userData.ringMat) {
+                shell.userData.ringMat.opacity = 0.35 + ht * 0.5;
+                shell.userData.ringMat.color.setHex(ht > 0.5 ? C.trail1 : C.orbitLine);
+              }
+              if (shell.electrons) {
+                shell.electrons.forEach(el => {
+                  // speed up on hover
+                  const speedMul = 1 + ht * 5;
+                  el.userData.angle += el.userData.baseSpeed * 0.014 * spinBoost * speedMul;
+                  const a = el.userData.angle;
+                  el.position.x = Math.cos(a) * el.userData.rx;
+                  el.position.y = Math.sin(a) * el.userData.ry;
+                  el.position.z = 0;
+                });
+              }
+            });
+          }
+        });
+
+        // ── Burst particles ──
+        updateBurst(dt);
+
+        canvas.style.opacity = Math.max(0, 1 - sp * 2.2);
+        renderer.render(scene, camera);
+      }
+
+      animate();
+      setTimeout(() => canvas.classList.add('ready'), 400);
+    })();
+
+
+    // ── Typing effect ──────────────────────────────────────────────────────
+    (function () {
+      const el = document.getElementById('typingText');
+      let words = ['Frontend Developer', 'Backend Developer', 'Full Stack Developer'];
+      window.__setTypingWords = function (w) { words = w; };
+      let wi = 0, ci = 0, deleting = false;
+
+      const TYPE_SPEED = 120;
+      const DELETE_SPEED = 65;
+      const PAUSE_END = 2400;
+      const PAUSE_START = 500;
+
+      function tick() {
+        const word = words[wi];
+        const current = word.slice(0, ci);
+        el.textContent = current;
+
+        if (!deleting) {
+          if (ci < word.length) {
+            ci++;
+            setTimeout(tick, TYPE_SPEED);
+          } else {
+            // pause at end, then start deleting
+            setTimeout(() => { deleting = true; tick(); }, PAUSE_END);
+          }
+        } else {
+          if (ci > 0) {
+            ci--;
+            setTimeout(tick, DELETE_SPEED);
+          } else {
+            // move to next word
+            deleting = false;
+            wi = (wi + 1) % words.length;
+            setTimeout(tick, PAUSE_START);
+          }
+        }
+      }
+
+      // Start after hero animation delay
+      setTimeout(tick, 1200);
+    })();
+
+    // ─── CURSOR DOM ─────────────────────────────────────────────────────────────
+    (function () {
+      const cursor = document.getElementById('cursor');
+      const ring = document.getElementById('cursorRing');
+      const corner = document.getElementById('cursorCorner');
+      const crossH = document.getElementById('cursorH');
+      const crossV = document.getElementById('cursorV');
+      let mx = 0, my = 0, rx = 0, ry = 0;
+
+      document.addEventListener('mousemove', e => {
+        mx = e.clientX; my = e.clientY;
+        cursor.style.left = mx + 'px'; cursor.style.top = my + 'px';
+        crossH.style.left = mx + 'px'; crossH.style.top = my + 'px';
+        crossV.style.left = mx + 'px'; crossV.style.top = my + 'px';
+      });
+
+      (function tick() {
+        rx += (mx - rx) * 0.10;
+        ry += (my - ry) * 0.10;
+        ring.style.left = rx + 'px'; ring.style.top = ry + 'px';
+        corner.style.left = rx + 'px'; corner.style.top = ry + 'px';
+        requestAnimationFrame(tick);
+      })();
+
+      document.querySelectorAll('a, button, .skill-tag, .project-card').forEach(el => {
+        el.addEventListener('mouseenter', () => document.body.classList.add('cursor-hover'));
+        el.addEventListener('mouseleave', () => document.body.classList.remove('cursor-hover'));
+      });
+
+      // Hero buttons trigger atom burst
+      document.querySelectorAll('.hero-cta a').forEach(btn => {
+        btn.addEventListener('mouseenter', () => {
+          window.__triggerAtomEffect && window.__triggerAtomEffect();
+        });
+      });
+    })();
+
+    // ─── REVEAL ON SCROLL ───────────────────────────────────────────────────────
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting)
+          setTimeout(() => entry.target.classList.add('visible'), i * 80);
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // ─── NAV SCROLL + HAMBURGER ──────────────────────────────────────────────────
+    (function () {
+      const nav = document.getElementById('mainNav');
+      const hamburger = document.getElementById('hamburger');
+      const navLinks = document.getElementById('navLinks');
+
+      // Scroll: frosted glass effect
+      window.addEventListener('scroll', () => {
+        nav.classList.toggle('scrolled', window.scrollY > 60);
+      });
+
+      // Hamburger toggle
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('open');
+        navLinks.classList.toggle('open');
+        document.body.style.overflow = navLinks.classList.contains('open') ? 'hidden' : '';
+      });
+
+      // Close on link click
+      document.querySelectorAll('.nav-item').forEach(link => {
+        link.addEventListener('click', () => {
+          hamburger.classList.remove('open');
+          navLinks.classList.remove('open');
+          document.body.style.overflow = '';
+        });
+      });
+    })();
+
+    // ── LOADER ───────────────────────────────────────────────────────────────────
+    (function () {
+      // Skip loader if already shown in this browser session
+      if (sessionStorage.getItem('loaderShown')) {
+        const loader = document.getElementById('loader');
+        if (loader) loader.remove();
+        return;
+      }
+      const bootLines = [
+        '> BOOT SEQUENCE INITIATED',
+        '> LOADING MODULES...',
+        '> THREE.JS        [OK]',
+        '> ATOMS.JS        [OK]',
+        '> PORTFOLIO.CSS   [OK]',
+        '> READY.',
+      ];
+
+      const bootEl = document.getElementById('loaderBootText');
+      const nameEl = document.getElementById('loaderName');
+      const roleEl = document.getElementById('loaderRole');
+      const barEl = document.getElementById('loaderBar');
+      const labelEl = document.getElementById('loaderLabel');
+      const loader = document.getElementById('loader');
+
+      let lineIndex = 0;
+
+      function typeLine(line, cb) {
+        let i = 0;
+        const span = document.createElement('div');
+        bootEl.appendChild(span);
+        const iv = setInterval(() => {
+          span.textContent += line[i++];
+          if (i >= line.length) { clearInterval(iv); setTimeout(cb, 80); }
+        }, 28);
+      }
+
+      function typeLines() {
+        if (lineIndex >= bootLines.length) {
+          // All lines typed — reveal name
+          setTimeout(() => {
+            nameEl.classList.add('reveal-name');
+            setTimeout(() => roleEl.classList.add('show'), 700);
+            // Progress bar — starts after name has time to breathe
+            setTimeout(() => {
+              let pct = 0;
+              const prog = setInterval(() => {
+                pct += Math.random() * 12 + 4;
+                if (pct >= 100) { pct = 100; clearInterval(prog); }
+                barEl.style.width = pct + '%';
+                labelEl.textContent = pct < 100 ? 'LOADING ' + Math.round(pct) + '%' : 'ENTER >';
+                if (pct >= 100) {
+                  setTimeout(() => {
+                    sessionStorage.setItem('loaderShown', '1');
+                    loader.classList.add('hide');
+                    setTimeout(() => loader.remove(), 800);
+                  }, 600);
+                }
+              }, 90);
+            }, 1800); // pause so name has time to be seen
+          }, 300);
+          return;
+        }
+        typeLine(bootLines[lineIndex++], typeLines);
+      }
+
+      // Start boot sequence after screen flicker
+      setTimeout(typeLines, 1500);
+    })();
+
+
+    // ── THEME SWITCHER ────────────────────────────────────────────────────────────
+    (function () {
+      const root = document.documentElement;
+      const panel = document.getElementById('themePanel');
+      const btn = document.getElementById('themeToggleBtn');
+      const options = document.querySelectorAll('.theme-option');
+
+      function applyTheme(theme) {
+        root.setAttribute('data-theme', theme === 'default' ? '' : theme);
+        options.forEach(o => {
+          o.classList.toggle('active', o.dataset.themeValue === theme);
+        });
+        try { localStorage.setItem('ag-theme', theme); } catch (e) { }
+      }
+
+      // Restore saved theme
+      try {
+        const saved = localStorage.getItem('ag-theme');
+        if (saved) applyTheme(saved);
+      } catch (e) { }
+
+      // Toggle panel
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        panel.classList.toggle('open');
+      });
+
+      // Pick theme
+      options.forEach(opt => {
+        opt.addEventListener('click', () => {
+          applyTheme(opt.dataset.themeValue);
+          setTimeout(() => { panel.classList.remove('open'); document.getElementById('themeSwitcher').classList.remove('panel-open'); }, 150);
+        });
+      });
+
+      // Close on outside click
+      document.addEventListener('click', () => { panel.classList.remove('open'); document.getElementById('themeSwitcher').classList.remove('panel-open'); });
+    })();
+
+
+    // ── TRANSLATIONS ──────────────────────────────────────────────────────────────
+    const translations = {
+      pt: {
+        'nav.about': 'Sobre',
+        'nav.exp': 'Experiência',
+        'nav.edu': 'Formação',
+        'nav.proj': 'Projetos',
+        'nav.contact': 'Contato',
+        'hero.available': '// disponível para novos projetos',
+        'hero.location': 'Localizado em São Paulo, Brasil',
+        'hero.desc': 'Construo produtos digitais escaláveis com foco em performance e experiência do usuário. Apaixonado por código limpo e arquitetura sólida.',
+        'hero.btn1': 'Ver Projetos',
+        'hero.btn2': 'Fale Comigo',
+        'hero.typing': ['Frontend Developer', 'Backend Developer', 'Full Stack Developer'],
+        'about.tag': '01 // sobre',
+        'about.title': 'Quem sou eu',
+        'about.p1': 'Olá, sou Alexandre Garcia, estudante de Análise e Desenvolvimento de Sistemas pela instituição SENAC.',
+        'about.p2': 'Na minha história, sou formado em Arquitetura e Urbanismo, com 12 anos de experiência na área de construção civil. Busco unir minha senioridade na área, minha capacidade de gestão de projetos e organização para impulsionar a busca por esta nova carreira na área de tecnologia e desenvolvimento de sistemas e softwares, com conhecimento em Frontend e Backend.',
+        'about.stack': '// stack',
+        'about.front': 'Frontend',
+        'about.back': 'Backend',
+        'about.tools': 'Ferramentas',
+        'exp.tag': '02 // experiência',
+        'exp.title': 'Trajetória',
+        'edu.tag': '04 // formação',
+        'edu.title': 'Formação',
+        'edu.type1': 'Tecnólogo',
+        'edu.type2': 'Bacharel',
+        'edu.type3': 'Cursos',
+        'edu.courses': 'Cursos Intensivos',
+        'edu.langs': 'Idiomas',
+        'lang.native': 'Nativo',
+        'lang.advanced': 'Avançado',
+        'lang.intermediate': 'Intermediário',
+        'proj.tag': '03 // projetos',
+        'proj.title': 'Projetos',
+        'proj.github': 'Ver todos no GitHub',
+        'contact.tag': '05 // contato',
+        'contact.title': 'Vamos conversar?',
+        'contact.desc': 'Estou aberto a novos projetos, colaborações e oportunidades de trabalho. Entre em contato e vamos construir algo incrível juntos.',
+        'contact.btn1': 'Entre em contato',
+        'contact.btn2': 'Download Currículo',
+        'footer.desc': 'Estou disponível para novos projetos, entre em contato e será um prazer atendê-lo(a).',
+        'footer.badge': 'Disponível para novos projetos',
+        'footer.menu': 'Menu',
+
+        'exp.synx.role': 'Analista de Tecnologia e Inovação',
+        'exp.synx.desc': 'Desenvolvedor focado na criação, manutenção e evolução de soluções SaaS voltadas à gestão de relacionamento com clientes (CRM), atuando com JavaScript e Node.js para construir sistemas mais eficientes, escaláveis e alinhados às necessidades do negócio.',
+        'exp.ag.role': 'Desenvolvedor Frontend',
+        'exp.ag.desc': 'Desenvolvimento de pequenos projetos, páginas Web, programas e APIs como desenvolvedor Frontend e Backend.',
+        'exp.nautilo.desc': 'Realização de diversos projetos de arquitetura de diferentes tipologias e tamanhos, realização de todas as etapas dos projetos, estudos de materiais e gerenciamento de obras, organização e gestão de equipes e execução de planilhas e cronogramas.',
+        'exp.arch.role': 'Arquiteto',
+        'exp.agarch.desc': 'Execução de diversos projetos residenciais e comerciais como arquiteto autônomo em Alexandre Garcia Arquitetura. Projetos de casas unifamiliares, apartamentos, estúdios, lojas comerciais, restaurantes e obras de diversos tipos.',
+        'proj.subtitle': 'Projetos desenvolvidos ao longo da minha jornada em tecnologia, unindo <strong>Backend</strong>, <strong>Frontend</strong> e a visão analítica da <strong>Arquitetura de Software</strong>.',
+        'edu.intro': 'Estudante de <strong>Análise e Desenvolvimento de Sistemas</strong> pela instituição <strong>SENAC</strong>, com foco em <strong>Backend</strong> e <strong>Frontend</strong>. Formado em <strong>Arquitetura e Urbanismo</strong> pela Universidade Nove de Julho, com 12 anos de experiência na área de construção civil.',
+        'edu.card1.title': 'Análise e Desenvolvimento de Sistemas',
+        'edu.card2.title': 'Arquitetura e Urbanismo',
+        'edu.card3.title': 'Frontend e Backend',
+        'footer.copy': '© 2025 Alexandre Garcia. Todos os direitos reservados.',
+      },
+      en: {
+        'nav.about': 'About',
+        'nav.exp': 'Experience',
+        'nav.edu': 'Education',
+        'nav.proj': 'Projects',
+        'nav.contact': 'Contact',
+        'hero.available': '// available for new projects',
+        'hero.desc': 'I build scalable digital products focused on performance and user experience. Passionate about clean code and solid architecture.',
+        'hero.btn1': 'View Projects',
+        'hero.btn2': 'Get in Touch',
+        'hero.location': 'Based in São Paulo, Brazil',
+        'hero.typing': ['Frontend Developer', 'Backend Developer', 'Full Stack Developer'],
+        'about.tag': '01 // about',
+        'about.title': 'Who I am',
+        'about.p1': 'Hi, I\'m Alexandre Garcia, a Systems Analysis and Development student at SENAC.',
+        'about.p2': 'My background includes a degree in Architecture and Urbanism with 12 years of experience in civil construction. I\'m bringing my project management skills and seniority into a new career in technology and software development, with knowledge in Frontend and Backend.',
+        'about.stack': '// stack',
+        'about.front': 'Frontend',
+        'about.back': 'Backend',
+        'about.tools': 'Tools',
+        'exp.tag': '02 // experience',
+        'exp.title': 'Journey',
+        'edu.tag': '04 // education',
+        'edu.title': 'Education',
+        'edu.type1': 'Technologist',
+        'edu.type2': 'Bachelor',
+        'edu.type3': 'Courses',
+        'edu.courses': 'Intensive Courses',
+        'edu.langs': 'Languages',
+        'lang.native': 'Native',
+        'lang.advanced': 'Advanced',
+        'lang.intermediate': 'Intermediate',
+        'proj.tag': '03 // projects',
+        'proj.title': 'Projects',
+        'proj.github': 'View all on GitHub',
+        'contact.tag': '05 // contact',
+        'contact.title': 'Let\'s talk?',
+        'contact.desc': 'I\'m open to new projects, collaborations and work opportunities. Get in touch and let\'s build something amazing together.',
+        'contact.btn1': 'Get in touch',
+        'contact.btn2': 'Download Resume',
+        'footer.desc': 'I\'m available for new projects — get in touch and it will be a pleasure to work with you.',
+        'footer.badge': 'Available for new projects',
+        'footer.menu': 'Menu',
+
+        'exp.synx.role': 'Technology and Innovation Analyst',
+        'exp.synx.desc': 'Developer focused on creating, maintaining and evolving SaaS solutions for customer relationship management (CRM), working with JavaScript and Node.js to build more efficient and scalable systems aligned with business needs.',
+        'exp.ag.role': 'Frontend Developer',
+        'exp.ag.desc': 'Development of small projects, web pages, programs and APIs as a Frontend and Backend developer.',
+        'exp.nautilo.desc': 'Execution of diverse architecture projects of different typologies and sizes, carrying out all project phases, material studies, construction management, team coordination and scheduling.',
+        'exp.arch.role': 'Architect',
+        'exp.agarch.desc': 'Execution of various residential and commercial projects as a freelance architect at Alexandre Garcia Arquitetura. Projects include single-family homes, apartments, studios, commercial stores, restaurants and various types of construction.',
+        'proj.subtitle': 'Projects developed throughout my technology journey, combining <strong>Backend</strong>, <strong>Frontend</strong> and the analytical vision of <strong>Software Architecture</strong>.',
+        'edu.intro': 'Student of <strong>Systems Analysis and Development</strong> at <strong>SENAC</strong>, focused on <strong>Backend</strong> and <strong>Frontend</strong>. Graduated in <strong>Architecture and Urbanism</strong> at Universidade Nove de Julho, with 12 years of experience in civil construction.',
+        'edu.card1.title': 'Systems Analysis and Development',
+        'edu.card2.title': 'Architecture and Urbanism',
+        'edu.card3.title': 'Frontend and Backend',
+        'footer.copy': '© 2025 Alexandre Garcia. All rights reserved.',
+      },
+      es: {
+        'nav.about': 'Sobre mí',
+        'nav.exp': 'Experiencia',
+        'nav.edu': 'Formación',
+        'nav.proj': 'Proyectos',
+        'nav.contact': 'Contacto',
+        'hero.available': '// disponible para nuevos proyectos',
+        'hero.desc': 'Construyo productos digitales escalables con foco en rendimiento y experiencia de usuario. Apasionado por el código limpio y la arquitectura sólida.',
+        'hero.btn1': 'Ver Proyectos',
+        'hero.btn2': 'Contáctame',
+        'hero.location': 'Ubicado en São Paulo, Brasil',
+        'hero.typing': ['Frontend Developer', 'Backend Developer', 'Full Stack Developer'],
+        'about.tag': '01 // sobre mí',
+        'about.title': '¿Quién soy?',
+        'about.p1': 'Hola, soy Alexandre Garcia, estudiante de Análisis y Desarrollo de Sistemas en la institución SENAC.',
+        'about.p2': 'Mi historia incluye una licenciatura en Arquitectura y Urbanismo con 12 años de experiencia en construcción civil. Busco unir mi senioridad en el área, mi capacidad de gestión de proyectos y organización para impulsar esta nueva carrera en tecnología y desarrollo de sistemas, con conocimiento en Frontend y Backend.',
+        'about.stack': '// stack',
+        'about.front': 'Frontend',
+        'about.back': 'Backend',
+        'about.tools': 'Herramientas',
+        'exp.tag': '02 // experiencia',
+        'exp.title': 'Trayectoria',
+        'edu.tag': '04 // formación',
+        'edu.title': 'Formación',
+        'edu.type1': 'Tecnólogo',
+        'edu.type2': 'Licenciado',
+        'edu.type3': 'Cursos',
+        'edu.courses': 'Cursos Intensivos',
+        'edu.langs': 'Idiomas',
+        'lang.native': 'Nativo',
+        'lang.advanced': 'Avanzado',
+        'lang.intermediate': 'Intermedio',
+        'proj.tag': '03 // proyectos',
+        'proj.title': 'Proyectos',
+        'proj.github': 'Ver todos en GitHub',
+        'contact.tag': '05 // contacto',
+        'contact.title': '¿Hablemos?',
+        'contact.desc': 'Estoy abierto a nuevos proyectos, colaboraciones y oportunidades de trabajo. Contáctame y construyamos algo increíble juntos.',
+        'contact.btn1': 'Contáctame',
+        'contact.btn2': 'Descargar CV',
+        'footer.desc': 'Estoy disponible para nuevos proyectos — contáctame y será un placer trabajar contigo.',
+        'footer.badge': 'Disponible para nuevos proyectos',
+        'footer.menu': 'Menú',
+
+        'exp.synx.role': 'Analista de Tecnología e Innovación',
+        'exp.synx.desc': 'Desarrollador enfocado en la creación, mantenimiento y evolución de soluciones SaaS para la gestión de relaciones con clientes (CRM), trabajando con JavaScript y Node.js para construir sistemas más eficientes y escalables.',
+        'exp.ag.role': 'Desarrollador Frontend',
+        'exp.ag.desc': 'Desarrollo de pequeños proyectos, páginas web, programas y APIs como desarrollador Frontend y Backend.',
+        'exp.nautilo.desc': 'Realización de diversos proyectos de arquitectura de diferentes tipologías y tamaños, todas las etapas del proyecto, estudios de materiales, gestión de obras y equipos, y ejecución de planillas y cronogramas.',
+        'exp.arch.role': 'Arquitecto',
+        'exp.agarch.desc': 'Ejecución de diversos proyectos residenciales y comerciales como arquitecto autónomo en Alexandre Garcia Arquitetura. Proyectos de casas, apartamentos, estudios, locales comerciales, restaurantes y obras de diversos tipos.',
+        'proj.subtitle': 'Proyectos desarrollados a lo largo de mi trayectoria en tecnología, uniendo <strong>Backend</strong>, <strong>Frontend</strong> y la visión analítica de la <strong>Arquitectura de Software</strong>.',
+        'edu.intro': 'Estudiante de <strong>Análisis y Desarrollo de Sistemas</strong> en la institución <strong>SENAC</strong>, con enfoque en <strong>Backend</strong> y <strong>Frontend</strong>. Titulado en <strong>Arquitectura y Urbanismo</strong> por la Universidad Nove de Julho, con 12 años de experiencia en construcción civil.',
+        'edu.card1.title': 'Análisis y Desarrollo de Sistemas',
+        'edu.card2.title': 'Arquitectura y Urbanismo',
+        'edu.card3.title': 'Frontend y Backend',
+        'footer.copy': '© 2025 Alexandre Garcia. Todos los derechos reservados.',
+      }
+    };
+
+    const langLabels = { pt: 'PT', en: 'EN', es: 'ES' };
+    let currentLang = 'pt';
+
+    function applyLang(lang) {
+      const t = translations[lang];
+      // Text nodes
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        if (t[el.dataset.i18n] !== undefined) el.textContent = t[el.dataset.i18n];
+      });
+      document.querySelectorAll('[data-i18n-html]').forEach(el => {
+        if (t[el.dataset.i18nHtml] !== undefined) el.innerHTML = t[el.dataset.i18nHtml];
+      });
+      // Update typing words
+      if (window.__setTypingWords) window.__setTypingWords(t['hero.typing']);
+      // Update lang button label
+      document.getElementById('langToggleBtn').textContent = langLabels[lang];
+      // Mark active option
+      document.querySelectorAll('.lang-option').forEach(o => {
+        o.classList.toggle('active', o.dataset.lang === lang);
+      });
+      // Set html lang attribute
+      document.documentElement.lang = lang === 'pt' ? 'pt-BR' : lang;
+      currentLang = lang;
+      try { sessionStorage.setItem('ag-lang', lang); } catch (e) { }
+    }
+
+    // ── LANG SWITCHER UI ─────────────────────────────────────────────────────────
+    (function () {
+      const panel = document.getElementById('langPanel');
+      const btn = document.getElementById('langToggleBtn');
+
+      // Restore saved lang
+      try {
+        const saved = sessionStorage.getItem('ag-lang');
+        if (saved && translations[saved]) applyLang(saved);
+      } catch (e) { }
+
+      btn.addEventListener('click', e => {
+        e.stopPropagation();
+        panel.classList.toggle('open');
+      });
+
+      document.querySelectorAll('.lang-option').forEach(opt => {
+        opt.addEventListener('click', () => {
+          applyLang(opt.dataset.lang);
+          setTimeout(() => panel.classList.remove('open'), 150);
+        });
+      });
+
+      document.addEventListener('click', () => panel.classList.remove('open'));
+    })();
+
+
+    // ── TOUCH RETICLE ─────────────────────────────────────────────────────────────
+    (function () {
+      if (!('ontouchstart' in window)) return; // desktop only uses mouse cursor
+
+      const ret = document.getElementById('touchReticle');
+      const retB = document.getElementById('touchReticleB');
+      const dot = document.getElementById('touchDot');
+      const b1 = document.getElementById('touchBurst');
+      const b2 = document.getElementById('touchBurst2');
+
+      let tx = 0, ty = 0, rx = 0, ry = 0;
+      let hideTimer = null;
+
+      function moveTo(x, y) {
+        tx = x; ty = y;
+        dot.style.left = x + 'px'; dot.style.top = y + 'px';
+      }
+
+      // Smooth follow via rAF
+      function tick() {
+        rx += (tx - rx) * 0.14;
+        ry += (ty - ry) * 0.14;
+        ret.style.left = rx + 'px'; ret.style.top = ry + 'px';
+        retB.style.left = rx + 'px'; retB.style.top = ry + 'px';
+        requestAnimationFrame(tick);
+      }
+      tick();
+
+      function show() {
+        ret.classList.add('visible');
+        retB.classList.add('visible');
+        dot.classList.add('visible');
+        clearTimeout(hideTimer);
+      }
+
+      function hide() {
+        hideTimer = setTimeout(() => {
+          ret.classList.remove('visible');
+          retB.classList.remove('visible');
+          dot.classList.remove('visible');
+        }, 400);
+      }
+
+      function burst(x, y) {
+        [b1, b2].forEach(el => {
+          el.style.left = x + 'px';
+          el.style.top = y + 'px';
+          el.classList.remove('pop');
+          void el.offsetWidth; // reflow
+          el.classList.add('pop');
+        });
+      }
+
+      document.addEventListener('touchstart', e => {
+        const t = e.touches[0];
+        moveTo(t.clientX, t.clientY);
+        tx = t.clientX; ty = t.clientY;
+        rx = t.clientX; ry = t.clientY;
+        show();
+        burst(t.clientX, t.clientY);
+      }, { passive: true });
+
+      document.addEventListener('touchmove', e => {
+        const t = e.touches[0];
+        moveTo(t.clientX, t.clientY);
+        show();
+      }, { passive: true });
+
+      document.addEventListener('touchend', hide, { passive: true });
+      document.addEventListener('touchcancel', hide, { passive: true });
+    })();
+
+  </script>
+</body>
+
+</html>

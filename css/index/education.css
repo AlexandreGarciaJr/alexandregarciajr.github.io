@@ -1,0 +1,145 @@
+
+  /* Education */
+  #education { background: var(--bg-card); border-top: 1px solid var(--gray-dark); border-bottom: 1px solid var(--gray-dark); }
+
+  .edu-intro {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.85;
+    max-width: 700px;
+    margin-bottom: 3rem;
+  }
+  .edu-intro strong { color: var(--text-primary); font-weight: 700; }
+
+  /* Degree cards */
+  .edu-degrees {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    margin-bottom: 3.5rem;
+  }
+  .edu-card {
+    background: var(--bg-deep);
+    border: 1px solid var(--gray-border);
+    padding: 1.5rem 1.75rem;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  .edu-card::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--blue-bright), var(--cyan));
+    opacity: 0.6;
+    transition: opacity 0.3s;
+  }
+  .edu-card:hover {
+    border-color: var(--blue-bright);
+    transform: translateY(-6px);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4), 0 0 30px rgba(59,130,246,0.1);
+  }
+  .edu-card:hover::before { opacity: 1; }
+  .edu-card-type {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.62rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+  }
+  .edu-card-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1.3;
+    flex: 1;
+  }
+  .edu-card-inst {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    color: var(--blue-glow);
+    margin-top: 0.5rem;
+  }
+
+  /* Courses + Languages row */
+  .edu-bottom {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 3rem;
+    align-items: start;
+  }
+
+  /* Course list */
+  .edu-courses-title,
+  .edu-lang-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.68rem;
+    color: var(--cyan);
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    margin-bottom: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .edu-courses-title::before { content: '//'; color: var(--text-muted); }
+  .edu-lang-title::before    { content: '//'; color: var(--text-muted); }
+
+  .edu-course-row {
+    display: grid;
+    grid-template-columns: 90px 1fr 40px;
+    gap: 0 1.5rem;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid rgba(46,61,82,0.4);
+    align-items: center;
+    transition: background 0.2s;
+  }
+  .edu-course-row:hover { background: rgba(37,99,168,0.06); padding-left: 0.5rem; }
+  .edu-course-row:last-child { border-bottom: none; }
+  .edu-course-inst {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.68rem;
+    color: var(--text-muted);
+  }
+  .edu-course-name {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+  }
+  .edu-course-hours {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.68rem;
+    color: var(--blue-glow);
+    text-align: right;
+  }
+
+  /* Languages */
+  .edu-lang-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem 0;
+    border-bottom: 1px solid rgba(46,61,82,0.4);
+  }
+  .edu-lang-item:last-child { border-bottom: none; }
+  .edu-lang-name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-primary);
+  }
+  .edu-lang-level {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.68rem;
+    color: var(--text-muted);
+    padding: 0.25rem 0.7rem;
+    border: 1px solid var(--gray-border);
+    background: var(--gray-dark);
+  }
+
+  @media (max-width: 900px) {
+    .edu-degrees { grid-template-columns: 1fr; }
+    .edu-bottom  { grid-template-columns: 1fr; gap: 2rem; }
+  }

@@ -1,0 +1,91 @@
+/* ══════════════════════════════════════════════
+   RESPONSIVE — max-width: 900px
+══════════════════════════════════════════════ */
+@media (max-width: 900px) {
+  nav { padding: 1.2rem 2rem; }
+  section { padding: 4rem 2rem; }
+
+  .hamburger { display: flex; }
+  .nav-links {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    height: 100dvh;
+    background: rgba(10,12,16,0.97);
+    backdrop-filter: blur(24px);
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.45s cubic-bezier(0.16,1,0.3,1), opacity 0.35s;
+    z-index: 150;
+  }
+  .nav-links a { font-size: 1.1rem; letter-spacing: 0.15em; }
+
+ /* Hero */
+#hero {
+  padding: 8rem 2rem 3rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2.5rem;
+  align-items: flex-start;
+}
+
+  .hero-code {
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    transform: none !important;
+    width: 280px;
+    font-size: 0.72rem;
+    align-self: flex-start;
+    line-height: 1.7;
+    padding: 1.2rem 1.4rem;
+    overflow-x: auto;
+    white-space: nowrap;
+    animation: fadeUp 0.8s 1.2s forwards;
+    opacity: 0;
+  }
+
+  /* About */
+  .about-grid {
+    display: flex !important;        /* troca grid por flex */
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .about-photo-col {
+    grid-row: auto !important;
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .about-photo-wrap {
+    max-width: 320px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .about-text {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .about-text p {
+    font-size: 0.9rem;
+  }
+
+  .about-stack {
+    width: 100%;
+    gap: 0.75rem;
+  }
+
+  .stack-tags { gap: 0.5rem; }
+
+  /* Footer */
+  .footer-main { grid-template-columns: 1fr; gap: 2rem; padding: 2.5rem 2rem; }
+  .footer-bottom { padding: 1rem 2rem; flex-direction: column; text-align: center; }
+}

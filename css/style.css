@@ -1,0 +1,17 @@
+  /* Globais */
+  @import url(./global.css);
+  @import url(./nav.css);
+  @import url(./footer.css);
+  @import url(./animations.css);
+
+  /* Index */
+  @import url(./index/hero.css);
+  @import url(./index/about.css);
+  @import url(./index/experience.css);
+  @import url(./index/projects.css);
+  @import url(./index/education.css);
+  @import url(./index/contact.css);
+  @import url(./index/responsive.css);
+
+    /* Contato */
+    @import url(./contato/contato-pagina.css);

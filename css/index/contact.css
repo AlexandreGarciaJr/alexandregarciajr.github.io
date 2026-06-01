@@ -1,0 +1,73 @@
+
+  /* Contact */
+  #contact {
+    border-top: 1px solid var(--gray-dark);
+  }
+
+  .contact-inner {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .contact-inner .section-line {
+    margin: 0 auto 3rem;
+    transform: none;
+  }
+  .contact-inner .section-line::before { transform-origin: center; }
+  .contact-inner .section-line::after  { left: 50%; margin-left: -8px; animation-name: lineShimmerCenter; }
+  @keyframes lineShimmerCenter {
+    0%   { margin-left: -40px; opacity: 0; }
+    10%  { opacity: 1; }
+    50%  { margin-left: 40px; opacity: 1; }
+    65%  { margin-left: 40px; opacity: 0; }
+    100% { margin-left: -40px; opacity: 0; }
+  }
+
+  .contact-inner p {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 3rem;
+  }
+
+  .contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+  }
+
+  .contact-link {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.9rem 1.8rem;
+    background: var(--bg-card);
+    border: 1px solid var(--gray-border);
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.78rem;
+    transition: all 0.3s;
+    letter-spacing: 0.08em;
+  }
+
+  .contact-cta-row {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+  }
+  .contact-wa {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .contact-link:hover {
+    color: var(--blue-bright);
+    border-color: var(--blue-bright);
+    box-shadow: 0 0 20px rgba(59,130,246,0.15);
+  }
