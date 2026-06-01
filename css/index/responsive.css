@@ -49,6 +49,15 @@
     opacity: 0;
   }
 
+  .hero-desc {
+    font-size: 0.82rem;
+    max-width: 100% !important;
+    width: 100%;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
   /* About */
   .about-grid {
     display: flex !important;        /* troca grid por flex */
@@ -88,4 +97,20 @@
   /* Footer */
   .footer-main { grid-template-columns: 1fr; gap: 2rem; padding: 2.5rem 2rem; }
   .footer-bottom { padding: 1rem 2rem; flex-direction: column; text-align: center; }
+}
+
+@media (max-width: 550px) {
+  .hero-desc {
+  font-size: 0.7rem;
+}
+
+.hero-title {
+  font-size: 4rem;
+}
+}
+
+@media (max-width: 480px) {
+.hero-title {
+  font-size: 3rem;
+}
 }

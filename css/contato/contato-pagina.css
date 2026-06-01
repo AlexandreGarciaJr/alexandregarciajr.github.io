@@ -39,6 +39,7 @@
     }
 
     .page-title {
+      font-family: 'JetBrains Mono', monospace;
       font-size: clamp(2.2rem, 4vw, 3.2rem);
       font-weight: 800;
       line-height: 1.1;

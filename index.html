@@ -32,6 +32,7 @@
   <script type="module" src="./js/translate.js"></script>
   <script type="module" src="./js/typing.js"></script>
   <script type="module" src="./js/touch-reticle.js"></script>
+  <script type="module" src="./js/tech-bar.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 
 </head>
@@ -187,7 +188,7 @@
     <div class="hero-content">
       <div class="hero-label" data-i18n="hero.available">// disponível para novos projetos</div>
       <h1 class="hero-title">
-        <span class="name">Alexandre Garcia</span>
+        <span class="name">ALEXANDRE<br>GARCIA</span>
         <span class="role"><span id="typingText"></span><span class="typing-cursor"></span></span>
       </h1>
       <p class="hero-desc">
@@ -199,7 +200,7 @@
           <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
           <circle cx="12" cy="10" r="3" />
         </svg>
-        <span data-i18n="hero.location">Localizado em São Paulo, Brasil</span><span>🏬</span>
+        <span data-i18n="hero.location">Localizado em São Paulo, Brasil</span>
       </div>
       <div class="hero-cta">
         <a href="#projects" class="btn-primary"><span data-i18n="hero.btn1">Ver Projetos</span></a>
@@ -228,9 +229,26 @@
       <span class="line"></span>
       <span class="line"><span class="kw">export default</span> <span class="fn">developer</span></span>
     </div>
+
+ <div class="mq-outer">
+  <div style="width:90%;max-width:900px;display:flex;flex-direction:column;align-items:center;gap:0.75rem;">
+    <p class="mq-pause-hint">// stack — hover to zoom</p>
+    <div class="mq-wrap">
+      <div class="mq-bracket tl"></div>
+      <div class="mq-bracket tr"></div>
+      <div class="mq-bracket bl"></div>
+      <div class="mq-bracket br"></div>
+      <div class="mq-track-wrap" id="mqWrap">
+        <div class="mq-track" id="mqTrack"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
   </section>
 
   <div class="glow-line"></div>
+  
 
   <!-- About -->
   <section id="about">
