@@ -63,8 +63,8 @@
   .theme-switcher.panel-open { z-index: 9995; }
 
   .theme-toggle-btn {
-    width: 38px;
-    height: 38px;
+    width: 45px;
+    height: 45px;
     background: var(--bg-card);
     border: 1px solid var(--gray-border);
     display: flex;
@@ -110,7 +110,7 @@
   }
   .theme-panel-label {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     color: var(--text-muted);
     text-transform: uppercase;
     letter-spacing: 0.15em;
@@ -119,7 +119,7 @@
   .theme-option {
     display: flex;
     align-items: center;
-    gap: 0.6rem;
+    gap: 0.7rem;
     padding: 0.45rem 0.6rem;
     cursor: pointer;
     border: 1px solid transparent;

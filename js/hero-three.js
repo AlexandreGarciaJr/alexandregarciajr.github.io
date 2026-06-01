@@ -230,7 +230,7 @@
       // All hit meshes for raycasting
 
       // ── Dust ──────────────────────────────────────────────────────────────
-      const dustCount = 1000;
+      const dustCount = 10000;
       const dustPos = new Float32Array(dustCount * 3);
       for (let i = 0; i < dustCount; i++) {
         dustPos[i * 3] = (Math.random() - 0.5) * 16;

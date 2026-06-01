@@ -227,8 +227,8 @@
     pointer-events: none;
   }
   .lang-toggle-btn {
-    width: 38px;
-    height: 38px;
+    width: 45px;
+    height: 45px;
     background: var(--bg-card);
     border: 1px solid var(--gray-border);
     display: flex;
@@ -237,7 +237,7 @@
     cursor: pointer;
     transition: border-color 0.3s, box-shadow 0.3s;
     font-family: 'JetBrains Mono', monospace;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: 600;
     color: var(--text-secondary);
     letter-spacing: 0.05em;
@@ -269,7 +269,7 @@
   .lang-option {
     display: flex;
     align-items: center;
-    gap: 0.6rem;
+    gap: 1rem;
     padding: 0.4rem 0.7rem;
     cursor: pointer;
     border: 1px solid transparent;
@@ -281,7 +281,7 @@
   .lang-flag { font-size: 0.9rem; line-height: 1; }
   .lang-name {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 0.68rem;
+    font-size: 0.75rem;
     color: var(--text-secondary);
   }
   .lang-option.active .lang-name { color: var(--blue-bright); }
@@ -401,10 +401,10 @@
   .wa-btn {
     position: fixed;
     bottom: 2rem;
-    right: calc(2rem + 38px + 0.5rem);
+    right: calc(3rem + 38px + 0.5rem);
     z-index: 490;
-    width: 38px;
-    height: 38px;
+    width: 45px;
+    height: 45px;
     background: var(--bg-card);
     border: 1px solid var(--gray-border);
     display: flex;
@@ -439,9 +439,9 @@
   .wa-pulse {
     position: fixed;
     bottom: 2rem;
-    right: calc(2rem + 38px + 0.5rem);
-    width: 38px;
-    height: 38px;
+    right: calc(3rem + 38px + 0.5rem);
+    width: 45px;
+    height: 45px;
     pointer-events: none;
     z-index: 489;
   }
@@ -467,7 +467,7 @@
     border: 1px solid #25d366;
     padding: 0.3rem 0.75rem;
     font-family: 'JetBrains Mono', monospace;
-    font-size: 0.62rem;
+    font-size: 0.75rem;
     color: #25d366;
     white-space: nowrap;
     opacity: 0;
