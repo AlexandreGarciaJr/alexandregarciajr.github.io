@@ -112,4 +112,46 @@
 .hero-title {
   font-size: 3rem;
 }
+.logo img {
+  height: 60px;
+  width: 250px;
+  transition: filter 0.3s;
+  flex-shrink: 0;
+  display: block;
+}
+}
+
+@media (max-width: 420px) {
+  .hero-title {
+    font-size: clamp(2rem, 18vw, 2.8rem) !important;
+    letter-spacing: 0.03em;
+  }
+
+  .project-desc,
+  .project-name {
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .project-body {
+    padding: 1.2rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero-title {
+    font-size: clamp(1.8rem, 16vw, 2.4rem) !important;
+  }
+
+  section {
+    padding: 3rem 1rem !important;
+  }
+
+  #hero {
+    padding: 5rem 1rem 2rem !important;
+  }
 }
