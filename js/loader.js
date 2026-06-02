@@ -1,11 +1,12 @@
 // ── LOADER ───────────────────────────────────────────────────────────────────
 (function () {
-  // Limpa o flag quando a aba for fechada de verdade
-  window.addEventListener('pagehide', () => {
-    sessionStorage.removeItem('loaderShown');
-  });
+  const EXPIRY_MS = 30 * 60 * 1000; // 30 minutos — ajuste se quiser
 
-  if (sessionStorage.getItem('loaderShown')) {
+  const stored = localStorage.getItem('loaderShown');
+  const now = Date.now();
+
+  // Se foi visto há menos de 30 min, pula
+  if (stored && (now - parseInt(stored)) < EXPIRY_MS) {
     const loader = document.getElementById('loader');
     if (loader) loader.remove();
     return;
@@ -23,9 +24,9 @@
   const bootEl = document.getElementById('loaderBootText');
   const nameEl = document.getElementById('loaderName');
   const roleEl = document.getElementById('loaderRole');
-  const barEl = document.getElementById('loaderBar');
+  const barEl  = document.getElementById('loaderBar');
   const labelEl = document.getElementById('loaderLabel');
-  const loader = document.getElementById('loader');
+  const loader  = document.getElementById('loader');
 
   let lineIndex = 0;
 
@@ -53,7 +54,7 @@
             labelEl.textContent = pct < 100 ? 'LOADING ' + Math.round(pct) + '%' : 'ENTER >';
             if (pct >= 100) {
               setTimeout(() => {
-                sessionStorage.setItem('loaderShown', '1');
+                localStorage.setItem('loaderShown', Date.now().toString());
                 loader.classList.add('hide');
                 setTimeout(() => loader.remove(), 800);
               }, 600);
