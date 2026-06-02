@@ -389,3 +389,4 @@
   setTimeout(() => canvas.classList.add('ready'), 400);
 })();
 
+sessionStorage.removeItem('loaderShown')

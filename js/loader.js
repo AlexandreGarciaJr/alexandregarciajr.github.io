@@ -10,9 +10,9 @@
       const bootLines = [
         '> BOOT SEQUENCE INITIATED',
         '> LOADING MODULES...',
-        '> THREE.JS        [OK]',
-        '> ATOMS.JS        [OK]',
-        '> PORTFOLIO.CSS   [OK]',
+        '> INDEX.HTML        [OK]',
+        '> STYLE.CSS        [OK]',
+        '> THREE.JS    [OK]',
         '> READY.',
       ];
 
@@ -67,4 +67,3 @@
       // Start boot sequence after screen flicker
       setTimeout(typeLines, 1500);
     })();
-
