@@ -1,7 +1,6 @@
 // ── LOADER ───────────────────────────────────────────────────────────────────
 (function () {
-  // Skip loader if already shown in this browser session
-  if (localStorage.getItem('loaderShown')) {
+  if (sessionStorage.getItem('loaderShown')) {
     const loader = document.getElementById('loader');
     if (loader) loader.remove();
     return;
@@ -49,7 +48,7 @@
             labelEl.textContent = pct < 100 ? 'LOADING ' + Math.round(pct) + '%' : 'ENTER >';
             if (pct >= 100) {
               setTimeout(() => {
-                localStorage.setItem('loaderShown', '1');
+                sessionStorage.setItem('loaderShown', '1');
                 loader.classList.add('hide');
                 setTimeout(() => loader.remove(), 800);
               }, 600);
