@@ -627,27 +627,30 @@ nav.scrolled .logo {
 .wa-pulse::after {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
   border: 2px solid rgba(37, 211, 102, 0.35);
+  opacity: 0; /* começa invisível */
   animation: waPulse 2.5s ease-out infinite;
+  animation-fill-mode: both;
+  will-change: opacity, top, left, right, bottom;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 @keyframes waPulse {
-  0%, 10% {
+  0% {
     top: -2px;
     left: -2px;
     right: -2px;
     bottom: -2px;
     opacity: 0;
   }
-
-  20% {
+  15% {
     opacity: 0.6;
   }
-
   100% {
     top: -15px;
     left: -15px;
