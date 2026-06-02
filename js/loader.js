@@ -1,6 +1,12 @@
 // ── LOADER ───────────────────────────────────────────────────────────────────
 (function () {
-  if (sessionStorage.getItem('loaderShown')) {
+  // Gera um ID único por sessão do browser
+  if (!sessionStorage.getItem('sessionId')) {
+    sessionStorage.setItem('sessionId', Date.now().toString());
+  }
+  const sessionId = sessionStorage.getItem('sessionId');
+
+  if (localStorage.getItem('loaderShown') === sessionId) {
     const loader = document.getElementById('loader');
     if (loader) loader.remove();
     return;
@@ -48,7 +54,7 @@
             labelEl.textContent = pct < 100 ? 'LOADING ' + Math.round(pct) + '%' : 'ENTER >';
             if (pct >= 100) {
               setTimeout(() => {
-                sessionStorage.setItem('loaderShown', '1');
+                localStorage.setItem('loaderShown', sessionId);
                 loader.classList.add('hide');
                 setTimeout(() => loader.remove(), 800);
               }, 600);
