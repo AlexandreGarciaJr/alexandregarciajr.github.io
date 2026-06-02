@@ -636,12 +636,16 @@ nav.scrolled .logo {
 }
 
 @keyframes waPulse {
-  0% {
-    top: 2px;
-    left: 2px;
-    right: 2px;
-    bottom: 2px;
-    opacity: 0.7;
+  0%, 10% {
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0.6;
   }
 
   100% {
