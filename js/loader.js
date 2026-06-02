@@ -1,12 +1,6 @@
 // ── LOADER ───────────────────────────────────────────────────────────────────
 (function () {
-  const EXPIRY_MS = 30 * 60 * 1000; // 30 minutos — ajuste se quiser
-
-  const stored = localStorage.getItem('loaderShown');
-  const now = Date.now();
-
-  // Se foi visto há menos de 30 min, pula
-  if (stored && (now - parseInt(stored)) < EXPIRY_MS) {
+  if (sessionStorage.getItem('loaderShown')) {
     const loader = document.getElementById('loader');
     if (loader) loader.remove();
     return;
@@ -21,10 +15,10 @@
     '> READY.',
   ];
 
-  const bootEl = document.getElementById('loaderBootText');
-  const nameEl = document.getElementById('loaderName');
-  const roleEl = document.getElementById('loaderRole');
-  const barEl  = document.getElementById('loaderBar');
+  const bootEl  = document.getElementById('loaderBootText');
+  const nameEl  = document.getElementById('loaderName');
+  const roleEl  = document.getElementById('loaderRole');
+  const barEl   = document.getElementById('loaderBar');
   const labelEl = document.getElementById('loaderLabel');
   const loader  = document.getElementById('loader');
 
@@ -54,7 +48,7 @@
             labelEl.textContent = pct < 100 ? 'LOADING ' + Math.round(pct) + '%' : 'ENTER >';
             if (pct >= 100) {
               setTimeout(() => {
-                localStorage.setItem('loaderShown', Date.now().toString());
+                sessionStorage.setItem('loaderShown', '1');
                 loader.classList.add('hide');
                 setTimeout(() => loader.remove(), 800);
               }, 600);
