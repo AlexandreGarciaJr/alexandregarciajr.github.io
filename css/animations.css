@@ -627,21 +627,37 @@ nav.scrolled .logo {
 .wa-pulse::after {
   content: '';
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   border: 2px solid rgba(37, 211, 102, 0.35);
   animation: waPulse 2.5s ease-out infinite;
 }
 
 @keyframes waPulse {
   0% {
-    inset: 2px;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
     opacity: 0.7;
   }
 
   100% {
-    inset: -15px;
+    top: -15px;
+    left: -15px;
+    right: -15px;
+    bottom: -15px;
     opacity: 0;
   }
+}
+
+.wa-pulse::after {
+  /* ... */
+  will-change: top, left, right, bottom, opacity;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 /* Tooltip */
