@@ -1,5 +1,10 @@
 // ── LOADER ───────────────────────────────────────────────────────────────────
 (function () {
+  // Limpa o flag quando a aba for fechada de verdade
+  window.addEventListener('pagehide', () => {
+    sessionStorage.removeItem('loaderShown');
+  });
+
   if (sessionStorage.getItem('loaderShown')) {
     const loader = document.getElementById('loader');
     if (loader) loader.remove();
