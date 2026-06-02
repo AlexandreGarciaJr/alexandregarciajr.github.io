@@ -573,7 +573,7 @@ nav.scrolled .logo {
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer !important;
+  cursor: pointer;
   text-decoration: none;
   color: var(--text-secondary);
   transition: border-color 0.3s, box-shadow 0.3s, color 0.3s, transform 0.3s;
@@ -632,10 +632,10 @@ nav.scrolled .logo {
   right: -2px;
   bottom: -2px;
   border: 2px solid rgba(37, 211, 102, 0.35);
-  opacity: 0; /* começa invisível */
+  opacity: 0;
   animation: waPulse 2.5s ease-out infinite;
   animation-fill-mode: both;
-  will-change: opacity, top, left, right, bottom;
+  will-change: top, left, right, bottom, opacity;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
@@ -660,13 +660,6 @@ nav.scrolled .logo {
   }
 }
 
-.wa-pulse::after {
-  /* ... */
-  will-change: top, left, right, bottom, opacity;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
 /* Tooltip */
 .wa-btn .wa-tip {
   position: absolute;
@@ -686,7 +679,53 @@ nav.scrolled .logo {
   transition: opacity 0.2s, transform 0.2s;
 }
 
-.wa-btn:hover .wa-tip {
+/* Menu WhatsApp */
+.wa-menu {
+  position: fixed;
+  bottom: calc(2rem + 45px + 10px);
+  right: calc(3rem + 38px + 0.5rem);
+  background: var(--bg-card);
+  border: 1px solid #25d366;
+  min-width: 180px;
+  z-index: 500;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(6px) scale(0.97);
+  transition: opacity 0.2s, transform 0.2s;
+  transform-origin: bottom right;
+}
+
+.wa-menu.open {
   opacity: 1;
-  transform: translateY(-50%) translateX(0);
+  pointer-events: auto;
+  transform: translateY(0) scale(1);
+}
+
+.wa-menu-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  color: #25d366;
+  letter-spacing: 0.1em;
+  border-bottom: 1px solid rgba(37, 211, 102, 0.2);
+  text-transform: uppercase;
+}
+
+.wa-menu-item {
+  display: block;
+  padding: 0.6rem 0.75rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  transition: background 0.15s, color 0.15s;
+}
+
+.wa-menu-item:hover {
+  background: rgba(37, 211, 102, 0.08);
+  color: #25d366;
 }
