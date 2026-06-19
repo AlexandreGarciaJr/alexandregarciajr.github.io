@@ -21,7 +21,6 @@
 
 ### Visualização:
 
-<!-- http://alexandregarciajr.com <br/> -->
-https://alexandregarciajr.github.io/
+http://alexandregarcia.dev
 
 ![alt text](./assets/img/print-site.jpg)
